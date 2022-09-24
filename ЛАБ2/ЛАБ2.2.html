@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ICS6 Bootstrap</title>
+    <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        html {
+            position: relative;
+            min-height: 100%; 
+        }
+
+main {
+            margin-top: 15px;
+        }
+
+footer {
+            height: 50px;
+            bottom: 0;
+            width: 100%;
+        }
+    .my-primary {
+            background-color: #F4A900;
+            color: #ffffff;
+            display: flex;
+            padding-top: 3px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+
+body {
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+h1 {
+  width: 400px;
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+h2 {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #cccccc;
+}
+
+h3 {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #cccccc;
+}
+
+.site-header {
+  margin-bottom: 40px;
+}
+
+.features {
+    margin-bottom: 30px;
+}
+
+.features p {
+  vertical-align: top;
+  width: 100%;
+  line-height: 40px;
+  text-align: left;
+  background-position: center top;
+  color: #585659;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dde5b6;
+}
+
+
+.skills-item {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  border-left: 10px solid #c4c4c4;
+  color: #999999;
+}
+.skills-vip {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  border-left: 10px solid #c4c4c4;
+  color: #000000;
+  border-color:#ff5a26;
+}
+
+.skills-standard {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  border-left: 10px solid #c4c4c4;
+  border-color:#ffc5b3;
+  color:#666666;
+}
+
+.podp {
+    color: #adc178;
+}
+.skills-list {
+  padding: 0;
+  list-style: none;
+}
+
+.table-timetable table {
+    border-collapse: collapse;
+    font-family: "Arial", sans-serif;
+  color: #666666;
+}
+.table-timetable th {
+    background-color: orange;
+   border: 1px solid #999999;
+   color: #adc178;
+}
+
+.table-timetable td {
+   border: 1px solid #999999;
+}
+.table-timetable td:hover{
+    background-color: orange;
+}
+
+form {
+    padding-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+     <header class="site-header">
+     <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+     <a class="navbar-brand" href="#">Navbar</a>
+     <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+     <a class="nav-link" href="#">Home
+     <span class="sr-only">(current)</span>
+     </a>
+     </li>
+     <li class="nav-item">
+     <a class="nav-link" href="#">Link</a>
+     </li>
+     </ul>
+     </nav>
+    </header>
+
+
+    <main class="container">
+        <div class="row">
+                <div class="col-12">
+                    <h1>Инструктор Марик</h1>
+                    <p class="podp">Обучение <em>начинающих</em> котят</p>  
+        </div></div>
+        <div class="row">
+            <div class="col-4">
+            <img src=" https://proprikol.ru/wp-content/uploads/2020/08/krasivye-kartinki-kotov-19.jpg" alt="avatar" >
+            </div>
+            
+            <div class="col-8">
+                <section class="features">
+                 <h2>Почему я?</h2>
+                 <p>Я сам был котёнком, и вот я здесь</p>
+                 <p>Хозяин натренирован на <strong>100%</strong></p>
+                 <p>Профессиональный кот уже более 5 лет</p>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-4">
+                <section class="skills">
+                <h2>Чему вы научитесь?</h2>
+                 <ul class="skills-list">
+                 <li class="skills-item">таскать еду из хозяйской тарелки;</li>
+                 <li class="skills-item">придавать мебели <s>обшарпанный</s> винтажный стиль;</li>
+                 <li class="skills-standard">открывать дверь и не входить;</li>
+                 <li class="skills-standard">пить достаточно NaBO<sub>2</sub>•H<sub>2</sub>O<sub>2</sub>•3H<sub>2</sub>О;</li>
+                 <li class="skills-vip">будить хозяина ночью;</li>
+                 <li class="skills-vip">разбрасывать шерсть по квартире.</li>
+                </ul>
+                </section>
+            </div>
+            <div class="col-6">
+                <div class="table-timetable">
+                    <table >
+                        <tr>
+                            <th  rowspan="2">Время</th> <th  colspan="5">Будние</th> <th  colspan="2">Выходные</th>
+                        </tr>
+                        <tr> 
+                            <td>пн</td> <td>вт</td> <td>ср</td> <td>чт</td> <td>пт</td> <td>сб</td> <td>вс</td>
+                        </tr>
+                        <tr>
+                            <td>02:00-03:00</td><td>МК по выбору вискаса</td><td>МК "вокальный"</td><td>МК "шторолазание"</td><td>МК "достать хозяина"</td><td>-</td><td>МК "открываем неоткрываемое"</td><td rowspan="5">Праздник: 
+                                <p>День мартовского кота</p></td>
+                        </tr>
+                        <tr>
+                            <td>10:00-12:00</td><td>-</td><td rowspan="2">Курс: от котенка ко льву</td><td>-</td><td rowspan="2">Курс: от котенка ко льву</td><td>-</td><td>-</td>
+                        </tr>
+                        <tr>
+                            <td>12:00-14:00</td><td rowspan="2">Курс: шкет или эстет</td><td rowspan="3">Практика сна</td><td rowspan="3">Практика сна</td><td rowspan="2">Курс: шкет или эстет</td>
+                        </tr>
+                        <tr>
+                            <td>15:00-17:00</td><td>-</td><td>-</td>
+                        </tr>
+                        <tr>
+                            <td>17:00-19:00</td><td>-</td><td>МК по выбору коробки</td><td>-</td><td>-</td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-12">  
+             <h3>Заполните форму</h3>     
+                <form>
+                    <table>
+                    <tr>
+                    <td>Имя:</td> <td><input type="text" name="fname" /></td>  
+                    </tr> 
+                    <tr>
+                       <td>Фамилия: </td> <td><input type="text" name="lname" /></td> 
+                    </tr>  
+                    <tr>
+                        <td>Пол: </td> <td><input type="radio" name="gender" value="м"/>м
+                        <input type="radio" name="gender" value="ж"/>ж</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="obr" /></td> <td>Согласен на обработку персональных данных</td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-outline-warning">Отправить</button></td> <td></td>
+                    </tr>
+                    </table>   
+                </form>
+            </div>
+        </div>
+</main>
+
+    <footer class="my-primary">
+        <div class="container">
+            <p>© Марик, 2022</p>
+            <p class="footer-text">Контактов нет, я сам вас найду</p>
+        </div>
+    </footer>
+</body>
+</html>

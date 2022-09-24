@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+        
+       .format td, th {
+            border-bottom: 1px solid grey;
+            width: 30%;
+        }
+        
+    </style>
+
+ <title>Лабораторная 4</title>
+
+<script type="text/javascript">
+  function work() {
+    
+    var Cost = document.getElementById("cost");
+    var Name = document.getElementById("name");
+    var row = document.createElement("TR");
+    var td1 = document.createElement("TD");
+    var td2 = document.createElement("TD");
+    td1.textContent = Name.value;
+    td2.textContent = Cost.value;
+    row.append(td1, td2);
+
+    row.addEventListener('mouseover', (event)=>{   
+        mouseover(event.target);
+    });
+    row.addEventListener('mouseout', (event)=>{   
+        mouseout(event.target);
+    });
+
+    td2.setAttribute('class','price');
+    document.getElementById("z").appendChild(row);
+  }
+
+  function mouseover(el){el.style.backgroundColor= "coral";}
+  function mouseout(el){el.style.backgroundColor= "white";}
+
+  function sum(){
+    let massprice=document.getElementsByClassName('price');
+    let sum=0;
+    for(const pr of massprice){
+        sum+=parseInt(pr.textContent);
+    }
+    let container = document.getElementById("demo");
+    container.innerText = sum;
+  }
+
+  function fromtable(el){
+    var row = document.createElement("TR");
+    var td1 = document.createElement("TD");
+    var td2 = document.createElement("TD");
+    row.append(td1, td2);
+    row.addEventListener('mouseover', (event)=>{   
+        mouseover(event.target);
+    });
+    row.addEventListener('mouseout', (event)=>{   
+        mouseout(event.target);
+    });
+
+    td2.setAttribute('class','price');
+    document.getElementById("z").append(row);
+  
+    console.log(el.children[0].textContent);
+
+    td1.textContent=el.children[0].textContent;
+    td2.textContent=el.children[1].textContent;
+  }
+</script>
+
+
+ </head>
+<body>
+    <main>
+        <div class="row">
+        <div class="col-4">
+        <h2>Твой заказ</h2>
+        <table id="z">
+            <tr><th>Наименование</th><th>Стоимость</th></tr>
+        </table>
+        </div>
+
+        <div class="col-4">
+        <form>
+          <legend>Введите для добавления</legend>
+          <table >
+            <tr><td>Наименование</td>
+            <td><input type="text" id="name"></td></tr>          
+            <tr><td>Стоимость</td>
+            <td><input type="number" id="cost"></td></tr>
+          <tr><td><input type="button" onclick="work()" value='Добавить'  class="btn btn-outline-dark"></td></tr>
+        </table>
+        </form>
+        </div>
+
+        <div class="col-4">
+        <table class="format">
+            <legend>Добавьте в заказ</legend>
+            <tr><th>Наименование</th>
+            <th>Стоимость</th></tr>
+            <tr onclick="fromtable(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)"><td>Помидоры</td>
+            <td>60</td></tr>
+            <tr onclick="fromtable(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)"><td>Картофель</td>
+            <td>50</td></tr>
+            <tr onclick="fromtable(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)"><td>Рис</td>
+            <td>100</td></tr>
+            <tr onclick="fromtable(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)"><td>Хлеб</td>
+            <td>59</td></tr>
+        </table>
+        </div>
+
+        </div>
+        
+
+
+        <div class="row"><div class="col-2">
+            <button onclick="sum()" class="btn btn-outline-dark">Рассчет стоимости</button>
+        </div>
+           <div class="col-4" id="demo"> </div>
+        </div>
+
+
+</main>
+</body>
+</html>

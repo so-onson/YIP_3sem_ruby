@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html><head>
+<title>Вывод структуры страницы.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+div.text p:hover{background-color:  coral;}
+div.text p { margin: 0 5px 5px 5px; background-color:orange;}
+</style>
+
+<script type="text/javascript">
+ 
+  function printElement (element, nesting=0) {
+
+    let nestingString = '';
+    if (nesting > 0) {
+        nestingString = '\u00A0'.repeat(nesting * 2) + '|_';
+    }
+
+    let result = nestingString + element.tagName + '\n';
+
+    for(const child of element.children) {
+        result += printElement(child, nesting + 1);
+    }
+
+    return result;
+}
+
+function tree() {
+    const string = printElement(document.body);
+    console.log(string);
+    let container = document.getElementById("demo");
+    container.innerText = string;
+}
+</script>
+</head> 
+
+<body>
+<div>
+<h1>Вывод дерева элементов страницы <em>HTML</em></h1>
+<p>Это самый <i>обычный</i> документ.</p>
+</div>
+<div class="text">
+<p>Абзац 1</p>
+<p>Еще один абзац, но <strong>пожирнее</strong></p>
+<p>Тоже абзац</p>
+<p ><i>Аккуратненький абзац</i></p>
+</div>
+<button onclick="tree()">Нажми</button>
+<div id="demo"><pre></pre></div>
+
+
+
+</body>
+</html>

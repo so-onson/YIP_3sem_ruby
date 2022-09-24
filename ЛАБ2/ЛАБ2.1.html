@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+ <meta charset="utf-8">
+ 
+<title>Инструктор Марик</title>
+
+
+ 
+
+  <style>
+      body {
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+h1 {
+  width: 400px;
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+h2 {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #cccccc;
+}
+
+h3 {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #cccccc;
+}
+
+.site-header {
+  margin-bottom: 40px;
+}
+
+.features {
+    margin-bottom: 40px;
+}
+
+.features p { 
+  width: 50%;
+  margin: 0 5px;
+  color: #90e0ef;
+}
+
+.table-timetable table {
+    border-collapse: collapse;
+    font-family: "Arial", sans-serif;
+  background:  radial-gradient(farthest-corner at 50% 50%, #90e0ef, #caf0f8);
+  color: #0C213B;
+}
+.table-timetable th {
+   border: 1px solid grey;
+}
+
+.table-timetable td {
+   border: 1px solid grey;
+}
+.row {
+    display: table-row;
+}
+.col {
+    display: table-cell;
+    border: 1px solid grey;
+}
+
+.conteiner {
+    margin: 30px 0;
+    border: 1px solid grey;
+    width: min-content;
+}
+  </style>
+ </head>
+ 
+
+ <body>
+    
+ <header class="site-header">
+ <h1>Инструктор Марик</h1>
+ <p>Обучение <em>начинающих</em> котят</p>
+</header>
+
+<section class="features">
+ <h2>Почему я?</h2>
+ <p>Я сам был котёнком, и вот я здесь</p>
+ <p>Хозяин натренирован на <strong>100%</strong></p>
+ <p>Профессиональный кот уже более 5 лет</p>
+</section>
+
+ <h2>Чему вы научитесь?</h2>
+ <ul>
+ <li>таскать еду из хозяйской тарелки;</li>
+ <li>придавать мебели <s>обшарпанный</s> винтажный стиль;</li>
+ <li>открывать дверь и не входить;</li>
+ <li>пить достаточно NaBO<sub>2</sub>•H<sub>2</sub>O<sub>2</sub>•3H<sub>2</sub>О;</li>
+ <li>будить хозяина ночью;</li>
+ <li>разбрасывать шерсть по квартире.</li>
+</ul>
+<p><cite><a href="https://poembook.ru/diary/63754-10-krylatykh-fraz-kota-begemota">
+<i>Попрошу меня не учить, сиживал за столом, не беспокойтесь, сиживал!
+</i></a></cite> Кот Бегемот.</p>
+
+<h2>Расписание на текущую неделю</h2>
+<div class="table-timetable">
+<table>
+	<tr>
+		<th  rowspan="2">Время</th> <th  colspan="5">Будние</th> <th  colspan="2">Выходные</th>
+	</tr>
+	<tr> 
+		<td>пн</td> <td>вт</td> <td>ср</td> <td>чт</td> <td>пт</td> <td>сб</td> <td>вс</td>
+	</tr>
+	<tr>
+		<td>02:00-03:00</td><td>МК по выбору вискаса</td><td>МК "вокальный"</td><td>МК "шторолазание"</td><td>МК "достать хозяина"</td><td>-</td><td>МК "открываем неоткрываемое"</td><td rowspan="5">Праздник: 
+			<p>День мартовского кота</p></td>
+	</tr>
+	<tr>
+		<td>10:00-12:00</td><td>-</td><td rowspan="2">Курс: от котенка ко льву</td><td>-</td><td rowspan="2">Курс: от котенка ко льву</td><td>-</td><td>-</td>
+	</tr>
+	<tr>
+		<td>12:00-14:00</td><td rowspan="2">Курс: шкет или эстет</td><td rowspan="3">Практика сна</td><td rowspan="3">Практика сна</td><td rowspan="2">Курс: шкет или эстет</td>
+	</tr>
+	<tr>
+		<td>15:00-17:00</td><td>-</td><td>-</td>
+	</tr>
+	<tr>
+		<td>17:00-19:00</td><td>-</td><td>МК по выбору коробки</td><td>-</td><td>-</td>
+	</tr>	
+</table>
+</div>
+
+<div class="conteiner" >
+    <div class="row">
+        <div class="col">МК</div>
+        <div class="col">Уровень</div>
+        <div class="col">Цена</div>
+    </div>
+    <div class="row">
+        <div class="col">Выбор коробки</div>
+        <div class="col">Котенок</div>
+        <div class="col">500</div>
+    </div>
+    <div class="row">
+        <div class="col">"шторолазание"</div>
+        <div class="col">Котенок</div>
+        <div class="col">500</div>
+    </div>
+    <div class="row">
+        <div class="col">"шторолазание"</div>
+        <div class="col">Кот</div>
+        <div class="col">800</div>
+    </div>
+    
+</div>
+
+
+<h3>Заполните форму</h3>
+<form>
+    <table>
+    <tr>
+    <td>Имя:</td> <td><input type="text" name="fname" /></td>  
+    </tr> 
+    <tr>
+       <td>Фамилия: </td> <td><input type="text" name="lname" /></td> 
+    </tr>  
+    <tr>
+        <td>Пол: </td> <td><input type="radio" name="gender" value="м"/>м
+        <input type="radio" name="gender" value="ж"/>ж</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="obr" /></td> <td>Согласен на обработку персональных данных</td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Отправить" /></td> <td></td>
+    </tr>
+    </table>   
+</form>
+
+<footer class="site-footer">
+ <p><small>Контактов нет, я сам вас найду</small></p>
+</footer>
+
+</body>
+</html>
