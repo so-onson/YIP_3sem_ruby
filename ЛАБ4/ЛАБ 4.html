@@ -6,11 +6,43 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style type="text/css">
+        html {
+            position: sticky;
+            min-height: 100%;
+        }
         
        .format td, th {
             border-bottom: 1px solid grey;
             width: 30%;
         }
+        header {
+            background-color: lightblue;
+            color: ghostwhite;
+            margin-bottom: 10px;
+            height: 60px;
+        }
+
+        footer {
+            background-color: lightblue;
+            color: ghostwhite;
+            height: 20px;
+            position: absolute ;
+            bottom: 0px;
+            width: 100%;
+        }
+
+        legend {
+            color: lightblue;
+        }
+
+        #demo {
+            color: blueviolet;
+            position: relative ;
+            width: 20px;
+            height: 40px;
+
+        }
+
         
     </style>
 
@@ -18,14 +50,21 @@
 
 <script type="text/javascript">
   function work() {
-    
-    var Cost = document.getElementById("cost");
-    var Name = document.getElementById("name");
+    let f=true;
+    var Cost = document.getElementById("cost").value;
+    var Name = document.getElementById("name").value;
     var row = document.createElement("TR");
     var td1 = document.createElement("TD");
     var td2 = document.createElement("TD");
-    td1.textContent = Name.value;
-    td2.textContent = Cost.value;
+    var reg = /^\d+/;
+    var reg1 = /^[а-яА-я ]+/;
+
+    //if(Cost.match(reg)){alert("Заполните форму");f=false;}  // /^\d+/
+    //if(parseInt(Cost)<0){alert("Отрицательная цена");f=false;}
+    if(Cost.match(reg)&&Name.match(reg1)){
+    td1.textContent = Name;
+
+    td2.textContent = Cost;
     row.append(td1, td2);
 
     row.addEventListener('mouseover', (event)=>{   
@@ -37,17 +76,31 @@
 
     td2.setAttribute('class','price');
     document.getElementById("z").appendChild(row);
-  }
+    }
+    else {alert("Невалидная цена");}
 
-  function mouseover(el){el.style.backgroundColor= "coral";}
+}
+
+  function mouseover(el){el.style.backgroundColor= "lightblue";}
   function mouseout(el){el.style.backgroundColor= "white";}
 
   function sum(){
-    let massprice=document.getElementsByClassName('price');
-    let sum=0;
-    for(const pr of massprice){
-        sum+=parseInt(pr.textContent);
+    var row = document.createElement("TR");
+    var td1 = document.createElement("TD");
+    var td2 = document.createElement("TD");
+
+    let massPrice=document.getElementsByClassName('price');
+    let sum = 0;
+    for(const pr of massPrice){
+        sum += parseInt(pr.textContent);
     }
+
+    td2.innerText = sum;
+    td1.innerText = 'Итог';
+    row.append(td1, td2);
+    document.getElementById("z").append(row);
+
+
     let container = document.getElementById("demo");
     container.innerText = sum;
   }
@@ -56,10 +109,12 @@
     var row = document.createElement("TR");
     var td1 = document.createElement("TD");
     var td2 = document.createElement("TD");
+
     row.append(td1, td2);
     row.addEventListener('mouseover', (event)=>{   
         mouseover(event.target);
     });
+
     row.addEventListener('mouseout', (event)=>{   
         mouseout(event.target);
     });
@@ -69,14 +124,15 @@
   
     console.log(el.children[0].textContent);
 
-    td1.textContent=el.children[0].textContent;
-    td2.textContent=el.children[1].textContent;
+    td1.textContent = el.children[0].textContent;
+    td2.textContent = el.children[1].textContent;
   }
 </script>
 
 
  </head>
 <body>
+    <header><h1>Корзина</h1></header>
     <main>
         <div class="row">
         <div class="col-4">
@@ -93,7 +149,7 @@
             <tr><td>Наименование</td>
             <td><input type="text" id="name"></td></tr>          
             <tr><td>Стоимость</td>
-            <td><input type="number" id="cost"></td></tr>
+            <td><input type="number" id="cost" value="0"></td></tr>
           <tr><td><input type="button" onclick="work()" value='Добавить'  class="btn btn-outline-dark"></td></tr>
         </table>
         </form>
@@ -122,10 +178,11 @@
         <div class="row"><div class="col-2">
             <button onclick="sum()" class="btn btn-outline-dark">Рассчет стоимости</button>
         </div>
-           <div class="col-4" id="demo"> </div>
+           <div class="col-4" id="demo" > </div>
         </div>
 
 
 </main>
+<footer>SonSon&Co</footer>
 </body>
 </html>
