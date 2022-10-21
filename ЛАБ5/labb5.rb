@@ -1,7 +1,7 @@
-a_,b_ = gets.split.map(&:to_f)
+# frozen_string_literal: true
 
-def calc(a,b) 
-    (Math.sin(a)-b)/(b.abs+Math.cos(b**2))
+def calc(str)
+  # unless str.match?(/^-?\d+[ ,]+-?\d+$/) {return 'Bad input, exit...'}
+  num1, num2 = str.split.map(&:to_f)
+  p (Math.sin(num1) - num2) / (num2.abs + Math.cos(num2**2))
 end
-
-puts calc(a_,b_)
