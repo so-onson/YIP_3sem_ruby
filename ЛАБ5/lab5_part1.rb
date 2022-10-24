@@ -4,7 +4,7 @@
 class First
   def self.calc(str)
     # unless str.match?(/^-?\d+[ ,]+-?\d+$/) {return 'Bad input, exit...'}
-    num1, num2 = str.split.map(&:to_f)
-    (Math.sin(num1) - num2) / (num2.abs + Math.cos(num2**2))
+    numa, numb = str.split.map(&:to_f)
+    (Math.sin(numa) - numb) / (numb.abs + Math.cos(numb**2))
   end
 end

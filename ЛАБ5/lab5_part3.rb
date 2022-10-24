@@ -3,9 +3,10 @@
 # Class for finding k minimal and k maximal
 class Third
   def self.find_k_maxmin(str, kkk)
-    # return 'Bad input, exit...' unless str.match?(/^[-?\d+ ]$/)
-    min_arr = str.split.map(&:to_i).sort[0..kkk - 1]
-    max_arr = str.split.map(&:to_i).sort.reverse[0..kkk - 1]
+    bord = kkk - 1
+    arr = str.split.map(&:to_i).sort
+    min_arr = arr[0..bord]
+    max_arr = arr.reverse[0..bord]
     [max_arr, min_arr]
   end
 end

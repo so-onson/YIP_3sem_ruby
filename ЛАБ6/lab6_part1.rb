@@ -11,7 +11,7 @@ class First
   def calculate(inp)
     count = 1
     summ = next_elem(count)
-    while next_elem(count).abs >= inp
+    while next_elem(count).abs >= inpl
       summ += next_elem(count)
       count += 1
     end
