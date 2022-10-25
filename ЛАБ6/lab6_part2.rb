@@ -17,29 +17,13 @@ class Second
       
               summ += 1.0 / (count * (count + 1))
               count += 1
-              @iter_count = k
+              @iter_count = count
             end
-          end
+        end
       
-          arr = list.take_while { |sum, real| (sum - real).abs >= inp }
+          arr = list.take_while { |sum, real| elem(count).abs >= inp }
           @iter_count = arr.last[2] - 1
           arr.last[0]
-
-
-      count = 1
-      summ = next_elem(count)
-      while next_elem(count).abs >= inp
-        summ += next_elem(count)
-        count += 1
-      end
-      @iter_count = count
-      summ
     end
-  
-    private
-  
-    def next_elem(count)
-      p 1.0 / (count * (count + 1))
-    end
-  end
+end
   

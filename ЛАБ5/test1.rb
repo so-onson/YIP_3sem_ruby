@@ -1,4 +1,4 @@
-require_relative 'labb5.rb'
+require_relative 'lab5_part1.rb'
  RSpec.describe First do
   
     # describe "calc('5, 6')" do 
