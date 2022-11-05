@@ -9,10 +9,10 @@ class First
   end
 
   def calculate(inp)
-    count = 1
-    summ = next_elem(count)
+    p summ = next_elem(1)
+    count = 2
     while next_elem(count).abs >= inp
-      summ += next_elem(count)
+      p summ += next_elem(count)
       count += 1
     end
     @iter_count = count
@@ -22,6 +22,6 @@ class First
   private
 
   def next_elem(count)
-    p 1.0 / (count * (count + 1))
+    1.0 / (count * (count + 1))
   end
 end
