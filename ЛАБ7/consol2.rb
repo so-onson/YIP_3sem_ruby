@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'lab7_part2.rb'
 
 troika = Troika.new('2 * 3')
