@@ -10,8 +10,9 @@ class Troika
   end
 
   def calc
-    first = @str.scan(/-?\d+\.?\d*/)[0].to_f
-    second = @str.scan(/-?\d+\.?\d*/)[1].to_f
+    scn = @str.scan(/-?\d+\.?\d*/)
+    first = scn[0].to_f
+    second = scn[-1].to_f
 
     case @str.split[1]
     when '+'

@@ -14,7 +14,7 @@ RSpec.describe Troika do
   end
   
   RSpec.describe TroikaSkobka do
-    let(:troikask) { TroikaSkobka.new(('60 * 10.5')) }
+    let(:troikask) { TroikaSkobka.new('(60 * 10.5)') }
   
     it 'should be child of Troika' do
       expect(TroikaSkobka.superclass).to eq(Troika)

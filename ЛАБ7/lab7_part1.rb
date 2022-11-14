@@ -4,9 +4,9 @@
 class First
   def self.make_files(*str)
     if str.empty?
-        make_f
+      make_f
     else
-        make_f(str)
+      make_f(str)
     end
     make_g
   end
