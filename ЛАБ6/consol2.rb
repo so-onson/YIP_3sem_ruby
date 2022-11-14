@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'lab6_part2.rb'
 
 ans = Second.calculate(0.001)

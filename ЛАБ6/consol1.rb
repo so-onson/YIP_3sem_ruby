@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'lab6_part1.rb'
 
 puts('Input the accuracy')

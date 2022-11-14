@@ -12,5 +12,5 @@ RSpec.describe First do
   it 'should has correct number of iterations' do
     part.calculate(0.0001)
     expect(part.iter_count).to eq(100)
-  endr
+  end
 end
