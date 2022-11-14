@@ -2,7 +2,6 @@
 
 # Class to make files and show them
 class Troika
-
   attr_reader :str
 
   def initialize(str)
@@ -11,18 +10,18 @@ class Troika
 
   def calc
     scn = @str.scan(/-?\d+\.?\d*/)
-    first = scn[0].to_f
+    @first = scn[0].to_f
     second = scn[-1].to_f
 
     case @str.split[1]
     when '+'
-      first + second
+      @first + second
     when '-'
-      first - second
+      @first - second
     when '/'
-      first / second
+      @first / second
     when '*'
-      first * second
+      @first * second
     else
       'error'
     end
