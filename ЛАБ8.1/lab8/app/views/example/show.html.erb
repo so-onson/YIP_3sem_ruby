@@ -1,0 +1,28 @@
+<h1>Example#show</h1>
+<h3> Вы ввели <%= params[:num1].to_i %> и <%= params[:num2].to_i %></h3>
+
+
+<div>
+<table>
+<tr><th>Итерация</th><th>Результат</th></tr>
+<% @it_res.each_with_index do |res, val| %>
+    <tr>
+    <td><%= val+1 %></td>
+    <td><%= res %></td>
+    <% end %>
+    </tr>
+</table>
+</div>
+
+
+
+<p><h3><%= "Наибольший общий делитель: #{@res}\n" %></h3></p>
+
+<p><h3>Наименьшее общее кратное: <%= @summ %></h3></p>
+
+
+
+ <%= form_with url: "/", method: :get do |form| %>
+    <%= form.submit 'Перейти на главную' %>
+    <% end %>
+

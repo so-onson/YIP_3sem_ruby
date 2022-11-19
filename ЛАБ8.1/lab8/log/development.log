@@ -1,0 +1,3114 @@
+Started GET "/" for ::1 at 2022-11-15 09:53:43 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.5ms | Allocations: 831)
+Completed 200 OK in 19ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 7789)
+
+
+Started GET "/example/input" for ::1 at 2022-11-15 09:54:00 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 281.4ms | Allocations: 123308)
+Completed 200 OK in 285ms (Views: 283.5ms | ActiveRecord: 0.0ms | Allocations: 124610)
+
+
+Started GET "/example/input" for ::1 at 2022-11-15 09:54:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/example/input"):
+  
+Started GET "/" for ::1 at 2022-11-15 09:54:25 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 21876)
+Completed 200 OK in 24ms (Views: 22.8ms | Allocations: 22761)
+
+
+Started GET "/example/show" for ::1 at 2022-11-15 09:55:04 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1123)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1195)
+Completed 500 Internal Server Error in 2ms (Allocations: 1585)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Example#show</h1>
+<p>Find me in app/views/example/show.html.erb</p>
+<p><%= link_to 'home' example_show_path %></p>
+
+):
+1:    <h1>Example#show</h1>
+2:    <p>Find me in app/views/example/show.html.erb</p>
+3:    <p><%= link_to 'home' example_show_path %></p>
+  
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/example/show" for ::1 at 2022-11-15 09:55:54 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4169)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 5286)
+
+
+Started GET "/example/show" for ::1 at 2022-11-15 09:56:28 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4146)
+Completed 200 OK in 12ms (Views: 10.2ms | Allocations: 5284)
+
+
+Started GET "/example/show" for ::1 at 2022-11-15 09:56:54 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1115)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1196)
+Completed 500 Internal Server Error in 4ms (Allocations: 2298)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Example#show</h1>
+<p>Find me in app/views/example/show.html.erb</p>
+<p><%link_to 'home' example_show_path %></p>
+
+):
+1:    <h1>Example#show</h1>
+2:    <p>Find me in app/views/example/show.html.erb</p>
+3:    <p><%link_to 'home' example_show_path %></p>
+  
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/example/show" for ::1 at 2022-11-15 09:59:33 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1114)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1195)
+Completed 500 Internal Server Error in 4ms (Allocations: 2292)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Example#show</h1>
+<p>Find me in app/views/example/show.html.erb</p>
+<% <p>link_to 'home' example_show_path </p> %>
+
+):
+1:    <h1>Example#show</h1>
+2:    <p>Find me in app/views/example/show.html.erb</p>
+3:    <% <p>link_to 'home' example_show_path </p> %>
+  
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/example/show" for ::1 at 2022-11-15 10:01:38 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1073)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1145)
+Completed 500 Internal Server Error in 2ms (Allocations: 1438)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Example#show</h1>
+<p>Find me in app/views/example/show.html.erb</p>
+<% <p>link_to 'home' example_show_path </p> %>
+
+):
+1:    <h1>Example#show</h1>
+2:    <p>Find me in app/views/example/show.html.erb</p>
+3:    <% <p>link_to 'home' example_show_path </p> %>
+  
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected '<', expecting `end'
+app/views/example/show.html.erb:3: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/example/show.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/example/show.html.erb:5: unterminated regexp meets end of file
+app/views/example/show.html.erb:5: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/example/show" for ::1 at 2022-11-15 10:05:24 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 17.9ms | Allocations: 7525)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 11579)
+Completed 200 OK in 32ms (Views: 29.3ms | Allocations: 12705)
+
+
+Started GET "/example/show" for ::1 at 2022-11-15 10:32:09 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2374)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6358)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 7534)
+
+
+Started GET "/example/show" for ::1 at 2022-11-15 10:32:51 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2370)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6369)
+Completed 200 OK in 12ms (Views: 10.5ms | Allocations: 7506)
+
+
+Started GET "/example/input?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 10:33:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/example/input"):
+  
+Started GET "/example/show" for ::1 at 2022-11-15 10:33:01 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2045)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 5576)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 5900)
+
+
+Started GET "/example/input?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 10:33:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/example/input"):
+  
+Started GET "/example/show" for ::1 at 2022-11-15 10:33:10 +0300
+Processing by ExampleController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2045)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 5589)
+Completed 200 OK in 12ms (Views: 11.9ms | Allocations: 5898)
+
+
+Started GET "/" for ::1 at 2022-11-15 10:33:20 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 0.5ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3648)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 4010)
+
+
+Started GET "/" for ::1 at 2022-11-15 10:34:16 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2366)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6347)
+Completed 200 OK in 10ms (Views: 8.7ms | Allocations: 7463)
+
+
+Started GET "/example/input?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 10:34:25 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/example/input"):
+  
+Started GET "/" for ::1 at 2022-11-15 10:34:25 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2046)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 5596)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 5920)
+
+
+Started GET "/example/input?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 10:45:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/example/input"):
+  
+Started GET "/" for ::1 at 2022-11-15 10:45:46 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2045)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5586)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 5894)
+
+
+Started GET "/example/input?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 10:45:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/example/input"):
+  
+Started GET "/" for ::1 at 2022-11-15 10:45:48 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2046)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 5582)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 5890)
+
+
+Started GET "/" for ::1 at 2022-11-15 10:51:18 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2364)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 6347)
+Completed 200 OK in 14ms (Views: 12.4ms | Allocations: 7463)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 10:51:23 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2271)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 5802)
+Completed 200 OK in 18ms (Views: 15.9ms | Allocations: 6181)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 10:51:51 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1106)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1187)
+Completed 500 Internal Server Error in 4ms (Allocations: 2273)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Example#show</h1>
+<%= form_with url: "/example/input", method: :get do |form| %>
+):
+1:    <h1>Example#show</h1>
+2:    <%= form_with url: "/example/input", method: :get do |form| %>
+  
+app/views/example/show.html.erb:4: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:4: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:4: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:4: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:4: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:4: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 10:56:10 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1071)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1152)
+Completed 500 Internal Server Error in 5ms (Allocations: 2349)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Example#show</h1>
+<h1> Вы ввели <%= @num1 %> и <%= @num 2%></h1>
+):
+1:    <h1>Example#show</h1>
+2:    <h1> Вы ввели <%= @num1 %> и <%= @num 2%></h1>
+  
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+Started GET "/" for ::1 at 2022-11-15 10:56:15 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2316)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 24366)
+Completed 200 OK in 27ms (Views: 26.2ms | Allocations: 24751)
+
+
+Started GET "/example/show?num1=3&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 10:56:24 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1082)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1154)
+Completed 500 Internal Server Error in 2ms (Allocations: 1444)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Example#show</h1>
+<h1> Вы ввели <%= @num1 %> и <%= @num 2%></h1>
+):
+1:    <h1>Example#show</h1>
+2:    <h1> Вы ввели <%= @num1 %> и <%= @num 2%></h1>
+  
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+app/views/example/show.html.erb:2: syntax error, unexpected integer literal, expecting ')'
+Started GET "/" for ::1 at 2022-11-15 10:56:54 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 6357)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 7473)
+
+
+Started GET "/example/show?num1=7&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 10:57:00 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3662)
+Completed 200 OK in 7ms (Views: 6.0ms | Allocations: 4054)
+
+
+Started GET "/example/show?num1=7&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:05:21 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 5540)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5644)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 11556)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `rout' for #<ActionView::Base:0x0000000000a708>
+Did you mean?  _routes):
+    1: <h1>Example#show</h1>
+    2: <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+    3: <%= link_to 'Перейти назад', rout %>
+  
+app/views/example/show.html.erb:3
+Started GET "/" for ::1 at 2022-11-15 11:05:30 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 15.2ms | Allocations: 2993)
+  Rendered layout layouts/application.html.erb (Duration: 189.2ms | Allocations: 53613)
+Completed 200 OK in 193ms (Views: 190.7ms | ActiveRecord: 0.0ms | Allocations: 54069)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:05:38 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 4209)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4282)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4622)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `rout' for #<ActionView::Base:0x0000000000ad20>
+Did you mean?  _routes):
+    1: <h1>Example#show</h1>
+    2: <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+    3: <%= link_to 'Перейти назад', rout %>
+  
+app/views/example/show.html.erb:3
+Started GET "/" for ::1 at 2022-11-15 11:06:09 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 6359)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 7485)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:06:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 4300)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4371)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4738)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root' for #<ActionView::Base:0x0000000000b0e0>):
+    1: <h1>Example#show</h1>
+    2: <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+    3: <%= link_to 'Перейти назад', root %>
+  
+app/views/example/show.html.erb:3
+Started GET "/" for ::1 at 2022-11-15 11:07:32 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2310)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 24434)
+Completed 200 OK in 27ms (Views: 25.7ms | Allocations: 25648)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:07:38 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 238)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3765)
+Completed 200 OK in 7ms (Views: 6.5ms | Allocations: 4156)
+
+
+Started GET "/example/input" for ::1 at 2022-11-15 11:07:40 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2047)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 5588)
+Completed 200 OK in 22ms (Views: 21.1ms | Allocations: 5898)
+
+
+Started GET "/example/input" for ::1 at 2022-11-15 11:08:23 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2362)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 6351)
+Completed 200 OK in 24ms (Views: 21.3ms | Allocations: 7472)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:08:29 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2193)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2264)
+Completed 500 Internal Server Error in 5ms (Allocations: 2635)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"input_page"}):
+    1: <h1>Example#show</h1>
+    2: <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+    3: <%= link_to 'Перейти назад', example_input_path %>
+    4: <%= form_for :home, :url => {:controller => 'input_page'} do |f| %>
+    5:     <%= f.submit('Перейти далее') %>
+    6:  <% end %>
+  
+app/views/example/show.html.erb:4
+Started GET "/example/input" for ::1 at 2022-11-15 11:09:10 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 6369)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 7485)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:09:17 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1755)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1826)
+Completed 500 Internal Server Error in 5ms (Allocations: 2190)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"example_input_path"}):
+    1: <h1>Example#show</h1>
+    2: <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+    3: <%= link_to 'Перейти назад', example_input_path %>
+    4: <%= form_for :home, :url => {:controller => 'example_input_path'} do |f| %>
+    5:     <%= f.submit('Перейти далее') %>
+    6:  <% end %>
+  
+app/views/example/show.html.erb:4
+Started GET "/example/input" for ::1 at 2022-11-15 11:10:19 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2364)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 6369)
+Completed 200 OK in 25ms (Views: 22.2ms | Allocations: 7495)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:10:23 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2309)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2380)
+Completed 500 Internal Server Error in 7ms (Allocations: 2746)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for {:url=>{:controller=>"example_input_path"}}:Hash):
+    1: <h1>Example#show</h1>
+    2: <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+    3: <%= link_to 'Перейти назад', example_input_path %>
+    4: <%= form_for :url => {:controller => 'example_input_path'} do |f| %>
+    5:     <%= f.submit('Перейти далее') %>
+    6:  <% end %>
+  
+app/views/example/show.html.erb:4
+Started GET "/example/input" for ::1 at 2022-11-15 11:11:34 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6367)
+Completed 200 OK in 13ms (Views: 11.7ms | Allocations: 7483)
+
+
+Started GET "/example/show?num1=9&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:11:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2339)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2410)
+Completed 500 Internal Server Error in 14ms (Allocations: 2774)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for {:url=>{:controller=>"example/input"}}:Hash):
+    1: <h1>Example#show</h1>
+    2: <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+    3: <%= link_to 'Перейти назад', example_input_path %>
+    4: <%= form_for :url => {:controller => 'example/input'} do |f| %>
+    5:     <%= f.submit('Перейти далее') %>
+    6:  <% end %>
+    7: 
+  
+app/views/example/show.html.erb:4
+Started GET "/example/input" for ::1 at 2022-11-15 11:11:59 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 6375)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 7491)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:12:03 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 16.2ms | Allocations: 4563)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 4634)
+Completed 500 Internal Server Error in 20ms (Allocations: 4998)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<ActionView::Base:0x0000000000ffa0>):
+    4: 
+    5: 
+    6:  <%= form_with url: "/example/show", method: :get do |form| %>
+    7:     <%= f.submit('Перейти далее') %>
+    8:     <% end %>
+  
+app/views/example/show.html.erb:7
+app/views/example/show.html.erb:6
+Started GET "/example/input" for ::1 at 2022-11-15 11:12:34 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 6369)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 7485)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:12:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 18.4ms | Allocations: 4561)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 4632)
+Completed 500 Internal Server Error in 23ms (Allocations: 4996)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<ActionView::Base:0x00000000010360>):
+    4: 
+    5: 
+    6:  <%= form_with url: "/example/show", method: :get do |form| %>
+    7:     <%= f.submit 'Перейти далее' %>
+    8:     <% end %>
+  
+app/views/example/show.html.erb:7
+app/views/example/show.html.erb:6
+Started GET "/example/input" for ::1 at 2022-11-15 11:12:57 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6361)
+Completed 200 OK in 13ms (Views: 11.3ms | Allocations: 7478)
+
+
+Started GET "/example/show?num1=7&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:13:02 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4562)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4633)
+Completed 500 Internal Server Error in 8ms (Allocations: 4997)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<ActionView::Base:0x000000000106d0>):
+    4: 
+    5: 
+    6:  <%= form_with url: "/example/input", method: :get do |form| %>
+    7:     <%= f.submit 'Перейти далее' %>
+    8:     <% end %>
+  
+app/views/example/show.html.erb:7
+app/views/example/show.html.erb:6
+Started GET "/example/input" for ::1 at 2022-11-15 11:13:24 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 6373)
+Completed 200 OK in 13ms (Views: 11.3ms | Allocations: 7489)
+
+
+Started GET "/example/show?num1=7&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:13:29 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3924)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 4316)
+
+
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%B4%D0%B0%D0%BB%D0%B5%D0%B5" for ::1 at 2022-11-15 11:13:32 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти далее"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2047)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 5586)
+Completed 200 OK in 7ms (Views: 6.5ms | Allocations: 5896)
+
+
+Started GET "/example/show?num1=3&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:14:03 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 483)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4472)
+Completed 200 OK in 12ms (Views: 11.4ms | Allocations: 5608)
+
+
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:14:05 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2276)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5816)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 6195)
+
+
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:32:40 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2068)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 23981)
+Completed 200 OK in 29ms (Views: 28.6ms | Allocations: 24860)
+
+
+Started GET "/example/show?num1=7&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:32:47 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"9", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 2ms (Allocations: 1614)
+
+
+  
+NoMethodError (undefined method `-' for "9":String
+Did you mean?  -@):
+  
+app/controllers/example_controller.rb:16:in `calc'
+app/controllers/example_controller.rb:8:in `show'
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:33:33 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 0.9ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 24021)
+Completed 200 OK in 25ms (Views: 24.4ms | Allocations: 24900)
+
+
+Started GET "/example/show?num1=7&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:33:38 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3720)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 4068)
+
+
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:33:47 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2048)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 5585)
+Completed 200 OK in 7ms (Views: 6.9ms | Allocations: 5895)
+
+
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:36:57 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2365)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 6348)
+Completed 200 OK in 14ms (Views: 12.3ms | Allocations: 7492)
+
+
+Started GET "/example/show?num1=9&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:37:07 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 4138)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4209)
+Completed 500 Internal Server Error in 8ms (Allocations: 4587)
+
+
+  
+ActionView::Template::Error (undefined method `calc' for #<ActionView::Base:0x00000000018358>):
+    2: <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+    3: <%= link_to 'Перейти назад', example_input_path %>
+    4: 
+    5: <p><%= calc() %></p>
+    6: 
+    7:  <%= form_with url: "/example/input", method: :get do |form| %>
+    8:     <%= form.submit 'Перейти на главную' %>
+  
+app/views/example/show.html.erb:5
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:37:29 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.0ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 24013)
+Completed 200 OK in 26ms (Views: 25.6ms | Allocations: 24892)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:37:34 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3916)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3987)
+Completed 500 Internal Server Error in 10ms (Allocations: 4311)
+
+
+  
+ActionView::Template::Error (undefined method `calc' for #<ActionView::Base:0x0000000001bff8>):
+    2: <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+    3: <%= link_to 'Перейти назад', example_input_path %>
+    4: 
+    5: <p><%= calc() %></p>
+    6: 
+    7:  <%= form_with url: "/example/input", method: :get do |form| %>
+    8:     <%= form.submit 'Перейти на главную' %>
+  
+app/views/example/show.html.erb:5
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:38:05 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2310)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 24456)
+Completed 200 OK in 23ms (Views: 21.8ms | Allocations: 25666)
+
+
+Started GET "/example/show?num1=9&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:38:11 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 414)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3951)
+Completed 200 OK in 17ms (Views: 16.1ms | Allocations: 4355)
+
+
+Started GET "/example/show?num1=9&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:43:41 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 258)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 22173)
+Completed 200 OK in 19ms (Views: 18.1ms | Allocations: 23051)
+
+
+Started GET "/example/show?num1=9&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:43:43 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3702)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 4026)
+
+
+Started GET "/" for ::1 at 2022-11-15 11:43:50 +0300
+Processing by ExampleController#input as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 508)
+
+
+  
+ZeroDivisionError (divided by 0):
+  
+app/controllers/example_controller.rb:18:in `%'
+app/controllers/example_controller.rb:18:in `calc'
+app/controllers/example_controller.rb:5:in `input'
+Started GET "/" for ::1 at 2022-11-15 11:44:13 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 23986)
+Completed 200 OK in 19ms (Views: 18.6ms | Allocations: 24885)
+
+
+Started GET "/example/show?num1=7&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:44:19 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3735)
+Completed 200 OK in 13ms (Views: 12.6ms | Allocations: 4061)
+
+
+Started GET "/example/show?num1=7&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:44:38 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 262)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 22160)
+Completed 200 OK in 19ms (Views: 18.4ms | Allocations: 23067)
+
+
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:44:40 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2062)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 5595)
+Completed 200 OK in 21ms (Views: 19.1ms | Allocations: 5938)
+
+
+Started GET "/example/show?num1=3&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:44:45 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 171)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3716)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 4050)
+
+
+Started GET "/example/show?num1=3&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:47:36 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 512)
+  Rendered layout layouts/application.html.erb (Duration: 82.9ms | Allocations: 22617)
+Completed 200 OK in 92ms (Views: 90.5ms | Allocations: 23857)
+
+
+Started GET "/" for ::1 at 2022-11-15 11:47:44 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2280)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 5817)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 6211)
+
+
+Started GET "/example/show?num1=9&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:47:51 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 169)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3702)
+Completed 200 OK in 5ms (Views: 4.3ms | Allocations: 4036)
+
+
+Started GET "/example/show?num1=9&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:48:28 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 264)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 22140)
+Completed 200 OK in 19ms (Views: 18.1ms | Allocations: 23045)
+
+
+Started GET "/" for ::1 at 2022-11-15 11:48:35 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2061)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 5589)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 5930)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:48:43 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 3698)
+Completed 200 OK in 17ms (Views: 15.8ms | Allocations: 4032)
+
+
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:50:29 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2047)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5584)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 5912)
+
+
+Started GET "/example/input?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:50:50 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 6341)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 7501)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:50:58 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 413)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 3940)
+Completed 200 OK in 21ms (Views: 19.0ms | Allocations: 4344)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:50:59 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2047)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 5592)
+Completed 200 OK in 19ms (Views: 17.8ms | Allocations: 5919)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:51:54 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2362)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 6334)
+Completed 200 OK in 11ms (Views: 10.5ms | Allocations: 7472)
+
+
+Started GET "/example/show?num1=17&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:52:00 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 413)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3941)
+Completed 200 OK in 15ms (Views: 13.2ms | Allocations: 4345)
+
+
+Started GET "/example/show?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:52:02 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+Completed 500 Internal Server Error in 1ms (Allocations: 496)
+
+
+  
+ZeroDivisionError (divided by 0):
+  
+app/controllers/example_controller.rb:19:in `%'
+app/controllers/example_controller.rb:19:in `calc'
+app/controllers/example_controller.rb:11:in `show'
+Started GET "/example/show?num1=17&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:52:48 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 508)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4488)
+Completed 200 OK in 10ms (Views: 8.7ms | Allocations: 5629)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:52:50 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2277)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5812)
+Completed 200 OK in 9ms (Views: 8.8ms | Allocations: 6209)
+
+
+Started GET "/example/show?num1=17&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:52:57 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3702)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 4036)
+
+
+Started GET "/example/show?num1=17&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:53:49 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 264)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 22164)
+Completed 200 OK in 16ms (Views: 15.8ms | Allocations: 23070)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:53:51 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2062)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 5599)
+Completed 200 OK in 24ms (Views: 23.1ms | Allocations: 5924)
+
+
+Started GET "/example/show?num1=3&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:53:56 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3700)
+Completed 200 OK in 17ms (Views: 15.4ms | Allocations: 4034)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:53:58 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2047)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 5596)
+Completed 200 OK in 9ms (Views: 8.1ms | Allocations: 5906)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:58:11 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 23997)
+Completed 200 OK in 23ms (Views: 22.9ms | Allocations: 24876)
+
+
+Started GET "/example/show?num1=17&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:58:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"7", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 2ms (Allocations: 1609)
+
+
+  
+NoMethodError (undefined method `-' for "7":String
+Did you mean?  -@):
+  
+app/controllers/example_controller.rb:17:in `calc'
+app/controllers/example_controller.rb:8:in `show'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 11:58:51 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 24021)
+Completed 200 OK in 18ms (Views: 17.7ms | Allocations: 24900)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 11:58:57 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 195)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3720)
+Completed 200 OK in 6ms (Views: 5.3ms | Allocations: 4067)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:01:29 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 264)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 22134)
+Completed 200 OK in 21ms (Views: 20.1ms | Allocations: 23038)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:01:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3706)
+Completed 200 OK in 11ms (Views: 9.9ms | Allocations: 4052)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 12:01:32 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2062)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 5593)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 5903)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:01:38 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3704)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 4036)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 12:01:40 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2047)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 5582)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 5892)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:03:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 528)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4503)
+Completed 200 OK in 14ms (Views: 12.8ms | Allocations: 5672)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 12:03:30 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2277)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5803)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 6183)
+
+
+Started GET "/example/show?num1=30&num2=89&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:04:07 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"30", "num2"=>"89", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 175)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 3698)
+Completed 200 OK in 18ms (Views: 16.5ms | Allocations: 4030)
+
+
+Started GET "/example/show?num1=30&num2=89&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:05:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"30", "num2"=>"89", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 526)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4506)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 5649)
+
+
+Started GET "/example/show?num1=30&num2=89&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:15:40 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"30", "num2"=>"89", "commit"=>"Вычислить"}
+Started GET "/" for ::1 at 2022-11-15 12:15:48 +0300
+Started GET "/" for ::1 at 2022-11-15 12:26:57 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.1ms | Allocations: 3357)
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 53969)
+Completed 200 OK in 69ms (Views: 62.9ms | ActiveRecord: 0.0ms | Allocations: 59911)
+
+
+Started GET "/example/show?num1=9&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:30:42 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 568)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 22383)
+Completed 200 OK in 16ms (Views: 15.7ms | Allocations: 23392)
+
+
+Started GET "/example/show?num1=9&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:33:25 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 22092)
+Completed 200 OK in 30ms (Views: 29.6ms | Allocations: 23028)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 12:33:28 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2062)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 5596)
+Completed 200 OK in 18ms (Views: 16.0ms | Allocations: 5921)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:33:35 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 175)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3698)
+Completed 200 OK in 5ms (Views: 4.6ms | Allocations: 4059)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 12:38:27 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2366)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 6364)
+Completed 200 OK in 13ms (Views: 12.4ms | Allocations: 7519)
+
+
+Started GET "/example/show?num1=9&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:38:35 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 12.6ms | Allocations: 7639)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 7725)
+Completed 500 Internal Server Error in 14ms (Allocations: 8161)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Example#show</h1>
+<h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+<%= link_to 'Перейти назад', example_input_path %>
+
+<% @m, @n = @num1, @num2 %>
+<%= p @it_count = 0 %>
+<% while !((@m.zero?) || (@n.zero?)) %>
+ <% if @m >= @n %>
+<%=  @m = @m - @n %>
+ <% else %>
+<%= @n = @n - @m %>
+ <% end %>
+
+<%= @it_count += 1 %>
+<% end %>
+
+<%= @k = @m == 0 ? @n : @m %>
+<%= "НОД(#{@num1},#{@num2}) = #{@k}\n" %>
+<% end %>
+
+<p><%= @k %></p>
+
+<p>Наименьшее общее кратное: <%= @num1*@num2 / @k %></p>
+
+ <%= form_with url: "/", method: :get do |form| %>
+    <%= form.submit 'Перейти на главную' %>
+    <% end %>
+
+
+):
+1:    <h1>Example#show</h1>
+2:    <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+3:    <%= link_to 'Перейти назад', example_input_path %>
+4:    
+5:    <% @m, @n = @num1, @num2 %>
+6:    <%= p @it_count = 0 %>
+7:    <% while !((@m.zero?) || (@n.zero?)) %>
+8:     <% if @m >= @n %>
+9:    <%=  @m = @m - @n %>
+10:     <% else %>
+11:    <%= @n = @n - @m %>
+12:     <% end %>
+13:    
+14:    <%= @it_count += 1 %>
+15:    <% end %>
+16:    
+17:    <%= @k = @m == 0 ? @n : @m %>
+18:    <%= "НОД(#{@num1},#{@num2}) = #{@k}\n" %>
+19:    <% end %>
+20:    
+21:    <p><%= @k %></p>
+22:    
+23:    <p>Наименьшее общее кратное: <%= @num1*@num2 / @k %></p>
+24:    
+25:     <%= form_with url: "/", method: :get do |form| %>
+26:        <%= form.submit 'Перейти на главную' %>
+27:        <% end %>
+  
+app/views/example/show.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/example/show.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/example/show.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/example/show.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/example/show.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+app/views/example/show.html.erb:30: syntax error, unexpected `end', expecting end-of-input
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 12:40:05 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6385)
+Completed 200 OK in 16ms (Views: 13.3ms | Allocations: 7520)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:40:11 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 637)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4164)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 4594)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:43:33 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 731)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4728)
+Completed 200 OK in 11ms (Views: 9.2ms | Allocations: 5900)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:46:00 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 748)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4721)
+Completed 200 OK in 11ms (Views: 9.3ms | Allocations: 5910)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:47:37 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 753)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4730)
+Completed 200 OK in 11ms (Views: 9.6ms | Allocations: 5919)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:48:43 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 758)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4735)
+Completed 200 OK in 13ms (Views: 11.5ms | Allocations: 5924)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:54:14 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 740)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4721)
+Completed 200 OK in 13ms (Views: 10.7ms | Allocations: 5910)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:55:23 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4705)
+Completed 200 OK in 11ms (Views: 9.5ms | Allocations: 5894)
+
+
+Started GET "/example/show?num1=3&num2=9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:56:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 733)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4721)
+Completed 200 OK in 17ms (Views: 14.6ms | Allocations: 5911)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 12:56:11 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2277)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 5821)
+Completed 200 OK in 22ms (Views: 20.5ms | Allocations: 6200)
+
+
+Started GET "/example/show?num1=30&num2=89&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:56:18 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"30", "num2"=>"89", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 307)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3836)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 4371)
+
+
+Started GET "/example/show?num1=30&num2=89&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:57:20 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"30", "num2"=>"89", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 10.0ms | Allocations: 4603)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4683)
+Completed 500 Internal Server Error in 14ms (Allocations: 5997)
+
+
+  
+ActionView::Template::Error (undefined method `calc' for #<ActionView::Base:0x00000000012d68>):
+    24: 
+    25: <p>Наименьшее общее кратное: <%= @num1*@num2 / @k %></p>
+    26: 
+    27: <%= calc() %>
+    28: 
+    29:  <%= form_with url: "/", method: :get do |form| %>
+    30:     <%= form.submit 'Перейти на главную' %>
+  
+app/views/example/show.html.erb:27
+Started GET "/example/show?num1=30&num2=89&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 12:59:48 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"30", "num2"=>"89", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 853)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 22970)
+Completed 200 OK in 19ms (Views: 17.9ms | Allocations: 24311)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 13:03:34 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6352)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 7490)
+
+
+Started GET "/example/show?num1=3&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:03:40 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1429)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1501)
+Completed 500 Internal Server Error in 6ms (Allocations: 1904)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Example#show</h1>
+<h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+<%= link_to 'Перейти назад', example_input_path %>
+
+
+
+# <div>
+# <% @m, @n = @num1, @num2 %>
+# <table><th>Результат</th><th>Итерация</th>
+# <%  @it_count = 0 %>
+# <% while !((@m.zero?) || (@n.zero?)) %>
+# <tr>
+#  <% if @m >= @n %>
+# <td> <%=  @m = @m - @n %></td>
+#  <% else %>
+# <td><%= @n = @n - @m %></td>
+#  <% end %>
+
+# <td><%= @it_count += 1 %></td>
+# </tr>
+# <% end %>
+
+# <% @k = @m == 0 ? @n : @m %>
+# </table>
+# </div>
+
+
+<div>
+<table>
+<% @it_res.each do |res, val| %>
+    <td><%= res %></td>
+    <td><%= val %></td>
+</table>
+</div>
+
+
+
+<p><%= "НОД(#{@num1},#{@num2}) = #{@k}\n" %></p>
+
+<p>Наименьшее общее кратное: <%= @num1*@num2 / @k %></p>
+
+
+
+ <%= form_with url: "/", method: :get do |form| %>
+    <%= form.submit 'Перейти на главную' %>
+    <% end %>
+
+
+):
+1:    <h1>Example#show</h1>
+2:    <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+3:    <%= link_to 'Перейти назад', example_input_path %>
+4:    
+5:    
+6:    
+7:    # <div>
+8:    # <% @m, @n = @num1, @num2 %>
+9:    # <table><th>Результат</th><th>Итерация</th>
+10:    # <%  @it_count = 0 %>
+11:    # <% while !((@m.zero?) || (@n.zero?)) %>
+12:    # <tr>
+13:    #  <% if @m >= @n %>
+14:    # <td> <%=  @m = @m - @n %></td>
+15:    #  <% else %>
+16:    # <td><%= @n = @n - @m %></td>
+17:    #  <% end %>
+18:    
+19:    # <td><%= @it_count += 1 %></td>
+20:    # </tr>
+21:    # <% end %>
+22:    
+23:    # <% @k = @m == 0 ? @n : @m %>
+24:    # </table>
+25:    # </div>
+26:    
+27:    
+28:    <div>
+29:    <table>
+30:    <% @it_res.each do |res, val| %>
+31:        <td><%= res %></td>
+32:        <td><%= val %></td>
+33:    </table>
+34:    </div>
+35:    
+36:    
+37:    
+38:    <p><%= "НОД(#{@num1},#{@num2}) = #{@k}\n" %></p>
+39:    
+40:    <p>Наименьшее общее кратное: <%= @num1*@num2 / @k %></p>
+41:    
+42:    
+43:    
+44:     <%= form_with url: "/", method: :get do |form| %>
+45:        <%= form.submit 'Перейти на главную' %>
+46:        <% end %>
+  
+app/views/example/show.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 13:04:06 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6369)
+Completed 200 OK in 11ms (Views: 9.9ms | Allocations: 7485)
+
+
+Started GET "/example/show?num1=3&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:04:11 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1254)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1326)
+Completed 500 Internal Server Error in 8ms (Allocations: 1724)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Example#show</h1>
+<h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+<%= link_to 'Перейти назад', example_input_path %>
+
+
+
+
+
+
+<div>
+<table>
+<% @it_res.each do |res, val| %>
+    <td><%= res %></td>
+    <td><%= val %></td>
+</table>
+</div>
+
+
+
+<p><%= "НОД(#{@num1},#{@num2}) = #{@k}\n" %></p>
+
+<p>Наименьшее общее кратное: <%= @num1*@num2 / @k %></p>
+
+
+
+ <%= form_with url: "/", method: :get do |form| %>
+    <%= form.submit 'Перейти на главную' %>
+    <% end %>
+
+
+):
+1:    <h1>Example#show</h1>
+2:    <h1> Вы ввели <%= @num1 %> и <%= @num2 %></h1>
+3:    <%= link_to 'Перейти назад', example_input_path %>
+4:    
+5:    
+6:    
+7:    
+8:    
+9:    
+10:    <div>
+11:    <table>
+12:    <% @it_res.each do |res, val| %>
+13:        <td><%= res %></td>
+14:        <td><%= val %></td>
+15:    </table>
+16:    </div>
+17:    
+18:    
+19:    
+20:    <p><%= "НОД(#{@num1},#{@num2}) = #{@k}\n" %></p>
+21:    
+22:    <p>Наименьшее общее кратное: <%= @num1*@num2 / @k %></p>
+23:    
+24:    
+25:    
+26:     <%= form_with url: "/", method: :get do |form| %>
+27:        <%= form.submit 'Перейти на главную' %>
+28:        <% end %>
+  
+app/views/example/show.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/example/show.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 13:04:54 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6357)
+Completed 200 OK in 11ms (Views: 9.7ms | Allocations: 7473)
+
+
+Started GET "/example/show?num1=7&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:05:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4096)
+Completed 200 OK in 20ms (Views: 17.7ms | Allocations: 4527)
+
+
+Started GET "/example/show?num1=7&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:05:48 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 652)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4629)
+Completed 200 OK in 11ms (Views: 9.5ms | Allocations: 5802)
+
+
+Started GET "/example/show?num1=7&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:07:02 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 655)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4622)
+Completed 200 OK in 13ms (Views: 12.0ms | Allocations: 5812)
+
+
+Started GET "/example/show?num1=7&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:07:44 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 654)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4619)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 5809)
+
+
+Started GET "/example/show?num1=7&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:08:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 670)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 4647)
+Completed 200 OK in 14ms (Views: 12.0ms | Allocations: 5837)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 13:09:58 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2276)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 5814)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 6193)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:13:29 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3717)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 4064)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:15:04 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 658)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4623)
+Completed 200 OK in 11ms (Views: 9.5ms | Allocations: 5781)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:17:28 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4553)
+Completed 200 OK in 13ms (Views: 11.2ms | Allocations: 5729)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:17:57 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 552)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4531)
+Completed 200 OK in 11ms (Views: 9.7ms | Allocations: 5706)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:18:33 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4542)
+Completed 200 OK in 11ms (Views: 9.7ms | Allocations: 5718)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:18:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4541)
+Completed 200 OK in 10ms (Views: 9.3ms | Allocations: 5716)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:19:34 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 554)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4533)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 5708)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 13:19:39 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2277)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5811)
+Completed 200 OK in 7ms (Views: 6.8ms | Allocations: 6190)
+
+
+Started GET "/example/show?num1=3&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:19:45 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"3", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 195)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3716)
+Completed 200 OK in 5ms (Views: 4.6ms | Allocations: 4099)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 13:19:53 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2047)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5582)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 5892)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 13:27:26 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 14.8ms | Allocations: 8187)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 12223)
+Completed 200 OK in 25ms (Views: 23.5ms | Allocations: 13344)
+
+
+Started GET "/example/show?num1=23&num2=21&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:27:40 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"23", "num2"=>"21", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 517)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4041)
+Completed 200 OK in 8ms (Views: 6.9ms | Allocations: 4533)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 13:29:13 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2388)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 6371)
+Completed 200 OK in 19ms (Views: 16.3ms | Allocations: 7493)
+
+
+Started GET "/example/show?num1=7.05&num2=67.9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:29:24 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7.05", "num2"=>"67.9", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 516)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 4055)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 4507)
+
+
+Started GET "/example/show?num1=7.05&num2=67.9&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:30:36 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"7.05", "num2"=>"67.9", "commit"=>"Вычислить"}
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 13:30:39 +0300
+Started GET "/" for ::1 at 2022-11-15 13:46:37 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.1ms | Allocations: 3468)
+  Rendered layout layouts/application.html.erb (Duration: 67.6ms | Allocations: 54347)
+Completed 200 OK in 76ms (Views: 70.3ms | ActiveRecord: 0.0ms | Allocations: 60290)
+
+
+Started GET "/example/show?num1=9&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:47:06 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 551)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4228)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4739)
+
+
+Started GET "/example/show?num1=9&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:52:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"9", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1000)
+  Rendered layout layouts/application.html.erb (Duration: 63.5ms | Allocations: 51817)
+Completed 200 OK in 73ms (Views: 67.0ms | ActiveRecord: 0.0ms | Allocations: 57830)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 13:52:34 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.4ms | Allocations: 3025)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6744)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 7215)
+
+
+Started GET "/example/show?num1=17&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 13:52:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 171)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3710)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 4118)
+
+
+Started GET "/example/show?num1=17&num2=7&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 14:02:21 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"7", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1004)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 51956)
+Completed 200 OK in 81ms (Views: 75.5ms | ActiveRecord: 0.0ms | Allocations: 57969)
+
+
+Started GET "/" for ::1 at 2022-11-15 14:02:27 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3028)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 6755)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7224)
+
+
+Started GET "/example/show?num1=17&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-15 14:02:34 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 175)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3712)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 4123)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-15 14:02:47 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2050)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 5592)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 5909)
+
+
+Started GET "/" for ::1 at 2022-11-18 16:47:30 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3915)
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 54622)
+Completed 200 OK in 71ms (Views: 66.3ms | ActiveRecord: 0.0ms | Allocations: 60584)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:47:58 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 2964)
+
+
+  
+NoMethodError (undefined method `require_params' for #<ExampleController:0x0000000000ab18>
+Did you mean?  require_relative):
+  
+activesupport (7.0.4) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:180:in `block (2 levels) in halting_and_conditional'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:181:in `block in halting_and_conditional'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-11-18 16:49:29 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2319)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 24070)
+Completed 200 OK in 18ms (Views: 17.6ms | Allocations: 25015)
+
+
+Started GET "/example/show?num1=17&num2=45&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:49:35 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"45", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 1ms (Allocations: 501)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/example_controller.rb:36:in `check'
+Started GET "/" for ::1 at 2022-11-18 16:51:25 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 24060)
+Completed 200 OK in 21ms (Views: 20.0ms | Allocations: 25008)
+
+
+Started GET "/example/show?num1=17&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:51:29 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 565)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 4100)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 4590)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 16:51:34 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2229)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5624)
+Completed 200 OK in 7ms (Views: 6.9ms | Allocations: 5935)
+
+
+Started GET "/example/show?num1=17&num2=34&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:51:42 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"34", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3682)
+Completed 200 OK in 6ms (Views: 4.8ms | Allocations: 4029)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 16:51:47 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2239)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 5634)
+Completed 200 OK in 7ms (Views: 6.4ms | Allocations: 5951)
+
+
+Started GET "/example/show?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:52:07 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 17ms (Allocations: 3206)
+
+
+  
+NameError (undefined local variable or method `palindroms_input_path' for #<ExampleController:0x00000000012868>):
+  
+app/controllers/example_controller.rb:38:in `check'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 16:53:21 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3922)
+  Rendered layout layouts/application.html.erb (Duration: 62.8ms | Allocations: 54688)
+Completed 200 OK in 72ms (Views: 65.9ms | ActiveRecord: 0.0ms | Allocations: 60650)
+
+
+Started GET "/example/show?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:53:26 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 3352)
+
+
+  
+NameError (undefined local variable or method `root' for #<ExampleController:0x0000000000ab18>):
+  
+app/controllers/example_controller.rb:38:in `check'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 16:54:15 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3910)
+  Rendered layout layouts/application.html.erb (Duration: 68.6ms | Allocations: 54631)
+Completed 200 OK in 77ms (Views: 71.1ms | ActiveRecord: 0.0ms | Allocations: 60593)
+
+
+Started GET "/example/show?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:54:20 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms | Allocations: 3370)
+
+
+  
+NameError (undefined local variable or method `example_input' for #<ExampleController:0x0000000000ab18>
+Did you mean?  example_input_url):
+  
+app/controllers/example_controller.rb:38:in `check'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 16:55:00 +0300
+  
+SyntaxError (/home/bison/Documents/BMSTU/ЯИП/ЛАБ8/lab8/app/controllers/example_controller.rb:38: unknown regexp options - pt
+...     redirect_to /example/input
+...                         ^~~~~~
+/home/bison/Documents/BMSTU/ЯИП/ЛАБ8/lab8/app/controllers/example_controller.rb:41: unknown regexp options - pt
+...     redirect_to /example/input
+...                         ^~~~~~
+):
+  
+app/controllers/example_controller.rb:38: unknown regexp options - pt
+app/controllers/example_controller.rb:41: unknown regexp options - pt
+app/controllers/example_controller.rb:38: unknown regexp options - pt
+app/controllers/example_controller.rb:41: unknown regexp options - pt
+app/controllers/example_controller.rb:38: unknown regexp options - pt
+app/controllers/example_controller.rb:41: unknown regexp options - pt
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 16:57:06 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2319)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 24055)
+Completed 200 OK in 19ms (Views: 17.9ms | Allocations: 25000)
+
+
+Started GET "/example/show?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:57:14 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"", "commit"=>"Вычислить"}
+Redirected to http://localhost:3000/example/input
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (Allocations: 472)
+
+
+Started GET "/example/input" for ::1 at 2022-11-18 16:57:14 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2268)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 5670)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 5998)
+
+
+Started GET "/example/show?num1=&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:57:35 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 558)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 22483)
+Completed 200 OK in 23ms (Views: 21.9ms | Allocations: 23537)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 16:57:43 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2249)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 5639)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 5971)
+
+
+Started GET "/example/show?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:57:49 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"", "commit"=>"Вычислить"}
+Redirected to http://localhost:3000/example/input
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 390)
+
+
+Started GET "/example/input" for ::1 at 2022-11-18 16:57:49 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2255)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 5643)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 5954)
+
+
+Started GET "/example/show?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 16:58:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"", "commit"=>"Вычислить"}
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 549)
+
+
+Started GET "/" for ::1 at 2022-11-18 16:58:16 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2380)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 24021)
+Completed 200 OK in 24ms (Views: 23.7ms | Allocations: 24863)
+
+
+Started GET "/example/show?num1=56&num2=8&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 17:01:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"56", "num2"=>"8", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 572)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4573)
+Completed 200 OK in 18ms (Views: 15.0ms | Allocations: 5786)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 17:01:59 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2529)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 5918)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 6299)
+
+
+Started GET "/example/show?num1=56&num2=6&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 17:02:05 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"56", "num2"=>"6", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 187)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3734)
+Completed 200 OK in 6ms (Views: 5.1ms | Allocations: 4111)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 17:49:00 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3910)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 54818)
+Completed 200 OK in 66ms (Views: 59.9ms | ActiveRecord: 0.0ms | Allocations: 60782)
+
+
+Started GET "/example/show?num1=5&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 17:49:05 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"5", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4248)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 4757)
+
+
+Started GET "/example/show?num1=5&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 18:40:42 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"5", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 996)
+  Rendered layout layouts/application.html.erb (Duration: 59.4ms | Allocations: 52147)
+Completed 200 OK in 70ms (Views: 62.5ms | ActiveRecord: 0.0ms | Allocations: 58174)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 18:40:44 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3330)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6849)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 7322)
+
+
+Started GET "/example/show?num1=1&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 18:40:46 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"1", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3680)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 4070)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-18 18:40:48 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2243)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 5632)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 5950)
+
+
+Started GET "/example/show?num1=1&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 18:40:51 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"1", "num2"=>"18", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 211)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3737)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 4139)
+
+
+Started GET "/example/show?num1=1&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-18 18:41:05 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"1", "num2"=>"18", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2306)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2395)
+Completed 500 Internal Server Error in 4ms (Allocations: 3399)
+
+
+  
+ActionView::Template::Error (undefined method `*' for nil:NilClass):
+    18: 
+    19: <p><h3><%= "Наибольший общий делитель: #{@k}\n" %></h3></p>
+    20: 
+    21: <p><h3>Наименьшее общее кратное: <%= @num1*@num2 / @k %></h3></p>
+    22: 
+    23: 
+    24: 
+  
+app/views/example/show.html.erb:21
+Started GET "/" for ::1 at 2022-11-19 11:25:42 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3952)
+  Rendered layout layouts/application.html.erb (Duration: 101.6ms | Allocations: 54814)
+Completed 200 OK in 115ms (Views: 106.6ms | ActiveRecord: 0.0ms | Allocations: 60776)
+
+
+Started GET "/example/show?num1=1&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 11:25:45 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"1", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 531)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 4255)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 4752)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 11:25:46 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2277)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5666)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 5984)
+
+
+Started GET "/example/show?num1=1&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 11:25:59 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"1", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 22066)
+Completed 200 OK in 45ms (Views: 42.6ms | Allocations: 23050)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 11:26:01 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2286)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5676)
+Completed 200 OK in 24ms (Views: 22.1ms | Allocations: 6008)
+
+
+Started GET "/example/show?num1=17&num2=68&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 11:26:10 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3725)
+Completed 200 OK in 20ms (Views: 17.8ms | Allocations: 4078)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 11:26:29 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2262)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 5650)
+Completed 200 OK in 18ms (Views: 15.7ms | Allocations: 5961)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 11:26:57 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2700)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 6488)
+Completed 200 OK in 34ms (Views: 32.2ms | Allocations: 7636)
+
+
+Started GET "/example/show?num1=17&num2=68&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 11:27:06 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 4036)
+Completed 200 OK in 19ms (Views: 16.6ms | Allocations: 4458)
+
+
+Started GET "/example/show?num1=17&num2=68&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 15:54:44 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 991)
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 52254)
+Completed 200 OK in 74ms (Views: 67.5ms | ActiveRecord: 0.0ms | Allocations: 58278)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 15:54:48 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3374)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 6893)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 7366)
+
+
+Started GET "/example/show?num1=-17&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 15:54:54 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"-17", "num2"=>"1", "commit"=>"Вычислить"}
+Started GET "/" for ::1 at 2022-11-19 16:03:16 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 13.5ms | Allocations: 3941)
+  Rendered layout layouts/application.html.erb (Duration: 70.5ms | Allocations: 54559)
+Completed 200 OK in 79ms (Views: 73.2ms | ActiveRecord: 0.0ms | Allocations: 60520)
+
+
+Started GET "/example/show?num1=18&num2=15&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:03:22 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"18", "num2"=>"15", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 4282)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 4789)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:03:25 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2283)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5672)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5990)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:13:04 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2649)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 24494)
+Completed 200 OK in 19ms (Views: 17.1ms | Allocations: 25771)
+
+
+Started GET "/example/show?num1=17&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:13:08 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 528)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4105)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 4567)
+
+
+Started GET "/example/show?num1=17&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:13:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 618)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4635)
+Completed 200 OK in 13ms (Views: 11.4ms | Allocations: 5849)
+
+
+Started GET "/example/show?num1=17&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:14:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2184)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2273)
+Completed 500 Internal Server Error in 5ms (Allocations: 3273)
+
+
+  
+ActionView::Template::Error (undefined method `each_with_index' for nil:NilClass):
+     5: <div>
+     6: <table>
+     7: <tr><th>Итерация</th><th>Результат</th></tr>
+     8: <% @it_res.each_with_index do |res, val| %>
+     9:     <tr>
+    10:     <td><%= val+1 %></td>
+    11:     <td><%= res %></td>
+  
+app/views/example/show.html.erb:8
+Started GET "/example/show?num1=17&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:15:28 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 273)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 22238)
+Completed 200 OK in 18ms (Views: 17.6ms | Allocations: 23262)
+
+
+Started GET "/example/show?num1=17&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:16:33 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 273)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 22150)
+Completed 200 OK in 40ms (Views: 39.6ms | Allocations: 23171)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:23:22 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 18.0ms | Allocations: 3962)
+  Rendered layout layouts/application.html.erb (Duration: 83.3ms | Allocations: 54726)
+Completed 200 OK in 93ms (Views: 86.8ms | ActiveRecord: 0.0ms | Allocations: 60689)
+
+
+Started GET "/example/show?num1=&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:23:27 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 530)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4275)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 4762)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:23:29 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2286)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5675)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 5993)
+
+
+Started GET "/example/show?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:23:35 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"", "commit"=>"Вычислить"}
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/" for ::1 at 2022-11-19 16:23:35 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2296)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 5685)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 6002)
+
+
+Started GET "/" for ::1 at 2022-11-19 16:24:35 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2359)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 24001)
+Completed 200 OK in 18ms (Views: 17.4ms | Allocations: 24947)
+
+
+Started GET "/example/show?num1=1&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:24:37 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"1", "num2"=>"1", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 1ms (Allocations: 522)
+
+
+  
+TypeError (nil can't be coerced into Integer):
+  
+app/controllers/example_controller.rb:31:in `/'
+app/controllers/example_controller.rb:31:in `calc_sum'
+app/controllers/example_controller.rb:11:in `show'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:24:41 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2365)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5874)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 6220)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:24:41 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2281)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 5669)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 5978)
+
+
+Started GET "/example/show?num1=-1&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:24:44 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"-1", "num2"=>"1", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 2ms (Allocations: 496)
+
+
+  
+TypeError (nil can't be coerced into Integer):
+  
+app/controllers/example_controller.rb:31:in `/'
+app/controllers/example_controller.rb:31:in `calc_sum'
+app/controllers/example_controller.rb:11:in `show'
+Started GET "/example/show?num1=&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:25:06 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"1", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 1ms (Allocations: 489)
+
+
+  
+TypeError (nil can't be coerced into Integer):
+  
+app/controllers/example_controller.rb:31:in `/'
+app/controllers/example_controller.rb:31:in `calc_sum'
+app/controllers/example_controller.rb:11:in `show'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:25:23 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2272)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5673)
+Completed 200 OK in 8ms (Views: 6.9ms | Allocations: 5984)
+
+
+Started GET "/example/show?num1=-12&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:25:28 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"-12", "num2"=>"1", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 1ms (Allocations: 489)
+
+
+  
+TypeError (nil can't be coerced into Integer):
+  
+app/controllers/example_controller.rb:31:in `/'
+app/controllers/example_controller.rb:31:in `calc_sum'
+app/controllers/example_controller.rb:11:in `show'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:25:43 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2361)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 24109)
+Completed 200 OK in 25ms (Views: 24.6ms | Allocations: 25053)
+
+
+Started GET "/example/show?num1=-11&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:25:48 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"-11", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1452)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1523)
+Completed 500 Internal Server Error in 4ms (Allocations: 1845)
+
+
+  
+ActionView::Template::Error (undefined method `each_with_index' for nil:NilClass):
+     5: <div>
+     6: <table>
+     7: <tr><th>Итерация</th><th>Результат</th></tr>
+     8: <% @it_res.each_with_index do |res, val| %>
+     9:     <tr>
+    10:     <td><%= val+1 %></td>
+    11:     <td><%= res %></td>
+  
+app/views/example/show.html.erb:8
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:26:13 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2354)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 24091)
+Completed 200 OK in 20ms (Views: 19.5ms | Allocations: 25034)
+
+
+Started GET "/example/show?num1=1&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:26:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"1", "num2"=>"1", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 1ms (Allocations: 710)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/example_controller.rb:39:in `check'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:26:39 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2417)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 24153)
+Completed 200 OK in 19ms (Views: 18.6ms | Allocations: 25096)
+
+
+Started GET "/example/show?num1=1&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:26:41 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"1", "num2"=>"1", "commit"=>"Вычислить"}
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 436)
+
+
+Started GET "/" for ::1 at 2022-11-19 16:26:41 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2300)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5688)
+Completed 200 OK in 7ms (Views: 6.8ms | Allocations: 6012)
+
+
+Started GET "/example/show?num1=1&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:26:51 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"1", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 22190)
+Completed 200 OK in 19ms (Views: 18.2ms | Allocations: 23167)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:26:53 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2302)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5691)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 6017)
+
+
+Started GET "/example/show?num1=-1&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:26:57 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"-1", "num2"=>"1", "commit"=>"Вычислить"}
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 422)
+
+
+Started GET "/" for ::1 at 2022-11-19 16:26:57 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2302)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 5690)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 6002)
+
+
+Started GET "/" for ::1 at 2022-11-19 16:58:05 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 12.2ms | Allocations: 3968)
+  Rendered layout layouts/application.html.erb (Duration: 97.5ms | Allocations: 54846)
+Completed 200 OK in 109ms (Views: 101.9ms | ActiveRecord: 0.0ms | Allocations: 60808)
+
+
+Started GET "/example/show?num1=17&num2=68&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 16:58:11 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 545)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 4266)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 4764)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 16:58:16 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2291)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 5680)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 5998)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 17:03:54 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2345)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 23986)
+Completed 200 OK in 29ms (Views: 28.0ms | Allocations: 24929)
+
+
+Started GET "/example/show?num1=&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 17:04:03 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 3721)
+Completed 200 OK in 21ms (Views: 18.8ms | Allocations: 4068)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 17:04:06 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2271)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 5659)
+Completed 200 OK in 19ms (Views: 17.8ms | Allocations: 5970)
+
+
+Started GET "/example/show?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 17:04:10 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"", "commit"=>"Вычислить"}
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (Allocations: 502)
+
+
+Started GET "/" for ::1 at 2022-11-19 17:04:11 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 31.0ms | Allocations: 2300)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 5702)
+Completed 200 OK in 46ms (Views: 43.9ms | Allocations: 6017)
+
+
+Started GET "/example/show?num1=&num2=&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-19 17:04:32 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"", "num2"=>"", "commit"=>"Вычислить"}
+Completed 500 Internal Server Error in 2ms (Allocations: 571)
+
+
+  
+ZeroDivisionError (divided by 0):
+  
+app/controllers/example_controller.rb:31:in `/'
+app/controllers/example_controller.rb:31:in `calc_sum'
+app/controllers/example_controller.rb:11:in `show'
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 17:05:00 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2402)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 24138)
+Completed 200 OK in 28ms (Views: 27.0ms | Allocations: 25083)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-19 17:05:00 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2269)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5657)
+Completed 200 OK in 11ms (Views: 10.6ms | Allocations: 5981)
+
+

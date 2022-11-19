@@ -1,0 +1,14 @@
+<h1>Example#input</h1>
+<%= form_with url: "/example/show", method: :get do |form| %>
+<%= form.label :num1, "Введите первое число:" %>
+<%= form.number_field :num1, value: 1 %>
+<br/>
+<%= form.label :num2, "Введите второе число:" %>
+<%= form.number_field :num2, value: 1 %>
+<br/>
+<%= form.submit "Вычислить" %>
+<% end %>
+
+<% unless flash[:error].nil?%>
+    <div> <%= flash[:error] %> </div>
+<% end %>
