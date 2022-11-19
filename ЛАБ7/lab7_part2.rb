@@ -3,8 +3,11 @@
 # Class to make files and show them
 class Troika
   attr_reader :str
+  VALIDATOR = %r{-?\d+\.?\d*\s*(\+|-|\*|\/)\s*-?\d+\.?\d*}.freeze
 
-  def initialize(str)
+  def initialize(str, validate: true)
+    raise 'Invalid input' unless !validate || str.match(/^#{VALIDATOR}$/)
+
     @str = str
   end
 
@@ -30,7 +33,11 @@ end
 
 # Class with ()
 class TroikaSkobka < Troika
+  VALIDATOR = /\(#{Troika::VALIDATOR}\)/.freeze
+
   def initialize(str)
-    @str = str
+    raise 'Invalid input' unless str.match(/^#{VALIDATOR}$/)
+
+    super(str, validate: false)
   end
 end
