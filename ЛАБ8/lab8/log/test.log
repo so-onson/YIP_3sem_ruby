@@ -3049,3 +3049,2432 @@ Processing by ExampleController#show as HTML
   Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2574)
 Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2956)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:03:09 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 70.0ms | Allocations: 50978)
+Completed 200 OK in 78ms (Views: 72.6ms | ActiveRecord: 0.0ms | Allocations: 56868)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:03:09 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 264)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:03:09 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 730)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:03:09 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:03:09 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:03:09 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:03:09 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:03:09 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 239)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:06:31 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 52.4ms | Allocations: 50354)
+Completed 200 OK in 59ms (Views: 54.6ms | ActiveRecord: 0.0ms | Allocations: 56244)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:06:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 264)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:06:31 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 730)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:06:31 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:06:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:06:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:06:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:06:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 239)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:11:16 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 50685)
+Completed 200 OK in 60ms (Views: 55.6ms | ActiveRecord: 0.0ms | Allocations: 56575)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:11:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2960)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:11:16 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:11:16 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:11:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:11:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:11:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:11:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:18:54 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 50585)
+Completed 200 OK in 62ms (Views: 57.3ms | ActiveRecord: 0.0ms | Allocations: 56475)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:18:55 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:18:55 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:18:55 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:18:55 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:18:55 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:18:55 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:18:55 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:21:15 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 51014)
+Completed 200 OK in 58ms (Views: 53.2ms | ActiveRecord: 0.0ms | Allocations: 56904)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:21:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:21:15 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:21:15 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:21:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:21:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:21:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:21:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2574)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:24:18 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 50420)
+Completed 200 OK in 58ms (Views: 53.6ms | ActiveRecord: 0.0ms | Allocations: 56310)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:24:18 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2960)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:24:18 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:24:18 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:24:18 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:24:18 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:24:18 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:24:18 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:24:52 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 53.9ms | Allocations: 50608)
+Completed 200 OK in 61ms (Views: 55.9ms | ActiveRecord: 0.0ms | Allocations: 56498)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:24:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:24:52 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:24:52 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:24:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:24:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:24:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:24:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:25:03 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 50425)
+Completed 200 OK in 61ms (Views: 55.9ms | ActiveRecord: 0.0ms | Allocations: 56315)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:25:04 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2960)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:25:04 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:25:04 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:25:04 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:25:04 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:25:04 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:25:04 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2574)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:25:30 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 50555)
+Completed 200 OK in 60ms (Views: 54.9ms | ActiveRecord: 0.0ms | Allocations: 56445)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:25:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:25:30 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:25:30 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:25:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:25:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:25:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:25:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2575)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2958)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:25:45 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 50543)
+Completed 200 OK in 57ms (Views: 52.1ms | ActiveRecord: 0.0ms | Allocations: 56433)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:25:45 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:25:45 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:25:45 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:25:45 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:25:45 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:25:45 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:25:45 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2575)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2958)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:26:12 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2070)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 50564)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.0ms | Allocations: 56454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:26:12 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:26:12 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:26:12 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:26:12 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:26:12 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:26:12 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:26:12 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2574)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:27:17 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 50493)
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.0ms | Allocations: 56383)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:27:17 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:27:17 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:27:17 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:27:17 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:27:17 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:27:18 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:27:18 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:27:41 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 50.4ms | Allocations: 50619)
+Completed 200 OK in 57ms (Views: 52.4ms | ActiveRecord: 0.0ms | Allocations: 56509)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:27:41 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:27:41 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:27:41 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:27:41 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:27:41 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:27:41 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:27:41 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2574)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:28:19 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 50721)
+Completed 200 OK in 58ms (Views: 53.1ms | ActiveRecord: 0.0ms | Allocations: 56611)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:28:19 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2960)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:28:19 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:28:19 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:28:19 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:28:19 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:28:19 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:28:19 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2574)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:28:50 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 50438)
+Completed 200 OK in 55ms (Views: 50.7ms | ActiveRecord: 0.0ms | Allocations: 56328)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:28:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:28:50 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:28:50 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:28:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:28:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:28:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:28:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 2574)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:29:01 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 50808)
+Completed 200 OK in 58ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 56698)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:29:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:29:01 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:29:01 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:29:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:29:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:29:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:29:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:29:32 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 50439)
+Completed 200 OK in 56ms (Views: 51.6ms | ActiveRecord: 0.0ms | Allocations: 56329)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:29:32 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:29:32 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:29:32 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:29:32 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:29:32 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:29:32 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:29:32 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:29:50 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 50565)
+Completed 200 OK in 56ms (Views: 51.9ms | ActiveRecord: 0.0ms | Allocations: 56455)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:29:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:29:50 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:29:50 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:29:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:29:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:29:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:29:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2575)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2958)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:30:15 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 50421)
+Completed 200 OK in 60ms (Views: 55.9ms | ActiveRecord: 0.0ms | Allocations: 56311)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:30:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:30:16 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:30:16 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:30:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:30:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:30:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:30:16 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:30:30 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 50483)
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.0ms | Allocations: 56373)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:30:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:30:30 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:30:30 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:30:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:30:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:30:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:30:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2574)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:30:42 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 50825)
+Completed 200 OK in 60ms (Views: 54.9ms | ActiveRecord: 0.0ms | Allocations: 56715)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:30:42 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:30:42 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:30:42 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:30:42 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:30:42 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:30:42 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:30:42 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:32:56 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | Allocations: 50597)
+Completed 200 OK in 60ms (Views: 55.6ms | ActiveRecord: 0.0ms | Allocations: 56487)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:32:56 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2960)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:32:56 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:32:56 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:32:56 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:32:56 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:32:56 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:32:56 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:41:39 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 52.9ms | Allocations: 50511)
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 0.0ms | Allocations: 56401)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:41:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2960)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:41:39 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:41:39 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:41:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:41:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:41:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:41:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2574)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-21 23:51:07 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2128)
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 50460)
+Completed 200 OK in 59ms (Views: 54.4ms | ActiveRecord: 0.0ms | Allocations: 56350)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-21 23:51:07 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2960)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:51:07 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 744)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-21 23:51:07 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-21 23:51:07 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-21 23:51:07 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-21 23:51:07 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 680)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-21 23:51:07 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 00:23:15 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2128)
+  Rendered layout layouts/application.html.erb (Duration: 70.2ms | Allocations: 51058)
+Completed 200 OK in 80ms (Views: 73.0ms | ActiveRecord: 0.0ms | Allocations: 56948)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 00:23:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1186)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 00:23:15 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1125)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 00:23:15 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1125)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 00:23:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1125)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 00:23:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1125)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 00:23:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1125)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 00:23:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1123)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 00:24:12 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2128)
+  Rendered layout layouts/application.html.erb (Duration: 57.9ms | Allocations: 50690)
+Completed 200 OK in 65ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 56581)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 00:24:12 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2960)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 00:24:12 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 393)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 00:24:12 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 305)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 00:24:12 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 305)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 00:24:12 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 305)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 00:24:12 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 305)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 00:24:12 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2574)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 10:21:59 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 15.5ms | Allocations: 2128)
+  Rendered layout layouts/application.html.erb (Duration: 170.9ms | Allocations: 50824)
+Completed 200 OK in 192ms (Views: 177.3ms | ActiveRecord: 0.0ms | Allocations: 56715)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 10:22:00 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2960)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 3430)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 10:22:00 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 393)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 10:22:00 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 305)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 10:22:00 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 305)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 10:22:00 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 305)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 10:22:00 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 305)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 10:22:00 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2574)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2957)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 10:52:58 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 14.2ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 172.9ms | Allocations: 50664)
+Completed 200 OK in 191ms (Views: 178.6ms | ActiveRecord: 0.0ms | Allocations: 56535)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 10:52:58 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2959)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3548)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 10:52:58 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 549)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 10:52:58 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 458)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 10:52:58 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 458)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 10:52:58 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 458)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 10:52:58 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 458)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 10:52:58 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2574)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3073)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 10:54:44 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 10:54:44 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 10:54:44 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 10:54:44 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 10:54:44 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 10:54:44 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 10:54:44 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 10:54:44 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:08:46 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 13.7ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 137.3ms | Allocations: 50894)
+Completed 200 OK in 156ms (Views: 142.9ms | ActiveRecord: 0.0ms | Allocations: 56785)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:08:46 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2959)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3555)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:08:46 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 382)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:08:46 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:08:46 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:08:46 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:08:46 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:08:46 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2573)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 3079)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:13:30 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 50813)
+Completed 200 OK in 76ms (Views: 69.5ms | ActiveRecord: 0.0ms | Allocations: 56704)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:13:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2959)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3559)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:13:30 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 382)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:13:30 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:13:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:13:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:13:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:13:30 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2573)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3083)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:16:37 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 64.9ms | Allocations: 50664)
+Completed 200 OK in 74ms (Views: 67.6ms | ActiveRecord: 0.0ms | Allocations: 56554)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:16:38 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 210)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:16:38 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 192)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:16:38 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 192)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:16:38 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 192)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:16:38 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 192)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:16:38 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 192)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:16:38 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 192)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:17:46 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:17:46 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:17:46 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:17:46 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:17:46 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:17:46 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:17:46 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:17:46 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:18:20 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:18:20 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:18:20 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:18:20 +0300
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:18:20 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:18:20 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:18:20 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:18:20 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:18:52 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 84.1ms | Allocations: 51035)
+Completed 200 OK in 101ms (Views: 89.2ms | ActiveRecord: 0.0ms | Allocations: 56925)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:18:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2959)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3554)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:18:52 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 870)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:18:52 +0300
+Processing by ExampleController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 803)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:18:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 803)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:18:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 803)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:18:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 803)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:18:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2574)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3079)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:20:39 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 91.5ms | Allocations: 50903)
+Completed 200 OK in 101ms (Views: 94.6ms | ActiveRecord: 0.0ms | Allocations: 56793)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:20:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2959)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3555)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:20:39 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 382)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:20:39 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:20:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:20:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:20:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:20:39 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2574)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 3080)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:22:10 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 76.3ms | Allocations: 50595)
+Completed 200 OK in 86ms (Views: 79.3ms | ActiveRecord: 0.0ms | Allocations: 56485)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:22:10 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2959)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3555)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:22:10 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Redirected to 
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 553)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:22:10 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Redirected to 
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 460)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:22:10 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Redirected to 
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 460)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:22:10 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Redirected to 
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 460)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:22:10 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Redirected to 
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 460)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:22:10 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2573)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3079)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:24:22 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 14.2ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 153.3ms | Allocations: 50642)
+Completed 200 OK in 172ms (Views: 158.8ms | ActiveRecord: 0.0ms | Allocations: 56532)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:24:23 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2959)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3551)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:24:23 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 396)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:24:23 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:24:23 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:24:23 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:24:23 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:24:23 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2574)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3078)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:25:50 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 14.3ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 146.2ms | Allocations: 50800)
+Completed 200 OK in 166ms (Views: 152.0ms | ActiveRecord: 0.0ms | Allocations: 56690)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:25:51 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2959)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 3551)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:25:51 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 380)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:25:51 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:25:51 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:25:51 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:25:51 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:25:51 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2574)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3076)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:27:02 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 66.2ms | Allocations: 50463)
+Completed 200 OK in 75ms (Views: 69.0ms | ActiveRecord: 0.0ms | Allocations: 56353)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:27:02 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2960)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3432)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:27:02 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 394)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:27:02 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:27:02 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:27:02 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:27:02 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:27:02 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2574)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2959)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:30:35 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 88.6ms | Allocations: 50451)
+Completed 200 OK in 97ms (Views: 91.6ms | ActiveRecord: 0.0ms | Allocations: 56341)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:30:35 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:30:35 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 394)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:30:35 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:30:35 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:30:35 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:30:35 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:30:35 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 245)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:30:57 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 14.1ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 145.1ms | Allocations: 50631)
+Completed 200 OK in 164ms (Views: 150.8ms | ActiveRecord: 0.0ms | Allocations: 56521)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:30:57 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:30:57 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 394)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:30:57 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:30:57 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:30:57 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:30:57 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:30:57 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 245)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-11-22 11:40:33 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 82.2ms | Allocations: 50985)
+Completed 200 OK in 91ms (Views: 85.0ms | ActiveRecord: 0.0ms | Allocations: 56875)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=6&num2=24" for 127.0.0.1 at 2022-11-22 11:40:33 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"6", "num2"=>"24"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2960)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3432)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:40:34 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 394)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show" for 127.0.0.1 at 2022-11-22 11:40:34 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=67ff" for 127.0.0.1 at 2022-11-22 11:40:34 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=d5" for 127.0.0.1 at 2022-11-22 11:40:34 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?n=help" for 127.0.0.1 at 2022-11-22 11:40:34 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/show?num1=17&num2=68" for 127.0.0.1 at 2022-11-22 11:40:34 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2574)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2959)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m

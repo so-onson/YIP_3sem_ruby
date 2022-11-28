@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Examples', type: :request do
@@ -10,14 +12,14 @@ RSpec.describe 'Examples', type: :request do
 
   describe 'GET /show' do
     it 'returns http success' do
-      get '/example/show', params: {num1:6, num2:24}
+      get '/example/show', params: { num1: 6, num2: 24 }
       expect(response).to have_http_status(:success)
     end
 
     context 'shouldn`t redirect and return http Error if' do
       it 'redirecting was without params' do
         get '/example/show'
-        expect(response).to have_http_status(302)
+        expect(response).to have_http_status(:redirect)
       end
 
       it 'redirecting was with empty params' do
@@ -41,12 +43,11 @@ RSpec.describe 'Examples', type: :request do
       end
     end
 
-
     context 'should return body contains' do
       it 'input 17, 68' do
-        get '/example/show', params: {num1:17, num2:68}
+        get '/example/show', params: { num1: 17, num2: 68 }
         html = Nokogiri::HTML(response.body)
-        expects = [1,	51, 2,	34, 3, 17, 4,	0] 
+        expects = [1,	17, 51, 2, 17, 34, 3, 17, 17]
         expects.each_with_index do |el, idx|
           p div = html.search('td')[idx.to_i].text.to_i
           expect(div).to eq(el)

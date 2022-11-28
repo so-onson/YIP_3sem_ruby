@@ -1,5 +1,5 @@
 <h1>Example#input</h1>
-<%= form_with url: "/example/show", method: :get do |form| %>
+<%= form_with url: "/example/show" do |form| %>
 <%= form.label :num1, "Введите первое число:" %>
 <%= form.number_field :num1, value: 1 %>
 <br/>
@@ -9,6 +9,9 @@
 <%= form.submit "Вычислить" %>
 <% end %>
 
-<% unless flash[:error].nil?%>
-    <div> <%= flash[:error] %> </div>
+
+<% flash.each do |_tr, msg|%>
+  <p><%= msg %></p>
 <% end %>
+
+<div id="result">тут будет show</div>

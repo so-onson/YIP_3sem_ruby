@@ -8,36 +8,44 @@ class ExampleController < ApplicationController
 
   def show
     @res = calc_nod(params[:num1].to_i, params[:num2].to_i)
-    @summ = calc_sum(@res)
+    @summ = calc_sum
   end
 
   private
 
-  def calc_nod(m, n)
-    @it_res = []
-    until m.zero? || n.zero?
-      if m >= n
-        p m -= n
-        @it_res << m
-      else
-        p n -= m
-        @it_res << n
+  def calc_nod(mres, nres)
+    iter = 0
+    @result = Enumerator.new do |yielder|
+      loop do
+        yielder << if mres < nres
+                     [iter += 1, mres, nres -= mres]
+                   else
+                     [iter += 1, mres -= nres, nres]
+                   end
       end
-    end
-    m.zero? ? n : m
+    end.take_while { |_, first, second| [first, second].min != 0 }
+    @k_k = [mres, nres].max
   end
 
-  def calc_sum(k_k)
-    params[:num1].to_i * params[:num2].to_i / k_k
+  def calc_sum
+    params[:num1].to_i * params[:num2].to_i / @k_k
   end
 
   def check
-    if (params[:num1].empty?) && (params[:num2].empty? )
-      flash[:error] = 'Error: Empty params'
-      redirect_to root_path
-    elsif params[:num1].match(/^-\d+$/) && !params[:num2].match(/^-\d+$/)
-      flash[:error] = 'Error: Input negative'
-      redirect_to root_path
-    end
+    return redirect_to root_path unless check_nil(params[:num1]).nil?
+
+    return redirect_to root_path unless check_nil(params[:num2]).nil?
+
+    return redirect_to root_path unless check_word.nil?
+  end
+
+  def check_nil(num)
+    flash[:error] = 'Incorrect input: empty params' if num.nil? || num.empty?
+  end
+
+  def check_word
+    flash[:error] = 'Error: Input negative' if params[:num1].match(/^-\d+$/) || params[:num2].match(/^-\d+$/)
+
+    flash[:error] = 'Error: Input words' if params[:num1].match(/\D+/) || params[:num2].match(/\D+/)
   end
 end

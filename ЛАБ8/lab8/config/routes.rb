@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'example#input'
-  get 'example/show'
+  root "example#input"
+  post'example/show'
   get 'example/input'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
