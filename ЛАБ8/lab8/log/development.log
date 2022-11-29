@@ -3112,3 +3112,53 @@ Processing by ExampleController#input as HTML
 Completed 200 OK in 11ms (Views: 10.6ms | Allocations: 5981)
 
 
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-29 10:09:00 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 12.1ms | Allocations: 3915)
+  Rendered layout layouts/application.html.erb (Duration: 105.3ms | Allocations: 54813)
+Completed 200 OK in 119ms (Views: 109.6ms | ActiveRecord: 0.0ms | Allocations: 60775)
+
+
+Started GET "/example/show?num1=17&num2=68&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-29 10:09:07 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"68", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 545)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 4231)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 4729)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-29 10:09:19 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2256)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 5645)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 5963)
+
+
+Started GET "/example/show?num1=18&num2=1&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-11-29 10:09:24 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"18", "num2"=>"1", "commit"=>"Вычислить"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 213)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3756)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 4150)
+
+
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-29 10:09:28 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2247)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 5636)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 5954)
+
+
