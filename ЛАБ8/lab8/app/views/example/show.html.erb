@@ -20,9 +20,4 @@
 
 <p><h3>Наименьшее общее кратное: <%= @summ %></h3></p>
 
-
-
- <%= form_with url: "/", method: :get do |form| %>
-    <%= form.submit 'Перейти на главную' %>
-    <% end %>
-
+<%= button_to 'Перейти на главную', root_path, method: :get %>

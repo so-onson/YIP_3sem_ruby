@@ -32,7 +32,7 @@ class ExampleController < ApplicationController
   end
 
   def check
-    if (params[:num1].empty?) && (params[:num2].empty? )
+    if ( params[:num1].nil?) || (params[:num2].nil?)
       flash[:error] = 'Error: Empty params'
       redirect_to root_path
     elsif params[:num1].match(/^-\d+$/) && !params[:num2].match(/^-\d+$/)
