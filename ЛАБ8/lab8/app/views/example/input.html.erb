@@ -6,12 +6,12 @@
 <%= form.label :num2, "Введите второе число:" %>
 <%= form.number_field :num2, value: 1 %>
 <br/>
-<%= form.submit "Вычислить" %>
+<%= form.submit('Посчитать', id: 'calculate-btn') %>
 <% end %>
 
 
 <% flash.each do |_tr, msg|%>
-  <p><%= msg %></p>
+  <p class = error><%= msg %></p>
 <% end %>
 
 <div id="result">тут будет show</div>
