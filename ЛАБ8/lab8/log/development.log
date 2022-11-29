@@ -4965,3 +4965,22 @@ Processing by ExampleController#show as TURBO_STREAM
 Completed 200 OK in 7ms (Views: 3.8ms | Allocations: 875)
 
 
+Started GET "/?commit=%D0%9F%D0%B5%D1%80%D0%B5%D0%B9%D1%82%D0%B8+%D0%BD%D0%B0+%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%83%D1%8E" for ::1 at 2022-11-29 10:04:50 +0300
+Processing by ExampleController#input as HTML
+  Parameters: {"commit"=>"Перейти на главную"}
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 13.8ms | Allocations: 4110)
+  Rendered layout layouts/application.html.erb (Duration: 100.0ms | Allocations: 54971)
+Completed 200 OK in 116ms (Views: 104.6ms | ActiveRecord: 0.0ms | Allocations: 60933)
+
+
+Started POST "/example/show" for ::1 at 2022-11-29 10:05:01 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"17", "num2"=>"68", "commit"=>"Вычислить"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 5.0ms | Allocations: 595)
+  Rendered example/show.turbo_stream.erb (Duration: 11.2ms | Allocations: 1484)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 2547)
+
+
