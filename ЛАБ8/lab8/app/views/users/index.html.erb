@@ -6,9 +6,12 @@
   <% @users.each do |user| %>
     <%= render user %>
     <p>
-      <%= link_to "Show this user", user %>
+      <%= link_to "Показать пользователя", user %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New user", new_user_path %>
+<%= link_to "Новый пользователь", new_user_path %>
+<div>
+<%= button_to "Выйти", root_path, method: :get %>
+</div>

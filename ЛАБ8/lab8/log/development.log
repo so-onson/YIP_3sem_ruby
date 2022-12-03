@@ -5362,3 +5362,904 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.4ms | Allocations: 4555)
 
 
+Started GET "/" for ::1 at 2022-12-03 14:16:12 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 25.5ms | Allocations: 4128)
+  Rendered layout layouts/application.html.erb (Duration: 216.3ms | Allocations: 55083)
+Completed 200 OK in 242ms (Views: 225.0ms | ActiveRecord: 0.0ms | Allocations: 61060)
+
+
+Started POST "/example/show" for ::1 at 2022-12-03 14:16:22 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"12", "num2"=>"17", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 4.1ms | Allocations: 613)
+  Rendered example/show.turbo_stream.erb (Duration: 11.8ms | Allocations: 1504)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 2572)
+
+
+Started GET "/" for ::1 at 2022-12-03 14:20:39 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 9.3ms | Allocations: 2827)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 6603)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 7762)
+
+
+Started POST "/example/show" for ::1 at 2022-12-03 14:20:44 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"17", "num2"=>"1", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 4.5ms | Allocations: 667)
+  Rendered example/show.turbo_stream.erb (Duration: 8.1ms | Allocations: 988)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 1850)
+
+
+Started POST "/" for ::1 at 2022-12-03 14:20:46 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-12-03 14:20:46 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2460)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 5947)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 6297)
+
+
+Started POST "/example/show" for ::1 at 2022-12-03 14:20:50 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"17", "num2"=>"1", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 2.0ms | Allocations: 316)
+  Rendered example/show.turbo_stream.erb (Duration: 3.2ms | Allocations: 469)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 1083)
+
+
+Started POST "/" for ::1 at 2022-12-03 14:20:55 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-12-03 14:20:56 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2347)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5734)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 6048)
+
+
+Started GET "/" for ::1 at 2022-12-03 14:23:37 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 20.7ms | Allocations: 4661)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 4741)
+Completed 500 Internal Server Error in 29ms (Allocations: 5837)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x0000000000c1e8>
+Did you mean?  super):
+    1: <h1>Example#input</h1>  <%= button_to 'Пользователи', user%>
+    2: <%= form_with url: "/example/show" do |form| %>
+    3: <%= form.label :num1, "Введите первое число:" %>
+    4: <%= form.number_field :num1, value: 1 %>
+  
+app/views/example/input.html.erb:1
+Started GET "/" for ::1 at 2022-12-03 14:24:03 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3060)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 6847)
+Completed 200 OK in 31ms (Views: 28.6ms | Allocations: 7983)
+
+
+Started POST "/users" for ::1 at 2022-12-03 14:24:05 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 400 Bad Request in 7ms (Allocations: 1626)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:68:in `user_params'
+app/controllers/users_controller.rb:24:in `create'
+Started GET "/" for ::1 at 2022-12-03 14:24:05 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2640)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6123)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 6463)
+
+
+Started POST "/users" for ::1 at 2022-12-03 14:24:07 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 400 Bad Request in 3ms (Allocations: 723)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:68:in `user_params'
+app/controllers/users_controller.rb:24:in `create'
+Started GET "/" for ::1 at 2022-12-03 14:24:07 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2534)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5921)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 6231)
+
+
+Started POST "/users" for ::1 at 2022-12-03 14:24:08 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 400 Bad Request in 3ms (Allocations: 708)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:68:in `user_params'
+app/controllers/users_controller.rb:24:in `create'
+Started GET "/" for ::1 at 2022-12-03 14:24:09 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2528)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 5915)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 6225)
+
+
+Started POST "/users" for ::1 at 2022-12-03 14:24:10 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 400 Bad Request in 4ms (Allocations: 711)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:68:in `user_params'
+app/controllers/users_controller.rb:24:in `create'
+Started GET "/" for ::1 at 2022-12-03 14:24:11 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2530)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5917)
+Completed 200 OK in 9ms (Views: 8.1ms | Allocations: 6227)
+
+
+Started POST "/users" for ::1 at 2022-12-03 14:24:11 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 400 Bad Request in 3ms (Allocations: 706)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:68:in `user_params'
+app/controllers/users_controller.rb:24:in `create'
+Started GET "/" for ::1 at 2022-12-03 14:24:12 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2526)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 5913)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 6223)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:24:22 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 1.6ms | Allocations: 232)
+  Rendered users/index.html.erb within layouts/application (Duration: 64.7ms | Allocations: 17517)
+  Rendered layout layouts/application.html.erb (Duration: 77.6ms | Allocations: 21115)
+Completed 200 OK in 86ms (Views: 82.2ms | ActiveRecord: 2.9ms | Allocations: 22303)
+
+
+Started GET "/users/1" for ::1 at 2022-12-03 14:24:25 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 23)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 935)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4406)
+Completed 200 OK in 30ms (Views: 18.6ms | ActiveRecord: 0.5ms | Allocations: 7500)
+
+
+Started GET "/users/1/edit" for ::1 at 2022-12-03 14:24:26 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 16.8ms | Allocations: 3681)
+  Rendered users/edit.html.erb within layouts/application (Duration: 20.0ms | Allocations: 4054)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 7526)
+Completed 200 OK in 37ms (Views: 31.7ms | ActiveRecord: 0.3ms | Allocations: 8383)
+
+
+Started GET "/users/1" for ::1 at 2022-12-03 14:24:30 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 22)
+  Rendered users/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 580)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 3947)
+Completed 200 OK in 24ms (Views: 18.7ms | ActiveRecord: 0.4ms | Allocations: 4808)
+
+
+Started GET "/users/1" for ::1 at 2022-12-03 14:25:55 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 2.1ms | Allocations: 165)
+  Rendered users/show.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1189)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 4950)
+Completed 200 OK in 38ms (Views: 31.9ms | ActiveRecord: 0.3ms | Allocations: 6572)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:25:57 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1123)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 4511)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.3ms | Allocations: 4935)
+
+
+Started GET "/users/1" for ::1 at 2022-12-03 14:25:59 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3923)
+Completed 200 OK in 27ms (Views: 20.7ms | ActiveRecord: 0.5ms | Allocations: 4706)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:26:01 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 846)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 4233)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.4ms | Allocations: 4563)
+
+
+Started GET "/users/new" for ::1 at 2022-12-03 14:26:03 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.5ms | Allocations: 1753)
+  Rendered users/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 2040)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 5414)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 5827)
+
+
+Started POST "/users" for ::1 at 2022-12-03 14:26:18 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"user2", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "user2"], ["password_digest", "[FILTERED]"], ["created_at", "2022-12-03 11:26:18.605824"], ["updated_at", "2022-12-03 11:26:18.605824"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 428ms (ActiveRecord: 5.4ms | Allocations: 3546)
+
+
+Started GET "/users/2" for ::1 at 2022-12-03 14:26:18 +0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 639)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 4005)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 4815)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:26:24 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 970)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 4369)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.3ms | Allocations: 4696)
+
+
+Started GET "/users/1" for ::1 at 2022-12-03 14:26:29 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 561)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 3928)
+Completed 200 OK in 28ms (Views: 21.5ms | ActiveRecord: 0.4ms | Allocations: 4688)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:26:32 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 973)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 4373)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.4ms | Allocations: 4702)
+
+
+Started GET "/users/2" for ::1 at 2022-12-03 14:26:33 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered users/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 561)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3934)
+Completed 200 OK in 27ms (Views: 20.5ms | ActiveRecord: 0.4ms | Allocations: 4694)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:26:35 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 980)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 4373)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.4ms | Allocations: 4699)
+
+
+Started GET "/" for ::1 at 2022-12-03 14:27:13 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2964)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 6738)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.0ms | Allocations: 7869)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:27:17 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 2.2ms | Allocations: 165)
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 1683)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 5266)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.4ms | Allocations: 6242)
+
+
+Started GET "/users/new" for ::1 at 2022-12-03 14:33:53 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 10.2ms | Allocations: 1733)
+  Rendered users/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2022)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 5396)
+Completed 200 OK in 28ms (Views: 26.0ms | Allocations: 5798)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:33:56 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.4ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1143)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 4530)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 1.3ms | Allocations: 4856)
+
+
+Started GET "/users/1" for ::1 at 2022-12-03 14:33:59 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 4126)
+Completed 200 OK in 27ms (Views: 20.1ms | ActiveRecord: 0.6ms | Allocations: 5010)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:34:02 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 970)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 4357)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.3ms | Allocations: 4683)
+
+
+Started GET "/users/2" for ::1 at 2022-12-03 14:34:03 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered users/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 571)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 3937)
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 0.3ms | Allocations: 4697)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:34:07 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 956)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 4343)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.5ms | Allocations: 4670)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:38:55 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 1.6ms | Allocations: 165)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 1764)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 5565)
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 0.5ms | Allocations: 6723)
+
+
+Started GET "/" for ::1 at 2022-12-03 14:38:57 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2967)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 6535)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 7483)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:39:33 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.4ms | Allocations: 22)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1130)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 4530)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.4ms | Allocations: 4878)
+
+
+Started GET "/users/1" for ::1 at 2022-12-03 14:39:39 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 770)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 4143)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.3ms | Allocations: 5021)
+
+
+Started GET "/users/1/edit" for ::1 at 2022-12-03 14:39:42 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 13.4ms | Allocations: 1783)
+  Rendered users/edit.html.erb within layouts/application (Duration: 17.2ms | Allocations: 2125)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 5497)
+Completed 200 OK in 38ms (Views: 30.4ms | ActiveRecord: 0.5ms | Allocations: 6309)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:39:57 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1036)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 4423)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.3ms | Allocations: 4749)
+
+
+Started GET "/users/new" for ::1 at 2022-12-03 14:40:00 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.5ms | Allocations: 1250)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1483)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 4857)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 5242)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:40:33 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.4ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 1036)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 4423)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.4ms | Allocations: 4750)
+
+
+Started GET "/" for ::1 at 2022-12-03 14:40:39 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2435)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 5809)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 6124)
+
+
+Started GET "/users" for ::1 at 2022-12-03 14:53:39 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1207)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 4594)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 1.2ms | Allocations: 4918)
+
+
+Started GET "/" for ::1 at 2022-12-03 14:53:42 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2448)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 5822)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 6136)
+
+
+Started POST "/example/show" for ::1 at 2022-12-03 14:53:44 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"1", "num2"=>"1", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 2.7ms | Allocations: 536)
+  Rendered example/show.turbo_stream.erb (Duration: 5.8ms | Allocations: 855)
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 1693)
+
+
+Started POST "/" for ::1 at 2022-12-03 14:53:49 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-12-03 14:53:49 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2443)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 5830)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 6144)
+
+
+Started GET "/" for ::1 at 2022-12-03 15:07:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 19.2ms | Allocations: 4330)
+  Rendered layout layouts/application.html.erb (Duration: 156.0ms | Allocations: 55160)
+Completed 200 OK in 177ms (Views: 163.1ms | ActiveRecord: 0.0ms | Allocations: 61143)
+
+
+Started GET "/" for ::1 at 2022-12-03 15:07:54 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2572)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 6049)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 6426)
+
+
+Started GET "/users" for ::1 at 2022-12-03 15:07:56 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 1.6ms | Allocations: 231)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 52.6ms | Allocations: 17627)
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 21213)
+Completed 200 OK in 77ms (Views: 64.6ms | ActiveRecord: 2.6ms | Allocations: 23281)
+
+
+Started GET "/users" for ::1 at 2022-12-03 15:07:58 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1145)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 4535)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.4ms | Allocations: 4904)
+
+
+Started GET "/users" for ::1 at 2022-12-03 15:09:14 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 2.0ms | Allocations: 165)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 1766)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 5560)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.4ms | Allocations: 6726)
+
+
+Started GET "/" for ::1 at 2022-12-03 15:09:16 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 10.8ms | Allocations: 2962)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 6519)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 7465)
+
+
+Started GET "/" for ::1 at 2022-12-03 15:09:17 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2448)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 5828)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 6157)
+
+
+Started GET "/" for ::1 at 2022-12-03 15:09:36 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 11.8ms | Allocations: 2970)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 6749)
+Completed 200 OK in 36ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 7908)
+
+
+Started GET "/users" for ::1 at 2022-12-03 15:09:37 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 1.7ms | Allocations: 165)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1779)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 5361)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.4ms | Allocations: 6338)
+
+
+Started GET "/" for ::1 at 2022-12-03 15:09:38 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2466)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 5840)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 6172)
+
+
+Started GET "/" for ::1 at 2022-12-03 15:10:23 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2956)
+  Rendered layout layouts/application.html.erb (Duration: 46.1ms | Allocations: 6734)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.0ms | Allocations: 7867)
+
+
+Started POST "/example/show" for ::1 at 2022-12-03 15:10:36 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"1", "num2"=>"1", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 3.3ms | Allocations: 633)
+  Rendered example/show.turbo_stream.erb (Duration: 10.3ms | Allocations: 1511)
+Completed 200 OK in 18ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 2544)
+
+
+Started GET "/users" for ::1 at 2022-12-03 15:10:38 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 1.6ms | Allocations: 165)
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 1784)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 5378)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.3ms | Allocations: 6357)
+
+
+Started GET "/" for ::1 at 2022-12-03 15:10:39 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2463)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 5837)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 6168)
+
+
+Started POST "/example/show" for ::1 at 2022-12-03 15:10:41 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"1", "num2"=>"1", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 1.8ms | Allocations: 214)
+  Rendered example/show.turbo_stream.erb (Duration: 3.9ms | Allocations: 368)
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 978)
+
+
+Started POST "/" for ::1 at 2022-12-03 15:10:43 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-12-03 15:10:43 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2586)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 6062)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 6411)
+
+
+Started GET "/" for ::1 at 2022-12-03 15:10:44 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2434)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 5815)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 6127)
+
+
+Started POST "/example/show" for ::1 at 2022-12-03 15:10:46 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"1", "num2"=>"1", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 2.2ms | Allocations: 214)
+  Rendered example/show.turbo_stream.erb (Duration: 3.7ms | Allocations: 366)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 966)
+
+
+Started GET "/users" for ::1 at 2022-12-03 15:10:47 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1114)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 4501)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.3ms | Allocations: 4836)
+
+
+Started GET "/users/2" for ::1 at 2022-12-03 15:10:49 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 23)
+  Rendered users/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 941)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 4421)
+Completed 200 OK in 51ms (Views: 37.7ms | ActiveRecord: 0.5ms | Allocations: 7510)
+
+
+Started GET "/users" for ::1 at 2022-12-03 15:10:50 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.6ms | Allocations: 17)
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 16)
+  Rendered users/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1045)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 4433)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.4ms | Allocations: 4763)
+
+
+Started GET "/" for ::1 at 2022-12-03 15:10:56 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2469)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 5850)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 6164)
+
+
+Started POST "/example/show" for ::1 at 2022-12-03 15:10:57 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"1", "num2"=>"1", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 1.7ms | Allocations: 214)
+  Rendered example/show.turbo_stream.erb (Duration: 2.8ms | Allocations: 367)
+Completed 200 OK in 10ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 955)
+
+
+Started POST "/example/show" for ::1 at 2022-12-03 15:11:00 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"17", "num2"=>"1", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 2.4ms | Allocations: 309)
+  Rendered example/show.turbo_stream.erb (Duration: 3.6ms | Allocations: 459)
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 1067)
+
+
