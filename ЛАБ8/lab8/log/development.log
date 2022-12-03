@@ -5082,3 +5082,12 @@ Processing by ExampleController#input as TURBO_STREAM
 Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 6296)
 
 
+Started GET "/" for ::1 at 2022-12-03 16:21:53 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 51.9ms | Allocations: 4135)
+  Rendered layout layouts/application.html.erb (Duration: 231.1ms | Allocations: 54989)
+Completed 200 OK in 261ms (Views: 241.4ms | ActiveRecord: 0.0ms | Allocations: 60951)
+
+
