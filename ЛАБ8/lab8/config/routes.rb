@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   root "example#input"
   post'example/show'
   get 'example/input'

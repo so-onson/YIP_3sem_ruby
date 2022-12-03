@@ -5082,3 +5082,283 @@ Processing by ExampleController#input as TURBO_STREAM
 Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 6296)
 
 
+Started GET "/" for ::1 at 2022-12-03 10:11:01 +0300
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20221203070531_create_users.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20221203070531)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221203070531"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-03 07:12:03.706798"], ["updated_at", "2022-12-03 07:12:03.706798"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-12-03 10:13:02 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 58.1ms | Allocations: 4126)
+  Rendered layout layouts/application.html.erb (Duration: 249.4ms | Allocations: 54964)
+Completed 200 OK in 284ms (Views: 257.9ms | ActiveRecord: 0.0ms | Allocations: 60940)
+
+
+Started GET "/" for ::1 at 2022-12-03 10:16:13 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2475)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 5952)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 6329)
+
+
+Started GET "/users" for ::1 at 2022-12-03 10:16:20 +0300
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms | Allocations: 3319)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/users" for ::1 at 2022-12-03 10:18:10 +0300
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms | Allocations: 6008)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/users" for ::1 at 2022-12-03 10:18:30 +0300
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 1253)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/users" for ::1 at 2022-12-03 10:18:32 +0300
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 1253)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/users" for ::1 at 2022-12-03 10:18:59 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 1811)
+  Rendered layout layouts/application.html.erb (Duration: 209.7ms | Allocations: 52701)
+Completed 200 OK in 241ms (Views: 218.9ms | ActiveRecord: 0.4ms | Allocations: 59653)
+
+
+Started GET "/users/new" for ::1 at 2022-12-03 10:19:03 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 33.8ms | Allocations: 4448)
+  Rendered users/new.html.erb within layouts/application (Duration: 37.3ms | Allocations: 4807)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 8295)
+Completed 200 OK in 103ms (Views: 52.4ms | ActiveRecord: 1.9ms | Allocations: 24108)
+
+
+Started POST "/users" for ::1 at 2022-12-03 10:20:06 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"user1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "user1"], ["password_digest", "[FILTERED]"], ["created_at", "2022-12-03 07:20:07.165056"], ["updated_at", "2022-12-03 07:20:07.165056"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 424ms (ActiveRecord: 5.0ms | Allocations: 3834)
+
+
+Started GET "/users/1" for ::1 at 2022-12-03 10:20:07 +0300
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.9ms | Allocations: 212)
+  Rendered users/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1681)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 5154)
+Completed 200 OK in 18ms (Views: 12.7ms | ActiveRecord: 0.3ms | Allocations: 8269)
+
+
+Started GET "/users" for ::1 at 2022-12-03 10:20:44 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 944)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 4334)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.4ms | Allocations: 4703)
+
+
+Started GET "/users/1" for ::1 at 2022-12-03 10:20:48 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 566)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 3932)
+Completed 200 OK in 27ms (Views: 19.1ms | ActiveRecord: 0.5ms | Allocations: 4715)
+
+
+Started GET "/users" for ::1 at 2022-12-03 10:20:50 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 844)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 4236)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.4ms | Allocations: 4562)
+
+
+Started GET "/users/new" for ::1 at 2022-12-03 10:20:52 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.5ms | Allocations: 1306)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1392)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 4767)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 5099)
+
+
+Started GET "/users" for ::1 at 2022-12-03 10:20:53 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.4ms | Allocations: 17)
+  Rendered users/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 837)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 4232)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.6ms | Allocations: 4566)
+
+
+Started GET "/users/1" for ::1 at 2022-12-03 10:20:56 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 3936)
+Completed 200 OK in 29ms (Views: 20.9ms | ActiveRecord: 0.6ms | Allocations: 4696)
+
+
+Started GET "/users/1/edit" for ::1 at 2022-12-03 10:20:58 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.6ms | Allocations: 1335)
+  Rendered users/edit.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1617)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 4983)
+Completed 200 OK in 28ms (Views: 22.8ms | ActiveRecord: 0.3ms | Allocations: 5796)
+
+
+Started GET "/users" for ::1 at 2022-12-03 10:21:00 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 842)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 4229)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.4ms | Allocations: 4555)
+
+
