@@ -1,4 +1,6 @@
-<h1>Example#input</h1>  <%= button_to 'Пользователи', users_path, method: :get%>
+<h1>Example#input</h1>
+<%= button_to 'Выход', session_logout_path, method: :get%>
+
 <%= form_with url: "/example/show" do |form| %>
 <%= form.label :num1, "Введите первое число:" %>
 <%= form.number_field :num1, value: 1 %>
@@ -9,9 +11,8 @@
 <%= form.submit('Посчитать', id: 'calculate-btn') %>
 <% end %>
 
-
 <% flash.each do |_tr, msg|%>
-  <p class = error><%= msg %></p>
+<p class = error><%= msg %></p>
 <% end %>
 
 <div id="result">тут будет show</div>
