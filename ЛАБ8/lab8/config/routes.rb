@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :users
-  get "example/input"
   post 'example/show'
   get 'example/input'
   root "session#login"
