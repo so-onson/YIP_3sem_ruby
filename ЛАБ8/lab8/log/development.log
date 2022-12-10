@@ -5091,3 +5091,30 @@ Processing by ExampleController#input as HTML
 Completed 200 OK in 261ms (Views: 241.4ms | ActiveRecord: 0.0ms | Allocations: 60951)
 
 
+Started GET "/" for ::1 at 2022-12-10 16:13:26 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 10.2ms | Allocations: 4121)
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 54277)
+Completed 200 OK in 85ms (Views: 79.5ms | ActiveRecord: 0.0ms | Allocations: 60239)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 16:13:32 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"17", "num2"=>"19", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 3.8ms | Allocations: 636)
+  Rendered example/show.turbo_stream.erb (Duration: 9.2ms | Allocations: 1525)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 2597)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 16:14:00 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"19", "num2"=>"17", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 1.4ms | Allocations: 200)
+  Rendered example/show.turbo_stream.erb (Duration: 2.3ms | Allocations: 351)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1040)
+
+
