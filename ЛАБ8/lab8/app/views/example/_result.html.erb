@@ -3,16 +3,16 @@
 <h1>Example#show</h1>
 <h3> Вы ввели <%= params[:num1].to_i %> и <%= params[:num2].to_i %></h3>
 
-
+<h3> Вы ввели <%= @first_num %> и <%= @second_num %></h3>
 
 <div>
 <table>
 <tr><th>Итерация</th><th>Результат</th><th>Результат</th></tr>
-<% @result.each do |val, res1, res2| %>
+<% @iterations.each do |iter| %>
     <tr>
-    <td><%= val %></td>
-    <td><%= res1 %></td>
-    <td><%= res2 %></td>
+    <td><%= iter['iter'] + 1 %></td>
+    <td><%= iter['num1'] %></td>
+    <td><%= iter['num2'] %></td>
     <% end %>
     </tr>
 </table>
@@ -21,11 +21,14 @@
 
 
 <p><h3 id = 'NOD' ><%= "Наибольший общий делитель: #{@k_k}\n" %></h3></p>
-
 <p><h3 id = 'NOK'>Наименьшее общее кратное: <%= @summ %></h3></p>
+
+
+<p><h3 id = 'NOD' >Наибольший общий делитель: <%=@nod%></h3></p>
+<p><h3 id = 'NOK'>Наименьшее общее кратное: <%= @nok %></h3></p>
 
 
 
  <%= form_with url: "/", method: :get do |form| %>
-    <%= form.submit 'Перейти на главную' %>
+    <%= form.submit 'Очистить' %>
     <% end %>

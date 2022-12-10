@@ -5091,3 +5091,311 @@ Processing by ExampleController#input as HTML
 Completed 200 OK in 261ms (Views: 241.4ms | ActiveRecord: 0.0ms | Allocations: 60951)
 
 
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvqlidResults (20221210111024)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "evqlid_results" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "num1" integer, "num2" integer, "nod" integer, "nok" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221210111024"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-10 11:11:40.828259"], ["updated_at", "2022-12-10 11:11:40.828259"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUniqnessToRes (20221210111153)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_evqlid_results_on_num1_and_num2" ON "evqlid_results" ("num1", "num2")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221210111153"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvqlidIterations (20221210111510)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "evqlid_iterations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "iteration" integer, "num1" integer, "num2" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221210111510"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddForeignKey (20221210111548)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "evqlid_iterations" ADD "evqlid_result_id" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aevqlid_iterations" ("id" integer NOT NULL PRIMARY KEY, "iteration" integer DEFAULT NULL, "num1" integer DEFAULT NULL, "num2" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "evqlid_result_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aevqlid_iterations" ("id","iteration","num1","num2","created_at","updated_at","evqlid_result_id")
+                     SELECT "id","iteration","num1","num2","created_at","updated_at","evqlid_result_id" FROM "evqlid_iterations"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "evqlid_iterations"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "evqlid_iterations" ("id" integer NOT NULL PRIMARY KEY, "iteration" integer DEFAULT NULL, "num1" integer DEFAULT NULL, "num2" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "evqlid_result_id" integer DEFAULT NULL, CONSTRAINT "fk_rails_c281d63959"
+FOREIGN KEY ("evqlid_result_id")
+  REFERENCES "evqlid_results" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_iterations" ("id","iteration","num1","num2","created_at","updated_at","evqlid_result_id")
+                     SELECT "id","iteration","num1","num2","created_at","updated_at","evqlid_result_id" FROM "aevqlid_iterations"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "aevqlid_iterations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221210111548"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-12-10 15:56:34 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 9.7ms | Allocations: 4116)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 54390)
+Completed 200 OK in 92ms (Views: 76.0ms | ActiveRecord: 0.0ms | Allocations: 60352)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 15:56:38 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"18", "num2"=>"1", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 1], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:20:in `get'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 1], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:21:in `get'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms | Allocations: 8240)
+
+
+  
+TypeError (nil can't be coerced into Integer):
+  
+app/models/evqlid_result.rb:69:in `/'
+app/models/evqlid_result.rb:69:in `calculating'
+app/models/evqlid_result.rb:50:in `generate_result'
+app/models/evqlid_result.rb:24:in `get'
+app/models/evqlid_result.rb:16:in `get_json'
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/" for ::1 at 2022-12-10 15:57:03 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2469)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5957)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 6314)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 15:57:08 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"19", "num2"=>"18", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:20:in `get'
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:21:in `get'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms | Allocations: 1735)
+
+
+  
+TypeError (nil can't be coerced into Integer):
+  
+app/models/evqlid_result.rb:69:in `/'
+app/models/evqlid_result.rb:69:in `calculating'
+app/models/evqlid_result.rb:50:in `generate_result'
+app/models/evqlid_result.rb:24:in `get'
+app/models/evqlid_result.rb:16:in `get_json'
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/" for ::1 at 2022-12-10 15:57:23 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2463)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 24178)
+Completed 200 OK in 24ms (Views: 23.6ms | Allocations: 25123)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 15:57:26 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"19", "num2"=>"1", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 1], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:20:in `get'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 1], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:21:in `get'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 1], ["num2", 1], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 1], ["num2", 1], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:12:in `unique_pair'
+  [1m[36mEvqlidResult Create (0.4ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["num1", 1], ["num2", 1], ["nod", 18], ["nok", 1], ["created_at", "2022-12-10 12:57:26.352998"], ["updated_at", "2022-12-10 12:57:26.352998"]]
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 6.1ms | Allocations: 41733)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'step' for EvqlidIteration.):
+  
+app/models/evqlid_result.rb:56:in `block in generate_result'
+app/models/evqlid_result.rb:54:in `each'
+app/models/evqlid_result.rb:54:in `reduce'
+app/models/evqlid_result.rb:54:in `generate_result'
+app/models/evqlid_result.rb:24:in `get'
+app/models/evqlid_result.rb:16:in `get_json'
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/" for ::1 at 2022-12-10 15:58:04 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2453)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 24163)
+Completed 200 OK in 26ms (Views: 25.3ms | Allocations: 25110)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 15:58:08 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"19", "num2"=>"18", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:20:in `get'
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:21:in `get'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:12:in `unique_pair'
+  [1m[36mEvqlidResult Create (0.3ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["num1", 18], ["num2", 18], ["nod", 18], ["nok", 19], ["created_at", "2022-12-10 12:58:08.892469"], ["updated_at", "2022-12-10 12:58:08.892469"]]
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 6.9ms | Allocations: 20574)
+
+
+  
+NameError (Rails couldn't find a valid model for EvqlidResults association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+  
+app/models/evqlid_result.rb:56:in `block in generate_result'
+app/models/evqlid_result.rb:54:in `each'
+app/models/evqlid_result.rb:54:in `reduce'
+app/models/evqlid_result.rb:54:in `generate_result'
+app/models/evqlid_result.rb:24:in `get'
+app/models/evqlid_result.rb:16:in `get_json'
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/" for ::1 at 2022-12-10 16:01:34 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2444)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 5931)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 6276)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 16:01:36 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"1", "num2"=>"1", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 1], ["num2", 1], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:20:in `get'
+  [1m[36mEvqlidIteration Load (0.2ms)[0m  [1m[34mSELECT "evqlid_iterations".* FROM "evqlid_iterations" WHERE "evqlid_iterations"."evqlid_result_id" = ? ORDER BY "step" ASC[0m  [["evqlid_result_id", 1]]
+  ↳ app/models/evqlid_result.rb:94:in `go_to_json'
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 1.2ms | Allocations: 650)
+  Rendered example/show.turbo_stream.erb (Duration: 2.6ms | Allocations: 1525)
+Completed 200 OK in 42ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 13773)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 16:01:48 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"1", "num2"=>"15", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 1], ["num2", 15], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:20:in `get'
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 15], ["num2", 1], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:21:in `get'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mEvqlidResult Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 15], ["num2", 15], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 15], ["num2", 15], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:12:in `unique_pair'
+  [1m[36mEvqlidResult Create (0.5ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["num1", 15], ["num2", 15], ["nod", 14], ["nok", 1], ["created_at", "2022-12-10 13:01:48.719450"], ["updated_at", "2022-12-10 13:01:48.719450"]]
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 6.1ms | Allocations: 6550)
+
+
+  
+NameError (Rails couldn't find a valid model for EvqlidResults association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+  
+app/models/evqlid_result.rb:56:in `block in generate_result'
+app/models/evqlid_result.rb:54:in `each'
+app/models/evqlid_result.rb:54:in `reduce'
+app/models/evqlid_result.rb:54:in `generate_result'
+app/models/evqlid_result.rb:24:in `get'
+app/models/evqlid_result.rb:16:in `get_json'
+app/controllers/example_controller.rb:16:in `show'
+Started POST "/example/show" for ::1 at 2022-12-10 16:02:07 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"91", "num2"=>"13", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 91], ["num2", 13], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:20:in `get'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 13], ["num2", 91], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:21:in `get'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 13], ["num2", 13], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 13], ["num2", 13], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:12:in `unique_pair'
+  [1m[36mEvqlidResult Create (0.8ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["num1", 13], ["num2", 13], ["nod", 13], ["nok", 91], ["created_at", "2022-12-10 13:02:07.633027"], ["updated_at", "2022-12-10 13:02:07.633027"]]
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 6.2ms | Allocations: 6271)
+
+
+  
+NameError (Rails couldn't find a valid model for EvqlidResults association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+  
+app/models/evqlid_result.rb:56:in `block in generate_result'
+app/models/evqlid_result.rb:54:in `each'
+app/models/evqlid_result.rb:54:in `reduce'
+app/models/evqlid_result.rb:54:in `generate_result'
+app/models/evqlid_result.rb:24:in `get'
+app/models/evqlid_result.rb:16:in `get_json'
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/" for ::1 at 2022-12-10 16:03:10 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2449)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 24158)
+Completed 200 OK in 21ms (Views: 20.3ms | Allocations: 25102)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 16:03:13 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"17", "num2"=>"1", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 17], ["num2", 1], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:20:in `get'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 1], ["num2", 17], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:21:in `get'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 1], ["num2", 1], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 1], ["num2", 1], ["LIMIT", 1]]
+  ↳ app/models/evqlid_result.rb:12:in `unique_pair'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/evqlid_result.rb:52:in `generate_result'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 2.4ms | Allocations: 17442)
+
+
+  
+NameError (Rails couldn't find a valid model for EvqlidResults association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+  
+app/models/evqlid_result.rb:56:in `block in generate_result'
+app/models/evqlid_result.rb:54:in `each'
+app/models/evqlid_result.rb:54:in `reduce'
+app/models/evqlid_result.rb:54:in `generate_result'
+app/models/evqlid_result.rb:24:in `get'
+app/models/evqlid_result.rb:16:in `get_json'
+app/controllers/example_controller.rb:16:in `show'
