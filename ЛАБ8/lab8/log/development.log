@@ -5091,3 +5091,550 @@ Processing by ExampleController#input as HTML
 Completed 200 OK in 261ms (Views: 241.4ms | ActiveRecord: 0.0ms | Allocations: 60951)
 
 
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvqlidResults (20221209072242)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "evqlid_results" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "num1" integer, "num2" integer, "nod" integer, "nok" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221209072242"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-09 07:27:56.544303"], ["updated_at", "2022-12-09 07:27:56.544303"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUniqnessToRes (20221209073056)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_evqlid_results_on_num1_and_num2" ON "evqlid_results" ("num1", "num2")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221209073056"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvqlidIterations (20221209074131)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "evqlid_iterations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "iterations" integer, "num1" integer, "num2" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221209074131"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddForeignKey (20221209074817)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "evqlid_iterations" ADD "evqlid_result_id" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aevqlid_iterations" ("id" integer NOT NULL PRIMARY KEY, "iterations" integer DEFAULT NULL, "num1" integer DEFAULT NULL, "num2" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "evqlid_result_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aevqlid_iterations" ("id","iterations","num1","num2","created_at","updated_at","evqlid_result_id")
+                     SELECT "id","iterations","num1","num2","created_at","updated_at","evqlid_result_id" FROM "evqlid_iterations"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "evqlid_iterations"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "evqlid_iterations" ("id" integer NOT NULL PRIMARY KEY, "iterations" integer DEFAULT NULL, "num1" integer DEFAULT NULL, "num2" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "evqlid_result_id" integer DEFAULT NULL, CONSTRAINT "fk_rails_c281d63959"
+FOREIGN KEY ("evqlid_result_id")
+  REFERENCES "evqlid_results" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_iterations" ("id","iterations","num1","num2","created_at","updated_at","evqlid_result_id")
+                     SELECT "id","iterations","num1","num2","created_at","updated_at","evqlid_result_id" FROM "aevqlid_iterations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aevqlid_iterations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221209074817"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddForeignKey (20221209074817)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aevqlid_iterations" ("id" integer NOT NULL PRIMARY KEY, "iterations" integer DEFAULT NULL, "num1" integer DEFAULT NULL, "num2" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "evqlid_result_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aevqlid_iterations" ("id","iterations","num1","num2","created_at","updated_at","evqlid_result_id")
+                     SELECT "id","iterations","num1","num2","created_at","updated_at","evqlid_result_id" FROM "evqlid_iterations"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "evqlid_iterations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "evqlid_iterations" ("id" integer NOT NULL PRIMARY KEY, "iterations" integer DEFAULT NULL, "num1" integer DEFAULT NULL, "num2" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "evqlid_result_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "evqlid_iterations" ("id","iterations","num1","num2","created_at","updated_at","evqlid_result_id")
+                     SELECT "id","iterations","num1","num2","created_at","updated_at","evqlid_result_id" FROM "aevqlid_iterations"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "aevqlid_iterations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aevqlid_iterations" ("id" integer NOT NULL PRIMARY KEY, "iterations" integer DEFAULT NULL, "num1" integer DEFAULT NULL, "num2" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "evqlid_result_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aevqlid_iterations" ("id","iterations","num1","num2","created_at","updated_at","evqlid_result_id")
+                     SELECT "id","iterations","num1","num2","created_at","updated_at","evqlid_result_id" FROM "evqlid_iterations"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "evqlid_iterations"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "evqlid_iterations" ("id" integer NOT NULL PRIMARY KEY, "iterations" integer DEFAULT NULL, "num1" integer DEFAULT NULL, "num2" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_iterations" ("id","iterations","num1","num2","created_at","updated_at")
+                     SELECT "id","iterations","num1","num2","created_at","updated_at" FROM "aevqlid_iterations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aevqlid_iterations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20221209074817"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvqlidIterations (20221209074131)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "evqlid_iterations"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20221209074131"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUniqnessToRes (20221209073056)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP INDEX "index_evqlid_results_on_num1_and_num2"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20221209073056"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvqlidResults (20221209072242)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "evqlid_results"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20221209072242"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvqlidResults (20221209081149)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "evqlid_results" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "num1" integer, "num2" integer, "nod" integer, "nok" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221209081149"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUniqnessToRes (20221209081617)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_evqlid_results_on_num1_and_num2" ON "evqlid_results" ("num1", "num2")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221209081617"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/new" for ::1 at 2022-12-09 11:22:47 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+Started GET "/" for ::1 at 2022-12-09 11:22:51 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 16.5ms | Allocations: 3457)
+  Rendered layout layouts/application.html.erb (Duration: 213.7ms | Allocations: 54102)
+Completed 200 OK in 238ms (Views: 220.2ms | ActiveRecord: 0.0ms | Allocations: 57996)
+
+
+Started POST "/example/show" for ::1 at 2022-12-09 11:23:02 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"17", "num2"=>"19", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 4.3ms | Allocations: 631)
+  Rendered example/show.turbo_stream.erb (Duration: 10.8ms | Allocations: 1501)
+Completed 200 OK in 18ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 2561)
+
+
+Started POST "/example/show" for ::1 at 2022-12-09 11:24:02 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"19", "num2"=>"17", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 1.0ms | Allocations: 200)
+  Rendered example/show.turbo_stream.erb (Duration: 2.0ms | Allocations: 350)
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1028)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddcolToEvqlidResult (20221209082737)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221209082737"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddcolToEvqlidResult (20221209082737)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20221209082737"]]
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddcolToEvqlidResult (20221209082737)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "evqlid_results" ADD "result1" varchar[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "evqlid_results" ADD "result2" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221209082737"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvqlidResult Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 17], ["num2", 19], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 17], ["num2", 19], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvqlidResult Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 17], ["num2", 19], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (1.1ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 17], ["num2", 19], ["nod", nil], ["nok", nil], ["created_at", "2022-12-09 08:42:49.803032"], ["updated_at", "2022-12-09 08:42:49.803032"], ["result1", nil], ["result2", nil]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvqlidResult Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 17], ["num2", 19], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvqlidResult Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 17], ["num2", 10], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.9ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 17], ["num2", 10], ["nod", nil], ["nok", nil], ["created_at", "2022-12-09 08:43:00.457533"], ["updated_at", "2022-12-09 08:43:00.457533"], ["result1", nil], ["result2", nil]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvqlidResult Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 17], ["num2", 10], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mEvqlidResult Delete All (6.6ms)[0m  [1m[31mDELETE FROM "evqlid_results" WHERE "evqlid_results"."id" BETWEEN ? AND ?[0m  [["id", 1], ["id", 10]]
+  [1m[36mEvqlidResult Load (0.6ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results"[0m
+Started GET "/" for ::1 at 2022-12-10 13:33:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 37.6ms | Allocations: 5529)
+  Rendered layout layouts/application.html.erb (Duration: 229.1ms | Allocations: 56286)
+Completed 200 OK in 290ms (Views: 267.5ms | ActiveRecord: 0.0ms | Allocations: 62247)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 13:33:17 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"17", "num2"=>"19", "commit"=>"Посчитать"}
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms | Allocations: 5911)
+
+
+  
+NameError (undefined local variable or method `set_result1' for EvqlidResult:Class):
+  
+app/models/evqlid_result.rb:5:in `<class:EvqlidResult>'
+app/models/evqlid_result.rb:1:in `<main>'
+app/controllers/example_controller.rb:12:in `show'
+Started POST "/example/show" for ::1 at 2022-12-10 13:34:04 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"17", "num2"=>"19", "commit"=>"Посчитать"}
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.8ms | Allocations: 5943)
+
+
+  
+NoMethodError (undefined method `find_by_input' for EvqlidResult:Class
+Did you mean?  find_by):
+  
+app/controllers/example_controller.rb:12:in `show'
+Started GET "/" for ::1 at 2022-12-10 13:34:56 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2678)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 24388)
+Completed 200 OK in 25ms (Views: 24.4ms | Allocations: 25334)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 13:35:03 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"18", "num2"=>"19", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.7ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE (18) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  [1m[36mEvqlidResult Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  [1m[36mEvqlidResult Create (1.3ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 18], ["num2", 19], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 10:35:03.582561"], ["updated_at", "2022-12-10 10:35:03.582561"], ["result1", nil], ["result2", nil]]
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/example_controller.rb:16:in `show'
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 13.6ms | Allocations: 25658)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/models/evqlid_result.rb:8:in `decoded_result1'
+app/controllers/example_controller.rb:17:in `show'
+Started GET "/" for ::1 at 2022-12-10 13:39:09 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2686)
+  Rendered layout layouts/application.html.erb (Duration: 48.7ms | Allocations: 24395)
+Completed 200 OK in 53ms (Views: 51.9ms | Allocations: 25340)
+
+
+Started GET "/example/show_db?commit=%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%91%D0%94" for ::1 at 2022-12-10 13:39:11 +0300
+Processing by ExampleController#show_db as HTML
+  Parameters: {"commit"=>"Показать БД"}
+Completed 500 Internal Server Error in 53ms (Allocations: 5418)
+
+
+  
+NameError (undefined local variable or method `set_result1' for EvqlidResult:Class):
+  
+app/models/evqlid_result.rb:5:in `<class:EvqlidResult>'
+app/models/evqlid_result.rb:1:in `<main>'
+app/controllers/example_controller.rb:27:in `show_db'
+Started GET "/" for ::1 at 2022-12-10 13:40:48 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2684)
+  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 24394)
+Completed 200 OK in 56ms (Views: 54.6ms | Allocations: 25339)
+
+
+Started GET "/example/show_db?commit=%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%91%D0%94" for ::1 at 2022-12-10 13:40:50 +0300
+Processing by ExampleController#show_db as HTML
+  Parameters: {"commit"=>"Показать БД"}
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results"[0m
+  ↳ app/controllers/example_controller.rb:27:in `show_db'
+Completed 200 OK in 87ms (Views: 76.2ms | ActiveRecord: 3.6ms | Allocations: 10600)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 13:42:21 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"17", "num2"=>"1", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE (17) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms | Allocations: 1516)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/models/evqlid_result.rb:8:in `decoded_result1'
+app/controllers/example_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvqlidResult Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 12], ["num2", 8], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.7ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 12], ["num2", 8], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 10:45:04.035451"], ["updated_at", "2022-12-10 10:45:04.035451"], ["result1", nil], ["result2", nil]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2022-12-10 13:53:43 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3062)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 24993)
+Completed 200 OK in 36ms (Views: 34.2ms | Allocations: 26270)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 13:53:46 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"1", "num2"=>"1", "commit"=>"Посчитать"}
+Completed 500 Internal Server Error in 55ms (Allocations: 5667)
+
+
+  
+NameError (undefined local variable or method `set_result1' for EvqlidResult:Class):
+  
+app/models/evqlid_result.rb:5:in `<class:EvqlidResult>'
+app/models/evqlid_result.rb:1:in `<main>'
+app/controllers/example_controller.rb:12:in `show'
+Started POST "/example/show" for ::1 at 2022-12-10 13:54:56 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"1", "num2"=>"1", "commit"=>"Посчитать"}
+Completed 500 Internal Server Error in 29ms (Allocations: 5616)
+
+
+  
+NoMethodError (undefined method `set_result1' for EvqlidResult:Class):
+  
+app/models/evqlid_result.rb:5:in `<class:EvqlidResult>'
+app/models/evqlid_result.rb:1:in `<main>'
+app/controllers/example_controller.rb:12:in `show'
+Started GET "/" for ::1 at 2022-12-10 13:55:39 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2686)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 24417)
+Completed 200 OK in 39ms (Views: 38.5ms | Allocations: 25362)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 13:55:42 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"19", "num2"=>"1", "commit"=>"Посчитать"}
+Completed 500 Internal Server Error in 67ms (Allocations: 5511)
+
+
+  
+NoMethodError (undefined method `set_result1' for EvqlidResult:Class):
+  
+app/models/evqlid_result.rb:5:in `<class:EvqlidResult>'
+app/models/evqlid_result.rb:1:in `<main>'
+app/controllers/example_controller.rb:12:in `show'
+Started GET "/" for ::1 at 2022-12-10 13:56:07 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2737)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 24446)
+Completed 200 OK in 33ms (Views: 31.8ms | Allocations: 25390)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 13:56:10 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"19", "num2"=>"1", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (1.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE (19) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.8ms | Allocations: 4904)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/models/evqlid_result.rb:8:in `decoded_result1'
+app/controllers/example_controller.rb:13:in `show'
+Started GET "/" for ::1 at 2022-12-10 13:56:54 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2676)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 24385)
+Completed 200 OK in 31ms (Views: 30.6ms | Allocations: 25329)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 13:57:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"91", "num2"=>"13", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.7ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE (91) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+Completed 406 Not Acceptable in 36ms (ActiveRecord: 4.0ms | Allocations: 5691)
+
+
+  
+ActionController::UnknownFormat (ExampleController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+  
+actionpack (7.0.4) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-12-10 13:57:41 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 10.5ms | Allocations: 3126)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 6915)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 8058)
+
+
+Started POST "/example/show" for ::1 at 2022-12-10 13:57:46 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "num1"=>"18", "num2"=>"15", "commit"=>"Посчитать"}
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE (18) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 9.3ms | Allocations: 1826)
+  Rendered example/show.turbo_stream.erb (Duration: 47.8ms | Allocations: 8809)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.5ms | Allocations: 10304)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8: <div>
+     9: <table>
+    10: <tr><th>Итерация</th><th>Результат</th><th>Результат</th></tr>
+    11: <% @res.each do |val, res1, res2| %>
+    12:     <tr>
+    13:     <td><%= val %></td>
+    14:     <td><%= res1 %></td>
+  
+app/views/example/_result.html.erb:11
+app/views/example/show.turbo_stream.erb:1
