@@ -5,7 +5,7 @@ class EvqlidResult < ApplicationRecord
   validates :num1, :num2, :nod, :nok, presence: true
   validate :unique_pair, on: :create
 
-  has_many :evqlid_iterations
+  has_many :evqlid_iteration
 
   def unique_pair
     errors.add(:already_calculated, 'посчитано') unless
@@ -45,16 +45,15 @@ class EvqlidResult < ApplicationRecord
 
   private
 
-
   def self.generate_result(num1, num2)
     iterations, nod, nok = calculating(num1, num2)
 
-    res = self.create(num1: num2, num2: num2, nod: nod, nok: nok)
+    res = create(num1: num2, num2: num2, nod: nod, nok: nok)
 
     iter_objects = iterations.reduce([]) do |sum, iteration|
       iter_res, index = iteration
       sum.push(EvqlidIteration.create(evqlid_result_id: res.id, iteration: index,
-                                 num1: iter_res[0], num2: iter_res[1]))
+                                      num1: iter_res[0], num2: iter_res[1]))
     end
 
     [iter_objects, nod, nok]
@@ -89,13 +88,12 @@ class EvqlidResult < ApplicationRecord
     params[:num1].to_i * params[:num2].to_i / @k_k
   end
 
-
   def self.go_to_json(res_iterations, nod, nok)
     ActiveSupport::JSON.encode({
-      iterations: res_iterations,
-      nod: nod,
-      nok: nok
-    })
+                                 iteration: res_iterations,
+                                 nod: nod,
+                                 nok: nok
+                               })
   end
 
   private_class_method :generate_result, :calculating,
