@@ -8,11 +8,11 @@
 <div>
 <table>
 <tr><th>Итерация</th><th>Результат</th><th>Результат</th></tr>
-<% @res.each do |val, res1, res2| %>
+<% @result_fin.each do |it| %>
     <tr>
-    <td><%= val %></td>
-    <td><%= res1 %></td>
-    <td><%= res2 %></td>
+    <td><%= @i+=1 %></td>
+    <td><%= it[0] %></td>
+    <td><%= it[1] %></td>
     <% end %>
     </tr>
 </table>
@@ -20,12 +20,12 @@
 
 
 
-<p><h3 id = 'NOD' ><%= "Наибольший общий делитель: #{@nod}\n" %></h3></p>
+<p><h3 id = 'NOD' ><%= "Наибольший общий делитель: #{@result_fin.last.max}\n" %></h3></p>
 
-<p><h3 id = 'NOK'>Наименьшее общее кратное: <%= @nok %></h3></p>
+<p><h3 id = 'NOK'>Наименьшее общее кратное: <%= @summ/@result_fin.last.max %></h3></p>
 
 
 
  <%= form_with url: "/", method: :get do |form| %>
-    <%= form.submit 'Перейти на главную' %>
+    <%= form.submit 'Очистить' %>
     <% end %>

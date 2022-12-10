@@ -7239,3 +7239,851 @@ Processing by ExampleController#input as TURBO_STREAM
   Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2934)
 Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 3222)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "evqlid_results"[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "evqlid_results" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "num1" integer, "num2" integer, "nod" integer, "nok" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "result1" varchar, "result2" varchar)[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_evqlid_results_on_num1_and_num2" ON "evqlid_results" ("num1", "num2")[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221209082737)[0m
+  [1m[35m (5.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221209081149),
+(20221209081617);
+
+[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-12-10 17:23:09.368347"], ["updated_at", "2022-12-10 17:23:09.368347"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "4e7cf44cd66a430f8ba46721e71d1723e40103d3"], ["created_at", "2022-12-10 17:23:09.376852"], ["updated_at", "2022-12-10 17:23:09.376852"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-10 20:23:09 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2322)
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 50860)
+Completed 200 OK in 56ms (Views: 51.4ms | ActiveRecord: 0.0ms | Allocations: 56746)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:23:09 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 2], ["num2", 3], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.5ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:23:09.602032"], ["updated_at", "2022-12-10 17:23:09.602032"], ["result1", "[[1,2],[1,1],[0,1]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 1.4ms | Allocations: 602)
+  Rendered example/show.turbo_stream.erb (Duration: 3.5ms | Allocations: 1458)
+Completed 200 OK in 47ms (Views: 4.6ms | ActiveRecord: 2.0ms | Allocations: 23613)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:23:09 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:23:09 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:23:09 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:23:09 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:23:09 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:23:09 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"17", "num2"=>"68"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 17], ["num2", 68], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 68], ["num2", 17], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 68], ["num2", 17], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 68], ["num2", 17], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:23:09.653127"], ["updated_at", "2022-12-10 17:23:09.653127"], ["result1", "[[51,17],[34,17],[17,17],[0,17]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 0.3ms | Allocations: 204)
+  Rendered example/show.turbo_stream.erb (Duration: 0.5ms | Allocations: 356)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms | Allocations: 1881)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-10 20:31:48 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 44.3ms | Allocations: 50930)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.0ms | Allocations: 56814)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:31:48.843637"], ["updated_at", "2022-12-10 17:31:48.843637"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:31:48 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 2], ["num2", 3], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:31:48.855078"], ["updated_at", "2022-12-10 17:31:48.855078"], ["result1", "[[1,2],[1,1],[0,1]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 0.7ms | Allocations: 602)
+  Rendered example/show.turbo_stream.erb (Duration: 2.0ms | Allocations: 1468)
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 3355)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:31:48 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:31:48 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:31:48 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:31:48 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:31:48 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-10 20:32:22 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 50813)
+Completed 200 OK in 56ms (Views: 50.7ms | ActiveRecord: 0.0ms | Allocations: 56698)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:32:22.950242"], ["updated_at", "2022-12-10 17:32:22.950242"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:32:22 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 2], ["num2", 3], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:32:22.962057"], ["updated_at", "2022-12-10 17:32:22.962057"], ["result1", "[[1,2],[1,1],[0,1]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 0.7ms | Allocations: 602)
+  Rendered example/show.turbo_stream.erb (Duration: 1.8ms | Allocations: 1468)
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 3355)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:32:22 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:32:22 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:32:22 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:32:22 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:32:22 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-10 20:47:45 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | Allocations: 51038)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 0.0ms | Allocations: 56922)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.3ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:47:46.097597"], ["updated_at", "2022-12-10 17:47:46.097597"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:47:46.101922"], ["updated_at", "2022-12-10 17:47:46.101922"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 78], ["num2", 36], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.1ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 78], ["num2", 36], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:47:46.103358"], ["updated_at", "2022-12-10 17:47:46.103358"], ["result1", "[[42,36],[6,36],[6,30],[6,24],[6,18],[6,12],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:47:46 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 2], ["num2", 3], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:47:46.124062"], ["updated_at", "2022-12-10 17:47:46.124062"], ["result1", "[[1,2],[1,1],[0,1]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 1.2ms | Allocations: 601)
+  Rendered example/show.turbo_stream.erb (Duration: 2.5ms | Allocations: 1467)
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 3351)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:47:46 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:47:46 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:47:46 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:47:46 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:47:46 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-10 20:49:54 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 44.6ms | Allocations: 51188)
+Completed 200 OK in 51ms (Views: 46.6ms | ActiveRecord: 0.0ms | Allocations: 57072)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.4ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:49:54.871453"], ["updated_at", "2022-12-10 17:49:54.871453"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:49:54.877155"], ["updated_at", "2022-12-10 17:49:54.877155"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 78], ["num2", 36], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.1ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 78], ["num2", 36], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:49:54.878999"], ["updated_at", "2022-12-10 17:49:54.878999"], ["result1", "[[42,36],[6,36],[6,30],[6,24],[6,18],[6,12],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:49:54 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 2], ["num2", 3], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:49:54.894191"], ["updated_at", "2022-12-10 17:49:54.894191"], ["result1", "[[1,2],[1,1],[0,1]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 12.6ms | Allocations: 601)
+  Rendered example/show.turbo_stream.erb (Duration: 13.9ms | Allocations: 1467)
+Completed 200 OK in 19ms (Views: 14.6ms | ActiveRecord: 0.6ms | Allocations: 3351)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:49:54 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:49:54 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:49:54 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:49:54 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:49:54 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-10 20:52:11 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 50595)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.0ms | Allocations: 56479)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:52:11.383740"], ["updated_at", "2022-12-10 17:52:11.383740"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:52:11.387616"], ["updated_at", "2022-12-10 17:52:11.387616"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 78], ["num2", 36], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:52:11 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 2], ["num2", 3], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 17:52:11.401919"], ["updated_at", "2022-12-10 17:52:11.401919"], ["result1", "[[1,2],[1,1],[0,1]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 0.8ms | Allocations: 603)
+  Rendered example/show.turbo_stream.erb (Duration: 2.3ms | Allocations: 1471)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.4ms | Allocations: 3355)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:52:11 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:52:11 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:52:11 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:52:11 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 20:52:11 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-10 21:28:31 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 50853)
+Completed 200 OK in 54ms (Views: 49.1ms | ActiveRecord: 0.0ms | Allocations: 56738)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 18:28:31.219176"], ["updated_at", "2022-12-10 18:28:31.219176"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 18:28:31.222667"], ["updated_at", "2022-12-10 18:28:31.222667"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 78], ["num2", 36], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:28:31 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 2], ["num2", 3], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 18:28:31.236640"], ["updated_at", "2022-12-10 18:28:31.236640"], ["result1", "[[1,2],[1,1],[0,1]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 1.0ms | Allocations: 602)
+  Rendered example/show.turbo_stream.erb (Duration: 2.2ms | Allocations: 1468)
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 3352)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:28:31 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:28:31 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:28:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:28:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:28:31 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.3ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 5], ["num2", 15], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 18:28:31.262386"], ["updated_at", "2022-12-10 18:28:31.262386"], ["result1", "[[5,10],[5,5],[0,5]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-10 21:53:26 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 50777)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 0.0ms | Allocations: 56661)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 18:53:26.610309"], ["updated_at", "2022-12-10 18:53:26.610309"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 18:53:26.614475"], ["updated_at", "2022-12-10 18:53:26.614475"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 78], ["num2", 36], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:53:26 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 2], ["num2", 3], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.3ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 18:53:26.623405"], ["updated_at", "2022-12-10 18:53:26.623405"], ["result1", "[[1,2],[1,1],[0,1]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 0.8ms | Allocations: 602)
+  Rendered example/show.turbo_stream.erb (Duration: 2.1ms | Allocations: 1468)
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 0.6ms | Allocations: 3352)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:53:26 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:53:26 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:53:26 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:53:26 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 21:53:26 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 5], ["num2", 15], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 18:53:26.666944"], ["updated_at", "2022-12-10 18:53:26.666944"], ["result1", "[[5,10],[5,5],[0,5]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (13.9ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-10 22:00:01 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 50908)
+Completed 200 OK in 51ms (Views: 47.1ms | ActiveRecord: 0.0ms | Allocations: 56792)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 19:00:01.556816"], ["updated_at", "2022-12-10 19:00:01.556816"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.1ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 19:00:01.560470"], ["updated_at", "2022-12-10 19:00:01.560470"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 78], ["num2", 36], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.1ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 78], ["num2", 36], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 19:00:01.562009"], ["updated_at", "2022-12-10 19:00:01.562009"], ["result1", "[[42,36],[6,36],[6,30],[6,24],[6,18],[6,12],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 78], ["num2", 36], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:00:01 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 2], ["num2", 3], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 19:00:01.590644"], ["updated_at", "2022-12-10 19:00:01.590644"], ["result1", "[[1,2],[1,1],[0,1]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 0.8ms | Allocations: 602)
+  Rendered example/show.turbo_stream.erb (Duration: 2.3ms | Allocations: 1470)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 3355)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:00:01 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:00:01 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:00:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:00:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:00:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 5], ["num2", 15], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 19:00:01.622605"], ["updated_at", "2022-12-10 19:00:01.622605"], ["result1", "[[5,10],[5,5],[0,5]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-10 22:15:26 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2321)
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 50851)
+Completed 200 OK in 51ms (Views: 46.0ms | ActiveRecord: 0.0ms | Allocations: 56736)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 19:15:26.380686"], ["updated_at", "2022-12-10 19:15:26.380686"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 36], ["num2", 78], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 19:15:26.384410"], ["updated_at", "2022-12-10 19:15:26.384410"], ["result1", "[[36,42],[36,6],[30,6],[24,6],[18,6],[12,6],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 78], ["num2", 36], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.1ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 78], ["num2", 36], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 19:15:26.385802"], ["updated_at", "2022-12-10 19:15:26.385802"], ["result1", "[[42,36],[6,36],[6,30],[6,24],[6,18],[6,12],[6,6],[0,6]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 36], ["num2", 78], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 78], ["num2", 36], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:15:26 +0300
+Processing by ExampleController#show as JS
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 2], ["num2", 3], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 19:15:26.394861"], ["updated_at", "2022-12-10 19:15:26.394861"], ["result1", "[[1,2],[1,1],[0,1]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 1.1ms | Allocations: 602)
+  Rendered example/show.turbo_stream.erb (Duration: 2.4ms | Allocations: 1468)
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 0.6ms | Allocations: 3352)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:15:26 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:15:26 +0300
+Processing by ExampleController#show as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:15:26 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"67ff"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:15:26 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"d5"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/example/show" for 127.0.0.1 at 2022-12-10 22:15:26 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"n"=>"help"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "created_at", "updated_at", "result1", "result2") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 5], ["num2", 15], ["nod", nil], ["nok", nil], ["created_at", "2022-12-10 19:15:26.421905"], ["updated_at", "2022-12-10 19:15:26.421905"], ["result1", "[[5,10],[5,5],[0,5]]"], ["result2", nil]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m

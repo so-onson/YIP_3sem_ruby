@@ -7,16 +7,16 @@ class ExampleController < ApplicationController
   def input; end
 
   def show
-    # @res = calc_nod(params[:num1].to_i, params[:num2].to_i)
-    # @summ = calc_sum
-    if (result = EvqlidResult.find_by(@num1 = params[:num1], @num2 = params[:num2]))
-      @res = result.decoded_result1
+    @i = 0
+    @summ = calc_sum
+    if result1 = (EvqlidResult.find_by(num1: @input1 = params[:num1], num2: @input2 = params[:num2]) || EvqlidResult.find_by(num1: @input1 = params[:num2], num2: @input2 = params[:num1]))
+      @result_fin = result1.decoded_res
     else
-      result = EvqlidResult.new(num1: @num1, num2: @num2)
-      if result.save
-        @res = result.decoded_result1
+      result1 = EvqlidResult.new(num1: @input1, num2: @input2)
+      if result1.save
+        @result_fin = result1.decoded_res
       else
-        redirect_to root_path, notice: result.errors.messages[:num1][0]
+        redirect_to root_path, notice: result1.errors.messages[:input][0]
       end
     end
   end
@@ -24,30 +24,17 @@ class ExampleController < ApplicationController
   def show_db
     # Задание с сериализацией
     # Для отрисовки в views/layouts/application.html.erb добавили <html data-turbo='false'>
-    render xml: EvqlidResult.all
+    # render xml: EvqlidResult.all
+    respond_to do |form|
+      form.xml { render xml: EvqlidResult.all.map(&:to_xml) }
+    end
   end
 
   private
 
-  # def calc_nod(mres, nres)
-  #   iter = 0
-  #   @result = Enumerator.new do |yielder|
-  #     loop do
-  #       yielder << if mres < nres
-  #                    [iter += 1, mres, nres -= mres]
-  #                  else
-  #                    [iter += 1, mres -= nres, nres]
-  #                  end
-  #     end
-  #   end.take_while { |_, first, second| [first, second].min != 0 }
-  #   @k_k = [mres, nres].max
-  # end
-
-  # def calc_sum
-  #   params[:num1].to_i * params[:num2].to_i / @k_k
-  # end
-
- 
+  def calc_sum
+    params[:num1].to_i * params[:num2].to_i
+  end
 
   def check
     return redirect_to root_path unless check_nil(params[:num1]).nil?
@@ -65,5 +52,25 @@ class ExampleController < ApplicationController
     flash[:error] = 'Error: Input negative' if params[:num1].match(/^-\d+$/) || params[:num2].match(/^-\d+$/)
 
     flash[:error] = 'Error: Input words' if params[:num1].match(/\D+/) || params[:num2].match(/\D+/)
+  end
+
+
+  def to_xml
+    Nokogiri::XML::Builder.new do |xml|
+      xml.result1 do
+        xml.id id
+        xml.nod nod
+        xml.nok nok
+        xml.iterations do
+          evqlid_iterations.all.each do |iter|
+            xml.iter do
+              xml.id iter.index
+              xml.num1 iter.num1
+              xml.num2 iter.num2
+            end
+          end
+        end
+      end
+    end.doc.root.to_xml
   end
 end

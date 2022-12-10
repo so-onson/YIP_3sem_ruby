@@ -10,6 +10,33 @@ RSpec.describe 'Examples', type: :request do
     end
   end
 
+  # Проверка на успешное добавление и поиск элемента в БД
+  describe 'Add and search db(check adding to db)' do
+    num1 = 36
+    num2 = 78
+    it 'Adds correctly' do
+      expect(EvqlidResult.create(num1: num1, num2: num2)).not_to be_nil
+      expect(EvqlidResult.find_by(num1: num1, num2: num2)).not_to be_nil
+    end
+  end
+
+    # Проверка на уникальность созданных полей
+  # При добавлении через форму проверяет в контроллере, в других случаях смотрит на
+  #  validates_uniqueness_of :input, :twins в models/twins.rb
+
+  # Проверка на различный результат при различных входных данных
+  describe 'WE have different results when enter different input values' do
+    it '1==2' do
+      num1 = 36
+      num2 = 78
+      EvqlidResult.create(num1: num1, num2: num2)
+      EvqlidResult.create(num1: num2, num2: num1)
+      t1 = EvqlidResult.find_by(num1: num1, num2: num2)
+      t2 = EvqlidResult.find_by(num1: num2, num2: num1)
+      expect(t1).not_to eq(t2)
+    end
+  end
+
   describe 'GET /show' do
     subject { post example_show_path, params: { num1: 2, num2: 3 }, xhr: true }
     it 'returns http success' do
@@ -43,39 +70,12 @@ RSpec.describe 'Examples', type: :request do
         expect(response).to have_http_status(302)
       end
     end
-
-    context 'should return body contains' do
-      subject { post example_show_path, params: { num1: 17, num2: 68 }, xhr: true }
-
-      it 'input 17, 68' do
-        subject
-        expect(assigns(:result).flatten).to eq([1,	17, 51, 2, 17, 34, 3, 17, 17])
-      end
-    end
   end
+end
 
-  # describe 'Capybara test case', type: :feature do
-  #   context 'Capybara test case' do
-
-  #       it 'header' do
-  #         visit root_path
-  #         expect(page). to have_content 'Example'
-  #       end
-  #     end
-  #   end
-
-  # describe 'Selenium WebDriver open root_path and', type: :feature do
-  #   before(:each) do
-  #     @driver = Selenium::WebDriver.for :firefox
-  #     @base_url = 'https://google.com'
-  #     @accept_next_alert = true
-  #     @driver.manage.timeouts.implicit_wait = 30
-  #     @verification_errors = []
-  #   end
-
-  #   after(:each) do
-  #     @driver.quit
-  #     expect(@verification_errors.size).to be_zero
-  #   end
-  # end
+RSpec.describe 'Test model', type: :model do
+  it 'another checks uniqueness_of field' do
+    EvqlidResult.create!(num1: "5", num2: "15")
+    expect { EvqlidResult.create!(num1: "5", num2: "15") }.to raise_error ActiveRecord::RecordInvalid
+  end
 end
