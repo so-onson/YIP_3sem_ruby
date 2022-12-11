@@ -35,4 +35,10 @@ RSpec.describe EvqlidResult, type: :model do
     record = EvqlidResult.create(num1: 3, num2: 2)
     expect(record.valid?).to eq false
   end
+
+  it 'creates corresponding steps' do
+    EvqlidResult.get(1, 2)
+    res = EvqlidResult.find_by(num1: 1, num2: 2)
+    expect(res.evqlid_iteration.many?).to eq true
+  end
 end
