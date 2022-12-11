@@ -7,13 +7,10 @@ class ExampleController < ApplicationController
   def input; end
 
   def show
-    # @res = calc_nod(params[:num1].to_i, params[:num2].to_i)
-    # @summ = calc_sum
-
     @first_num = params[:num1].to_i
     @second_num = params[:num2].to_i
 
-    @iterations, @nod, @nok = ActiveSupport::JSON.decode(EvqlidResult.get_json(@first_num, @second_num)).values 
+    @iterations, @nod, @nok = ActiveSupport::JSON.decode(EvqlidResult.get_json(@first_num, @second_num)).values
   end
 
   def show_db
@@ -21,11 +18,6 @@ class ExampleController < ApplicationController
       form.xml { render xml: EvqlidResult.all.map(&:to_xml) }
     end
   end
-
-
-
-
-
 
   private
 

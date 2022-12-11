@@ -5,7 +5,7 @@ class EvqlidResult < ApplicationRecord
   validates :num1, :num2, :nod, :nok, presence: true
   validate :unique_pair, on: :create
 
-  has_many :evqlid_iteration
+  has_many :evqlid_iterations
 
   def unique_pair
     errors.add(:already_calculated, 'посчитано') unless
@@ -13,7 +13,7 @@ class EvqlidResult < ApplicationRecord
   end
 
   def self.get_json(num1, num2)
-    go_to_json(*self.get(num1, num2))
+    go_to_json(*get(num1, num2))
   end
 
   def self.get(num1, num2)
@@ -71,21 +71,15 @@ class EvqlidResult < ApplicationRecord
   end
 
   def self.calc_nod(mres, nres)
-    iter = 0
     Enumerator.new do |yielder|
       loop do
         yielder << if mres < nres
-                     [iter += 1, mres, nres -= mres]
+                     [mres, nres -= mres]
                    else
-                     [iter += 1, mres -= nres, nres]
+                     [mres -= nres, nres]
                    end
       end
     end
-    # @k_k = [mres, nres].max
-  end
-
-  def calc_sum
-    params[:num1].to_i * params[:num2].to_i / @k_k
   end
 
   def self.go_to_json(res_iterations, nod, nok)
