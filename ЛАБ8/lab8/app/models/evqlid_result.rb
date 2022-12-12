@@ -33,7 +33,7 @@ class EvqlidResult < ApplicationRecord
         xml.iterations do
           evqlid_iterations.all.each do |iter|
             xml.iter do
-              xml.id iter.index
+              xml.id iter.id
               xml.num1 iter.num1
               xml.num2 iter.num2
             end

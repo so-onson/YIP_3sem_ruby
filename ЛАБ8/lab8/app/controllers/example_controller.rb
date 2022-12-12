@@ -14,8 +14,15 @@ class ExampleController < ApplicationController
   end
 
   def show_db
-    respond_to do |form|
-      form.xml { render xml: EvqlidResult.all.map(&:to_xml) }
+    # respond_to do |form|
+    #   form.xml { render xml: EvqlidResult.all.map(&:to_xml) }
+    # end
+
+    @ev_res = EvqlidResult.all.map(&:to_xml)
+
+    respond_to do |format|
+      format.html
+      format.xml { render :xml => @ev_res }
     end
   end
 
