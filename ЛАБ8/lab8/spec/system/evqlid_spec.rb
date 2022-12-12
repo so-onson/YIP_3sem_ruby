@@ -1,39 +1,51 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 
-RSpec.describe 'Static content', type: :system do
-  # автоматически создаем значения x и y
-  let(:num1_value) { Faker::Number.number(digits: 1) }
-  let(:num2_value) { Faker::Number.number(digits: 1) }
+RSpec.describe 'application', type: :system do
 
-  # сценарий успешного складывания x + y
-  scenario 'calculte' do
-    visit root_path # переходим на страницы ввода
+  it 'returns valid values after registration and login' do
+    visit root_path
+    click_button 'Регистрация'
+    expect(page).to have_current_path new_user_path
 
-    fill_in :num1, with: num1_value # заполняем поле с name="x"
-    fill_in :num2, with: num2_value # заполняем поле с name="y"
+    fill_in :user_name, with: 'Megachell'
+    fill_in :user_password, with: 'qwerty12345'
+    fill_in :user_password_confirmation, with: 'qwerty12345'
+    click_button 'Create User'
+    expect(page).to have_current_path root_path
 
-    # choose('operation_+') # выбираем radio_button с id="operation_+"
-    find('#calculate-btn').click # нажимаем на кнопку с id="calculate_btn"
+    fill_in :name, with: 'Megachell'
+    fill_in :password, with: 'qwerty12345'
+    click_button 'Вход'
+    expect(page).to have_current_path example_input_path
 
-    # ожидаем найти в контенере вывода правильное содержимое
-    expect(find('#NOD')).to have_text("Наибольший общий делитель: #{@k_k}")
-    expect(find('#NOK')).to have_text("Наименьшее общее кратное: #{@summ}")
+    fill_in :num1, with: 24
+    fill_in :num2, with: 36
+    click_button 'Посчитать'
+
+    expect(find('#NOD')).to have_content '12'
+    expect(find('#NOK')).to have_content '72'
   end
 
+  it "doesn't allow non-logged in users to calculate values" do
+    visit example_input_path
+    expect(page).to have_current_path root_path
+  end
 
-  # сценарий неправильного ввода формы
-  scenario 'do not fill any values in form and click submit' do
-    visit root_path # переходим на страницу ввода
-    fill_in :num1, with: '' # заполняем поле с name="x"
-    fill_in :num2, with: '' # заполняем поле с name="y"
+  it "doesn't allow uncorecct password" do 
+    visit root_path
+    click_button 'Регистрация'
+    expect(page).to have_current_path new_user_path
 
+    fill_in :user_name, with: 'Megachell'
+    fill_in :user_password, with: 'qwerty12345'
+    fill_in :user_password_confirmation, with: 'qwerty12345'
+    click_button 'Create User'
+    expect(page).to have_current_path root_path
 
-
-    find('#calculate-btn').click # нажимаем на кнопку с id="calculate_btn"
-
-    # ожидаем найти в контенере вывода содержимое с выводом всех ошибок модели
-      expect(find('.error')).to have_text('Incorrect input: empty params')
+    fill_in :name, with: 'Megachell'
+    fill_in :password, with: 'qwerty'
+    click_button 'Вход'
+    expect(page).to have_current_path root_path
+    expect(find('#error')).to have_text('Неправильный пароль или логин')
   end
 end

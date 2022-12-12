@@ -2,6 +2,7 @@
 
 # class main
 class ExampleController < ApplicationController
+  before_action :require_login
   before_action :check, only: [:show]
 
   def input; end
@@ -47,5 +48,9 @@ class ExampleController < ApplicationController
     flash[:error] = 'Error: Input negative' if params[:num1].match(/^-\d+$/) || params[:num2].match(/^-\d+$/)
 
     flash[:error] = 'Error: Input words' if params[:num1].match(/\D+/) || params[:num2].match(/\D+/)
+  end
+
+  def require_login
+    redirect_to root_path if session[:current_user_id].nil?
   end
 end

@@ -6280,3 +6280,88 @@ Migrating to AddUniqness (20221205160829)
   [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-12-12 18:29:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 9.2ms | Allocations: 5641)
+  Rendered layout layouts/application.html.erb (Duration: 76.0ms | Allocations: 56653)
+Completed 200 OK in 86ms (Views: 79.8ms | ActiveRecord: 0.0ms | Allocations: 62624)
+
+
+Started GET "/session/authorize?name=user1&password=[FILTERED]&commit=%D0%92%D1%85%D0%BE%D0%B4" for ::1 at 2022-12-12 18:29:12 +0300
+Processing by SessionController#authorize as HTML
+  Parameters: {"name"=>"user1", "password"=>"[FILTERED]", "commit"=>"Вход"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "user1"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/example/input
+Completed 302 Found in 258ms (ActiveRecord: 1.7ms | Allocations: 19253)
+
+
+Started GET "/example/input" for ::1 at 2022-12-12 18:29:12 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 3173)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 6742)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 7831)
+
+
+Started GET "/session/logout" for ::1 at 2022-12-12 18:53:37 +0300
+Processing by SessionController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (Allocations: 353)
+
+
+Started GET "/" for ::1 at 2022-12-12 18:53:37 +0300
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2425)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 5815)
+Completed 200 OK in 22ms (Views: 20.9ms | Allocations: 6161)
+
+
+Started GET "/example/input" for ::1 at 2022-12-12 18:53:48 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2455)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 5830)
+Completed 200 OK in 26ms (Views: 24.5ms | Allocations: 6143)
+
+
+Started GET "/session/logout" for ::1 at 2022-12-12 19:02:00 +0300
+Processing by SessionController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 466)
+
+
+Started GET "/" for ::1 at 2022-12-12 19:02:00 +0300
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2576)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 24336)
+Completed 200 OK in 42ms (Views: 41.0ms | Allocations: 25181)
+
+
+Started GET "/session/authorize?name=&password=&commit=%D0%92%D1%85%D0%BE%D0%B4" for ::1 at 2022-12-12 19:02:02 +0300
+Processing by SessionController#authorize as HTML
+  Parameters: {"name"=>"", "password"=>"[FILTERED]", "commit"=>"Вход"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 1.6ms | Allocations: 2405)
+
+
+Started GET "/" for ::1 at 2022-12-12 19:02:02 +0300
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2477)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 5968)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 6326)
+
+

@@ -3,7 +3,7 @@
 
 <% flash.each do |type, msg|%>
 <% unless type == "notice" %>
-<p><%= msg %></p>
+<p id = 'error'><%= msg %></p>
 <% end %>
 <% end %>
 
