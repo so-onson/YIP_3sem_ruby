@@ -12,3 +12,9 @@
 <% unless flash[:error].nil?%>
     <div> <%= flash[:error] %> </div>
 <% end %>
+
+
+<br/>
+<%= form_with url: "example/show_db", method: :get do |form| %>
+  <%= form.submit "Показать БД" %>
+<% end %>

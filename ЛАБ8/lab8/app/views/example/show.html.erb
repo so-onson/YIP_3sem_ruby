@@ -1,23 +1,21 @@
 <h1>Example#show</h1>
 <h3> Вы ввели <%= params[:num1].to_i %> и <%= params[:num2].to_i %></h3>
 
-
 <div>
 <table>
-<tr><th>Итерация</th><th>Результат</th></tr>
-<% @it_res.each_with_index do |res, val| %>
+<tr><th>Итерация</th><th>Результат</th><th>Результат</th></tr>
+<% @result_fin.each do |it| %>
     <tr>
-    <td><%= val+1 %></td>
-    <td><%= res %></td>
+    <td><%= @i+=1 %></td>
+    <td><%= it[0] %></td>
+    <td><%= it[1] %></td>
     <% end %>
     </tr>
 </table>
 </div>
 
+<p><h3 id = 'NOD' ><%= "Наибольший общий делитель: #{@result_fin.last.max}\n" %></h3></p>
 
-
-<p><h3><%= "Наибольший общий делитель: #{@res}\n" %></h3></p>
-
-<p><h3>Наименьшее общее кратное: <%= @summ %></h3></p>
+<p><h3 id = 'NOK'>Наименьшее общее кратное: <%= @summ/@result_fin.last.max %></h3></p>
 
 <%= button_to 'Перейти на главную', root_path, method: :get %>

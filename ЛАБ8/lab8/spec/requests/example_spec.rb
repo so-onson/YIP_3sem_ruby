@@ -46,7 +46,7 @@ RSpec.describe 'Examples', type: :request do
       it 'input 17, 68' do
         get '/example/show', params: {num1:17, num2:68}
         html = Nokogiri::HTML(response.body)
-        expects = [1,	51, 2,	34, 3, 17, 4,	0] 
+        expects = [1,	51, 17,	2, 34, 17, 3,	17, 17, 4, 0, 17] 
         expects.each_with_index do |el, idx|
           p div = html.search('td')[idx.to_i].text.to_i
           expect(div).to eq(el)
@@ -54,4 +54,14 @@ RSpec.describe 'Examples', type: :request do
       end
     end
   end
+
+    # Проверка на успешное добавление и поиск элемента в БД
+    describe 'Add and search db(check adding to db)' do
+      num1 = 36
+      num2 = 78
+      it 'Adds correctly' do
+        expect(EvqlidResult.create(num1: num1, num2: num2)).not_to be_nil
+        expect(EvqlidResult.find_by(num1: num1, num2: num2)).not_to be_nil
+      end
+    end
 end
