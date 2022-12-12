@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'faker'
 
 RSpec.describe EvqlidResult, type: :model do
   # pending "add some examples to (or delete) #{__FILE__}"
@@ -38,8 +39,8 @@ RSpec.describe EvqlidResult, type: :model do
   # Проверка на различный результат при различных входных данных
   describe 'WE have different results when enter different input values' do
     it "validates uniqueness" do
-      num1 = 36
-      num2 = 78
+      num1 = Faker::Number.number(digits: 1)
+      num2 = Faker::Number.number(digits: 1)
       EvqlidResult.create(num1: num1, num2: num2)
       expect(EvqlidResult.create(num1: num1, num2: num2).valid?).to eq false
     end
