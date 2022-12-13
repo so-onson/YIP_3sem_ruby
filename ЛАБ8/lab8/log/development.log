@@ -6365,3 +6365,95 @@ Processing by SessionController#login as HTML
 Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 6326)
 
 
+Started GET "/" for ::1 at 2022-12-13 11:47:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 34.2ms | Allocations: 5638)
+  Rendered layout layouts/application.html.erb (Duration: 223.8ms | Allocations: 56203)
+Completed 200 OK in 251ms (Views: 233.1ms | ActiveRecord: 0.0ms | Allocations: 62173)
+
+
+Started GET "/session/authorize?name=user1&password=[FILTERED]&commit=%D0%92%D1%85%D0%BE%D0%B4" for ::1 at 2022-12-13 11:47:57 +0300
+Processing by SessionController#authorize as HTML
+  Parameters: {"name"=>"user1", "password"=>"[FILTERED]", "commit"=>"Вход"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "user1"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/example/input
+Completed 302 Found in 478ms (ActiveRecord: 4.0ms | Allocations: 19286)
+
+
+Started GET "/example/input" for ::1 at 2022-12-13 11:47:57 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 27.2ms | Allocations: 5418)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 5508)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 6784)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user_id' for #<ActionView::Base:0x0000000000bcc0>
+Did you mean?  current_page?):
+    1: <h1>Example#input</h1>
+    2: <h3>Привет <%= User.find_by(id: session[current_user_id]).name %></h3>
+    3: <%= button_to 'Выход', session_logout_path, method: :get%>
+    4: 
+    5: <%= form_with url: "/example/show" do |form| %>
+  
+app/views/example/input.html.erb:2
+Started GET "/" for ::1 at 2022-12-13 11:48:47 +0300
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 21.3ms | Allocations: 2955)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 6768)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.0ms | Allocations: 7926)
+
+
+Started GET "/session/authorize?name=user1&password=[FILTERED]&commit=%D0%92%D1%85%D0%BE%D0%B4" for ::1 at 2022-12-13 11:48:52 +0300
+Processing by SessionController#authorize as HTML
+  Parameters: {"name"=>"user1", "password"=>"[FILTERED]", "commit"=>"Вход"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "user1"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/example/input
+Completed 302 Found in 430ms (ActiveRecord: 0.3ms | Allocations: 899)
+
+
+Started GET "/example/input" for ::1 at 2022-12-13 11:48:52 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/example/input.html.erb:2
+  Rendered example/input.html.erb within layouts/application (Duration: 15.9ms | Allocations: 10784)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 14352)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.2ms | Allocations: 15457)
+
+
+Started GET "/session/logout" for ::1 at 2022-12-13 11:51:25 +0300
+Processing by SessionController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 401)
+
+
+Started GET "/" for ::1 at 2022-12-13 11:51:25 +0300
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2415)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 5805)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 6156)
+
+
+Started GET "/users/new" for ::1 at 2022-12-13 11:51:28 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.6ms | Allocations: 1950)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 2655)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 6210)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 7349)
+
+
