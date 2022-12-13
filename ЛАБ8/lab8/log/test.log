@@ -5608,3 +5608,99 @@ Completed 200 OK in 55ms (Views: 36.3ms | ActiveRecord: 0.7ms | Allocations: 402
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
   [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 5], ["LIMIT", 1]]
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.6ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 5], ["num2", 15], ["nod", nil], ["nok", nil], ["result", "[[5,10],[5,5],[0,5]]"], ["created_at", "2022-12-13 07:11:25.553897"], ["updated_at", "2022-12-13 07:11:25.553897"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", 1], ["nok", 6], ["result", "[[1,2],[1,1],[0,1]]"], ["created_at", "2022-12-13 07:11:25.836126"], ["updated_at", "2022-12-13 07:11:25.836126"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", 1], ["nok", 6], ["result", "[[1,2],[1,1],[0,1]]"], ["created_at", "2022-12-13 07:11:25.863956"], ["updated_at", "2022-12-13 07:11:25.863956"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" IS NULL LIMIT ?[0m  [["num1", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" IS NULL LIMIT ?[0m  [["num1", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 7], ["num2", 9], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.3ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 7], ["num2", 9], ["nod", nil], ["nok", nil], ["result", "[[7,2],[5,2],[3,2],[1,2],[1,1],[0,1]]"], ["created_at", "2022-12-13 07:11:25.875671"], ["updated_at", "2022-12-13 07:11:25.875671"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 7], ["num2", 9], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 7], ["num2", 9], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.7ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 5], ["num2", 15], ["nod", nil], ["nok", nil], ["result", "[[5,10],[5,5],[0,5]]"], ["created_at", "2022-12-13 07:18:46.061968"], ["updated_at", "2022-12-13 07:18:46.061968"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 5], ["num2", 15], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.2ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", 1], ["nok", 6], ["result", "[[1,2],[1,1],[0,1]]"], ["created_at", "2022-12-13 07:18:46.358497"], ["updated_at", "2022-12-13 07:18:46.358497"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.3ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 2], ["nod", 1], ["nok", 6], ["result", "[[1,2],[1,1],[0,1]]"], ["created_at", "2022-12-13 07:18:46.388134"], ["updated_at", "2022-12-13 07:18:46.388134"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" IS NULL LIMIT ?[0m  [["num1", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" IS NULL LIMIT ?[0m  [["num1", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 4], ["LIMIT", 1]]
+  [1m[36mEvqlidResult Create (0.3ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 3], ["num2", 4], ["nod", nil], ["nok", nil], ["result", "[[3,1],[2,1],[1,1],[0,1]]"], ["created_at", "2022-12-13 07:18:46.402640"], ["updated_at", "2022-12-13 07:18:46.402640"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mEvqlidResult Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 3], ["num2", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m

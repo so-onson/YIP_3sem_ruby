@@ -3819,3 +3819,685 @@ Processing by ExampleController#show_db as HTML
 Completed 200 OK in 115ms (Views: 78.0ms | ActiveRecord: 2.4ms | Allocations: 26704)
 
 
+Started GET "/example/show_db?commit=%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%91%D0%94" for ::1 at 2022-12-13 10:10:35 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExampleController#show_db as HTML
+  Parameters: {"commit"=>"Показать БД"}
+  [1m[36mEvqlidResult Load (0.6ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results"[0m
+  ↳ app/controllers/example_controller.rb:27:in `show_db'
+Completed 200 OK in 98ms (Views: 74.0ms | ActiveRecord: 2.5ms | Allocations: 25204)
+
+
+Started GET "/" for ::1 at 2022-12-13 10:10:39 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 32.1ms | Allocations: 4096)
+  Rendered layout layouts/application.html.erb (Duration: 241.5ms | Allocations: 54709)
+Completed 200 OK in 271ms (Views: 257.0ms | ActiveRecord: 0.0ms | Allocations: 57954)
+
+
+Started GET "/example/show?num1=17&num2=19&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:10:45 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"19", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 17], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 17], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  [1m[36mEvqlidResult Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 17], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  [1m[36mEvqlidResult Create (1.6ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 19], ["num2", 17], ["nod", nil], ["nok", nil], ["result", "[[2,17],[2,15],[2,13],[2,11],[2,9],[2,7],[2,5],[2,3],[2,1],[1,1],[0,1]]"], ["created_at", "2022-12-13 07:10:45.284739"], ["updated_at", "2022-12-13 07:10:45.284739"]]
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 590)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 4273)
+Completed 200 OK in 73ms (Views: 19.2ms | ActiveRecord: 10.0ms | Allocations: 12585)
+
+
+Started GET "/" for ::1 at 2022-12-13 10:10:47 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2383)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 5773)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 6091)
+
+
+Started GET "/example/show_db?commit=%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%91%D0%94" for ::1 at 2022-12-13 10:10:48 +0300
+Processing by ExampleController#show_db as HTML
+  Parameters: {"commit"=>"Показать БД"}
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results"[0m
+  ↳ app/controllers/example_controller.rb:27:in `show_db'
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.5ms | Allocations: 1089)
+
+
+Started GET "/" for ::1 at 2022-12-13 10:14:16 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2351)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 5739)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 6051)
+
+
+Started GET "/example/show?num1=100&num2=185&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:18:24 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"100", "num2"=>"185", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 100], ["num2", 185], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 185], ["num2", 100], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  [1m[36mEvqlidResult Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 185], ["num2", 100], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  [1m[36mEvqlidResult Create (1.1ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 185], ["num2", 100], ["nod", nil], ["nok", nil], ["result", "[[85,100],[85,15],[70,15],[55,15],[40,15],[25,15],[10,15],[10,5],[5,5],[0,5]]"], ["created_at", "2022-12-13 07:18:24.614263"], ["updated_at", "2022-12-13 07:18:24.614263"]]
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/example_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 168)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3699)
+Completed 200 OK in 61ms (Views: 15.5ms | ActiveRecord: 10.1ms | Allocations: 7689)
+
+
+Started GET "/" for ::1 at 2022-12-13 10:18:26 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2345)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 5733)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 6046)
+
+
+Started GET "/example/show_db?commit=%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%91%D0%94" for ::1 at 2022-12-13 10:18:32 +0300
+Processing by ExampleController#show_db as HTML
+  Parameters: {"commit"=>"Показать БД"}
+  [1m[36mEvqlidResult Load (0.6ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results"[0m
+  ↳ app/controllers/example_controller.rb:27:in `show_db'
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.6ms | Allocations: 1159)
+
+
+Started GET "/" for ::1 at 2022-12-13 10:26:20 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2433)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 24113)
+Completed 200 OK in 32ms (Views: 31.0ms | Allocations: 25059)
+
+
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:26:25 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/example_controller.rb:17:in `show'
+  [1m[36mEvqlidResult Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:17:in `show'
+  [1m[36mEvqlidResult Create (0.8ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 18], ["num2", 19], ["nod", nil], ["nok", nil], ["result", "[[18,1],[17,1],[16,1],[15,1],[14,1],[13,1],[12,1],[11,1],[10,1],[9,1],[8,1],[7,1],[6,1],[5,1],[4,1],[3,1],[2,1],[1,1],[0,1]]"], ["created_at", "2022-12-13 07:26:26.023193"], ["updated_at", "2022-12-13 07:26:26.023193"]]
+  ↳ app/controllers/example_controller.rb:17:in `show'
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/example_controller.rb:17:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 273)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3970)
+Completed 200 OK in 106ms (Views: 19.2ms | ActiveRecord: 10.4ms | Allocations: 12572)
+
+
+Started GET "/" for ::1 at 2022-12-13 10:26:27 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2378)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 6055)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.0ms | Allocations: 6373)
+
+
+Started GET "/" for ::1 at 2022-12-13 10:26:27 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2355)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 5743)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 6055)
+
+
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:26:50 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3760)
+Completed 200 OK in 31ms (Views: 19.4ms | ActiveRecord: 0.8ms | Allocations: 5027)
+
+
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:29:34 +0300
+  
+SyntaxError (/home/bison/Documents/BMSTU/ЯИП/ЛАБ8/lab8/app/controllers/example_controller.rb:18: else without rescue is useless
+    else
+    ^~~~
+/home/bison/Documents/BMSTU/ЯИП/ЛАБ8/lab8/app/controllers/example_controller.rb:57: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/example_controller.rb:18: else without rescue is useless
+app/controllers/example_controller.rb:57: syntax error, unexpected `end', expecting end-of-input
+app/controllers/example_controller.rb:18: else without rescue is useless
+app/controllers/example_controller.rb:57: syntax error, unexpected `end', expecting end-of-input
+app/controllers/example_controller.rb:18: else without rescue is useless
+app/controllers/example_controller.rb:57: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for ::1 at 2022-12-13 10:39:50 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2433)
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 24170)
+Completed 200 OK in 40ms (Views: 39.0ms | Allocations: 25114)
+
+
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:39:56 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (2.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE (upc = '19' OR cspc = '18') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.1ms | Allocations: 5140)
+
+
+  [1m[36mEvqlidResult Load (1.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE (upc = '19' OR cspc = '18') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  
+NoMethodError (undefined method `decoded_res' for #<EvqlidResult::ActiveRecord_Relation:0x00007fc764d31660>):
+  
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:41:26 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE (num1 = '19' OR num2 = '18') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.6ms | Allocations: 6917)
+
+
+  [1m[36mCACHE EvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE (num1 = '19' OR num2 = '18') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  
+NoMethodError (undefined method `decoded_res' for #<ActiveRecord::Relation [#<EvqlidResult id: 3, num1: 19, num2: 17, nod: nil, nok: nil, result: "[[2,17],[2,15],[2,13],[2,11],[2,9],[2,7],[2,5],[2,...", created_at: "2022-12-13 07:10:45.284739000 +0000", updated_at: "2022-12-13 07:10:45.284739000 +0000">]>):
+  
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:45:09 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE ("evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? OR "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ?) /* loading for inspect */ LIMIT ?[0m  [["num1", 19], ["num2", 18], ["num1", 18], ["num2", 19], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.0ms | Allocations: 7083)
+
+
+  [1m[36mCACHE EvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE ("evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? OR "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ?) /* loading for inspect */ LIMIT ?[0m  [["num1", 19], ["num2", 18], ["num1", 18], ["num2", 19], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `decoded_res' for #<ActiveRecord::Relation [#<EvqlidResult id: 5, num1: 18, num2: 19, nod: nil, nok: nil, result: "[[18,1],[17,1],[16,1],[15,1],[14,1],[13,1],[12,1],...", created_at: "2022-12-13 07:26:26.023193000 +0000", updated_at: "2022-12-13 07:26:26.023193000 +0000">]>):
+  
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:46:25 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE ("evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? OR "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ?) /* loading for inspect */ LIMIT ?[0m  [["num1", 19], ["num2", 18], ["num1", 18], ["num2", 19], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.9ms | Allocations: 7053)
+
+
+  [1m[36mCACHE EvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE ("evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? OR "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ?) /* loading for inspect */ LIMIT ?[0m  [["num1", 19], ["num2", 18], ["num1", 18], ["num2", 19], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `decoded_res' for #<ActiveRecord::Relation [#<EvqlidResult id: 5, num1: 18, num2: 19, nod: nil, nok: nil, result: "[[18,1],[17,1],[16,1],[15,1],[14,1],[13,1],[12,1],...", created_at: "2022-12-13 07:26:26.023193000 +0000", updated_at: "2022-12-13 07:26:26.023193000 +0000">]>):
+  
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:48:14 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? /* loading for inspect */ LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.7ms | Allocations: 4776)
+
+
+  [1m[36mCACHE EvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? /* loading for inspect */ LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `decoded_res' for #<ActiveRecord::Relation []>):
+  
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:48:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? /* loading for inspect */ LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 2956)
+
+
+  [1m[36mCACHE EvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? /* loading for inspect */ LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `decoded_res' for #<ActiveRecord::Relation []>):
+  
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:48:37 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.7ms | Allocations: 6510)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/" for ::1 at 2022-12-13 10:48:43 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2495)
+  Rendered layout layouts/application.html.erb (Duration: 81.0ms | Allocations: 24251)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.0ms | Allocations: 25098)
+
+
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:48:48 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.0ms | Allocations: 1867)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:16:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:49:18 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.7ms | Allocations: 6455)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:15:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:49:20 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.7ms | Allocations: 1790)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:15:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:49:55 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 286)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 22219)
+Completed 200 OK in 53ms (Views: 37.5ms | ActiveRecord: 1.7ms | Allocations: 28741)
+
+
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:50:20 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? /* loading for inspect */ LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.9ms | Allocations: 4831)
+
+
+  [1m[36mCACHE EvqlidResult Load (0.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? /* loading for inspect */ LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `decoded_res' for #<ActiveRecord::Relation []>):
+  
+app/controllers/example_controller.rb:14:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:51:08 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 3.5ms | Allocations: 6456)
+
+
+  
+NoMethodError (undefined method `or' for nil:NilClass):
+  
+app/controllers/example_controller.rb:12:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:51:10 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.7ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.0ms | Allocations: 1789)
+
+
+  
+NoMethodError (undefined method `or' for nil:NilClass):
+  
+app/controllers/example_controller.rb:12:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:52:27 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 286)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 22213)
+Completed 200 OK in 45ms (Views: 28.8ms | ActiveRecord: 1.9ms | Allocations: 28692)
+
+
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:53:03 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.1ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.2ms | Allocations: 6400)
+
+
+  
+NoMethodError (undefined method `or' for nil:NilClass):
+  
+app/controllers/example_controller.rb:12:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 10:57:41 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:17:in `show'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.9ms | Allocations: 4151)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:18:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:01:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.9ms | Allocations: 6455)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:21:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:01:54 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.8ms | Allocations: 1789)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:21:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:01:55 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms | Allocations: 1787)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:21:in `show'
+Started GET "/" for ::1 at 2022-12-13 11:02:23 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2486)
+  Rendered layout layouts/application.html.erb (Duration: 68.9ms | Allocations: 24223)
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.0ms | Allocations: 25068)
+
+
+Started GET "/example/show?num1=17&num2=14&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:02:28 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"17", "num2"=>"14", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.6ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 17], ["num2", 14], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 14], ["num2", 17], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/example_controller.rb:25:in `show'
+  [1m[36mEvqlidResult Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 14], ["num2", 17], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:25:in `show'
+  [1m[36mEvqlidResult Create (0.8ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 14], ["num2", 17], ["nod", nil], ["nok", nil], ["result", "[[14,3],[11,3],[8,3],[5,3],[2,3],[2,1],[1,1],[0,1]]"], ["created_at", "2022-12-13 08:02:28.776626"], ["updated_at", "2022-12-13 08:02:28.776626"]]
+  ↳ app/controllers/example_controller.rb:25:in `show'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/example_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3720)
+Completed 200 OK in 61ms (Views: 19.7ms | ActiveRecord: 9.3ms | Allocations: 8059)
+
+
+Started GET "/" for ::1 at 2022-12-13 11:02:32 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2343)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 5731)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 6043)
+
+
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:02:36 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms | Allocations: 1805)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:21:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:06:15 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.7ms | Allocations: 6456)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:21:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:06:48 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.7ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 4.9ms | Allocations: 6394)
+
+
+  
+NoMethodError (undefined method `decoded_res' for nil:NilClass):
+  
+app/controllers/example_controller.rb:21:in `show'
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:07:42 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 286)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 22209)
+Completed 200 OK in 46ms (Views: 29.5ms | ActiveRecord: 1.8ms | Allocations: 28687)
+
+
+Started GET "/example/show?num1=19&num2=18&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:08:53 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"18", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 18], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.2ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 18], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 286)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 22119)
+Completed 200 OK in 44ms (Views: 27.7ms | ActiveRecord: 2.0ms | Allocations: 28573)
+
+
+Started GET "/" for ::1 at 2022-12-13 11:08:56 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2400)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 5789)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 6118)
+
+
+Started GET "/example/show?num1=14&num2=19&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:09:01 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"14", "num2"=>"19", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 14], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 14], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/example_controller.rb:18:in `show'
+  [1m[36mEvqlidResult Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 14], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:18:in `show'
+  [1m[36mEvqlidResult Create (0.8ms)[0m  [1m[32mINSERT INTO "evqlid_results" ("num1", "num2", "nod", "nok", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["num1", 19], ["num2", 14], ["nod", nil], ["nok", nil], ["result", "[[5,14],[5,9],[5,4],[1,4],[1,3],[1,2],[1,1],[0,1]]"], ["created_at", "2022-12-13 08:09:01.688551"], ["updated_at", "2022-12-13 08:09:01.688551"]]
+  ↳ app/controllers/example_controller.rb:18:in `show'
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/example_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3680)
+Completed 200 OK in 50ms (Views: 14.1ms | ActiveRecord: 8.6ms | Allocations: 7995)
+
+
+Started GET "/" for ::1 at 2022-12-13 11:09:02 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2345)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 5733)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 6045)
+
+
+Started GET "/example/show?num1=14&num2=19&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:09:07 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"14", "num2"=>"19", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.4ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 14], ["num2", 19], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:12:in `show'
+  [1m[36mEvqlidResult Load (0.5ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE "evqlid_results"."num1" = ? AND "evqlid_results"."num2" = ? LIMIT ?[0m  [["num1", 19], ["num2", 14], ["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3702)
+Completed 200 OK in 26ms (Views: 14.9ms | ActiveRecord: 0.9ms | Allocations: 4938)
+
+
+Started GET "/" for ::1 at 2022-12-13 11:09:09 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2355)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 5743)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 6055)
+
+
+  [1m[36mEvqlidResult Load (0.6ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results"[0m
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE ((num1 = :n1 and num2 = :n2) or (num1 = :n2 and num2 = :n1))[0m
+  [1m[36mEvqlidResult Load (0.6ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE ((num1 = 19 and num2 = 14) or (num1 = 14 and num2 = 19))[0m
+  [1m[36mEvqlidResult Load (0.6ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE ((num1 = 19 and num2 = 14) or (num1 = 14 and num2 = 19)) ORDER BY "evqlid_results"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/example/show?num1=18&num2=19&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:39:29 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"18", "num2"=>"19", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (0.3ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE ((num1 = '18' and num2 = '19') or (num1 = '19' and num2 = '18')) ORDER BY "evqlid_results"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:14:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 286)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 22170)
+Completed 200 OK in 51ms (Views: 39.5ms | ActiveRecord: 0.6ms | Allocations: 27255)
+
+
+Started GET "/" for ::1 at 2022-12-13 11:39:31 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2400)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 5789)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 6117)
+
+
+Started GET "/example/show?num1=19&num2=14&commit=%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-13 11:39:52 +0300
+Processing by ExampleController#show as HTML
+  Parameters: {"num1"=>"19", "num2"=>"14", "commit"=>"Вычислить"}
+  [1m[36mEvqlidResult Load (1.0ms)[0m  [1m[34mSELECT "evqlid_results".* FROM "evqlid_results" WHERE ((num1 = '19' and num2 = '14') or (num1 = '14' and num2 = '19')) ORDER BY "evqlid_results"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/example_controller.rb:14:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering example/show.html.erb within layouts/application
+  Rendered example/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 3696)
+Completed 200 OK in 75ms (Views: 51.6ms | ActiveRecord: 1.0ms | Allocations: 4789)
+
+
+Started GET "/" for ::1 at 2022-12-13 11:39:53 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  Rendered example/input.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 5741)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 6054)
+
+

@@ -9,8 +9,11 @@ class ExampleController < ApplicationController
   def show
     @i = 0
     @summ = calc_sum
-    if (result = (EvqlidResult.find_by(num1: @input1 = params[:num1], num2: @input2 = params[:num2]) || EvqlidResult.find_by(num1: @input1 = params[:num2], num2: @input2 = params[:num1])))
-      @result_fin = result.decoded_res
+    inp = EvqlidResult.where('(num1 = :input1 and num2 = :input2) or (num1 = :input2 and num2 = :input1)',
+                             input1: params[:num1],
+                             input2: params[:num2]).last
+    if inp
+      @result_fin = inp.decoded_res
     else
       result = EvqlidResult.new(num1: @input1, num2: @input2)
       if result.save
