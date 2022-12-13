@@ -8203,3 +8203,128 @@ Processing by SessionController#login as HTML
   Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3051)
 Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 3331)
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-13 17:15:34 +0300
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 299.1ms | Allocations: 342853)
+  Rendered layout layouts/application.html.erb (Duration: 354.3ms | Allocations: 391620)
+Completed 200 OK in 381ms (Views: 361.7ms | ActiveRecord: 0.0ms | Allocations: 397525)
+Started GET "/assets/application-e0cf9d8fcb18bf7f909d8d91a5e78499f82ac29523d475bf3a9ab265d5e2b451.css" for 127.0.0.1 at 2022-12-13 17:15:34 +0300
+Started GET "/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js" for 127.0.0.1 at 2022-12-13 17:15:34 +0300
+Started GET "/assets/turbo.min-7ab2ea9f35bae4a4d65b552f9b93524099f267a8ba3a2e07002aaa7bff8ae4cf.js" for 127.0.0.1 at 2022-12-13 17:15:34 +0300
+Started GET "/assets/application-37f365cbecf1fa2810a8303f4b6571676fa1f9c56c248528bc14ddb857531b95.js" for 127.0.0.1 at 2022-12-13 17:15:34 +0300
+Started GET "/assets/stimulus.min-2dae3fdcdb1a5ee8172d3dc02a2a10cd6d5f022cc7782b3888cedc06bab7388a.js" for 127.0.0.1 at 2022-12-13 17:15:34 +0300
+Started GET "/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js" for 127.0.0.1 at 2022-12-13 17:15:34 +0300
+Started GET "/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js" for 127.0.0.1 at 2022-12-13 17:15:35 +0300
+Started GET "/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js" for 127.0.0.1 at 2022-12-13 17:15:35 +0300
+Started GET "/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js" for 127.0.0.1 at 2022-12-13 17:15:35 +0300
+Started GET "/users/new" for 127.0.0.1 at 2022-12-13 17:15:35 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.2ms | Allocations: 1842)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2426)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 5033)
+Completed 200 OK in 29ms (Views: 8.3ms | ActiveRecord: 0.5ms | Allocations: 23686)
+Started POST "/users" for 127.0.0.1 at 2022-12-13 17:15:35 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"user"=>{"name"=>"Megachell", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Megachell"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Megachell"], ["password_digest", "[FILTERED]"], ["created_at", "2022-12-13 14:15:35.914525"], ["updated_at", "2022-12-13 14:15:35.914525"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1:42581/
+Completed 302 Found in 18ms (ActiveRecord: 1.4ms | Allocations: 2573)
+Started GET "/" for 127.0.0.1 at 2022-12-13 17:15:35 +0300
+Processing by SessionController#login as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 3.3ms | Allocations: 794)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3189)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 3661)
+Started GET "/session/authorize?name=Megachell&password=[FILTERED]&commit=%D0%92%D1%85%D0%BE%D0%B4" for 127.0.0.1 at 2022-12-13 17:15:36 +0300
+Processing by SessionController#authorize as HTML
+  Parameters: {"name"=>"Megachell", "password"=>"[FILTERED]", "commit"=>"Вход"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Megachell"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:42581/example/input
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms | Allocations: 1122)
+Started GET "/example/input" for 127.0.0.1 at 2022-12-13 17:15:36 +0300
+Processing by ExampleController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering example/input.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered example/input.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1775)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 4755)
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 0.4ms | Allocations: 6010)
+Started POST "/example/show" for 127.0.0.1 at 2022-12-13 17:15:37 +0300
+Processing by ExampleController#show as TURBO_STREAM
+  Parameters: {"num1"=>"24", "num2"=>"36", "commit"=>"Посчитать"}
+  Rendering example/show.turbo_stream.erb
+  Rendered example/_result.html.erb (Duration: 2.1ms | Allocations: 521)
+  Rendered example/show.turbo_stream.erb (Duration: 5.3ms | Allocations: 1360)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2196)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/example/input" for 127.0.0.1 at 2022-12-13 17:15:37 +0300
+Processing by ExampleController#input as HTML
+Redirected to http://127.0.0.1:42581/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 283)
+Started GET "/" for 127.0.0.1 at 2022-12-13 17:15:37 +0300
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 2.5ms | Allocations: 664)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3069)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3394)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-13 17:15:38 +0300
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 2.8ms | Allocations: 701)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3099)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 3434)
+Started GET "/users/new" for 127.0.0.1 at 2022-12-13 17:15:38 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 1009)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1196)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3533)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 4706)
+Started POST "/users" for 127.0.0.1 at 2022-12-13 17:15:39 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"user"=>{"name"=>"Megachell", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Megachell"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Megachell"], ["password_digest", "[FILTERED]"], ["created_at", "2022-12-13 14:15:39.116676"], ["updated_at", "2022-12-13 14:15:39.116676"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1:42581/
+Completed 302 Found in 14ms (ActiveRecord: 1.4ms | Allocations: 1586)
+Started GET "/" for 127.0.0.1 at 2022-12-13 17:15:39 +0300
+Processing by SessionController#login as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 3.2ms | Allocations: 714)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3053)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3726)
+Started GET "/session/authorize?name=Megachell&password=[FILTERED]&commit=%D0%92%D1%85%D0%BE%D0%B4" for 127.0.0.1 at 2022-12-13 17:15:39 +0300
+Processing by SessionController#authorize as HTML
+  Parameters: {"name"=>"Megachell", "password"=>"[FILTERED]", "commit"=>"Вход"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Megachell"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:42581/
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms | Allocations: 1133)
+Started GET "/" for 127.0.0.1 at 2022-12-13 17:15:39 +0300
+Processing by SessionController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering session/login.html.erb within layouts/application
+  Rendered session/login.html.erb within layouts/application (Duration: 3.8ms | Allocations: 696)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3035)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 3315)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
