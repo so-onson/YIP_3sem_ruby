@@ -1,0 +1,1940 @@
+Started GET "/users/new" for ::1 at 2022-12-13 13:43:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+Started GET "/" for ::1 at 2022-12-13 13:43:53 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.6ms | Allocations: 494)
+Completed 200 OK in 34ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4736)
+
+
+Started GET "/" for ::1 at 2022-12-13 13:44:30 +0300
+Processing by XmlController#index as HTML
+Completed 500 Internal Server Error in 8ms (Allocations: 3109)
+
+
+  
+NameError (undefined local variable or method `num1' for #<XmlController:0x0000000000e1c8>):
+  
+app/controllers/xml_controller.rb:123:in `calc_nod'
+app/controllers/xml_controller.rb:86:in `index'
+Started GET "/" for ::1 at 2022-12-13 13:47:26 +0300
+Processing by XmlController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 1035)
+
+
+  
+NoMethodError (undefined method `<' for nil:NilClass):
+  
+app/controllers/xml_controller.rb:125:in `calc_nod'
+app/controllers/xml_controller.rb:86:in `index'
+Started GET "/?num1=2&num2=3" for ::1 at 2022-12-13 13:48:44 +0300
+Processing by XmlController#index as HTML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 500 Internal Server Error in 3ms (Allocations: 921)
+
+
+  
+NoMethodError (undefined method `<' for nil:NilClass):
+  
+app/controllers/xml_controller.rb:125:in `calc_nod'
+app/controllers/xml_controller.rb:86:in `index'
+Started GET "/?num1=2&num2=3" for ::1 at 2022-12-13 13:49:58 +0300
+Processing by XmlController#index as HTML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 593)
+
+
+  
+TypeError (Array can't be coerced into Integer):
+  
+app/controllers/xml_controller.rb:137:in `/'
+app/controllers/xml_controller.rb:137:in `calc_sum'
+app/controllers/xml_controller.rb:88:in `index'
+Started GET "/?num1=2&num2=3" for ::1 at 2022-12-13 13:51:00 +0300
+Processing by XmlController#index as HTML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+DEPRECATION WARNING: Array#to_s(2) is deprecated. Please use Array#to_fs(2) instead. (called from block in index at /home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/app/controllers/xml_controller.rb:92)
+DEPRECATION WARNING: Array#to_s(2) is deprecated. Please use Array#to_fs(2) instead. (called from block in index at /home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/app/controllers/xml_controller.rb:92)
+DEPRECATION WARNING: Array#to_s(2) is deprecated. Please use Array#to_fs(2) instead. (called from block in index at /home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/app/controllers/xml_controller.rb:92)
+Completed 406 Not Acceptable in 4ms (Allocations: 1003)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/xml_controller.rb:95:in `index'
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-13 13:51:47 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+DEPRECATION WARNING: Array#to_s(2) is deprecated. Please use Array#to_fs(2) instead. (called from block in index at /home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/app/controllers/xml_controller.rb:92)
+DEPRECATION WARNING: Array#to_s(2) is deprecated. Please use Array#to_fs(2) instead. (called from block in index at /home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/app/controllers/xml_controller.rb:92)
+DEPRECATION WARNING: Array#to_s(2) is deprecated. Please use Array#to_fs(2) instead. (called from block in index at /home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/app/controllers/xml_controller.rb:92)
+Completed 200 OK in 77ms (Views: 0.3ms | Allocations: 11270)
+
+
+Started GET "/" for ::1 at 2022-12-13 22:32:21 +0300
+Processing by XmlController#index as HTML
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 0.0ms | Allocations: 3417)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/xml_controller.rb:95:in `index'
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-13 22:32:45 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+DEPRECATION WARNING: Array#to_s(2) is deprecated. Please use Array#to_fs(2) instead. (called from block in index at /home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/app/controllers/xml_controller.rb:92)
+DEPRECATION WARNING: Array#to_s(2) is deprecated. Please use Array#to_fs(2) instead. (called from block in index at /home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/app/controllers/xml_controller.rb:92)
+DEPRECATION WARNING: Array#to_s(2) is deprecated. Please use Array#to_fs(2) instead. (called from block in index at /home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/app/controllers/xml_controller.rb:92)
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5035)
+
+
+Started GET "/" for ::1 at 2022-12-14 09:05:05 +0300
+Processing by XmlController#index as HTML
+Completed 406 Not Acceptable in 14ms (ActiveRecord: 0.0ms | Allocations: 3416)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/xml_controller.rb:95:in `index'
+Started GET "/" for ::1 at 2022-12-14 16:45:28 +0300
+Processing by XmlController#index as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms | Allocations: 3416)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/xml_controller.rb:95:in `index'
+Started GET "/?num1=&num2=&format=xml" for 127.0.0.1 at 2022-12-14 16:45:53 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"", "num2"=>""}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1132)
+
+
+  
+NoMethodError (undefined method `to_xml' for nil:NilClass
+Did you mean?  to_yaml):
+  
+app/controllers/xml_controller.rb:96:in `block (2 levels) in index'
+app/controllers/xml_controller.rb:95:in `index'
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 16:49:55 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 9753)
+
+
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-14 17:13:42 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 4282)
+
+
+  
+NoMethodError (undefined method `max' for 0:Integer):
+  
+app/controllers/xml_controller.rb:60:in `calc_nod'
+app/controllers/xml_controller.rb:14:in `index'
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-14 17:15:35 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 500 Internal Server Error in 7ms (Allocations: 3149)
+
+
+  
+NameError (undefined local variable or method `results' for #<XmlController:0x0000000000e588>):
+  
+app/controllers/xml_controller.rb:63:in `calc_nod'
+app/controllers/xml_controller.rb:14:in `index'
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-14 17:15:51 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 500 Internal Server Error in 19ms (Allocations: 3187)
+
+
+  
+NameError (undefined local variable or method `generate_xml_result' for #<XmlController:0x00000000011fd0>
+Did you mean?  generate_xml_res):
+  
+app/controllers/xml_controller.rb:16:in `index'
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-14 17:16:45 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1035)
+
+
+  
+NoMethodError (undefined method `map' for nil:NilClass):
+  
+app/controllers/xml_controller.rb:40:in `generate_xml_res'
+app/controllers/xml_controller.rb:16:in `index'
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-14 17:17:12 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 500 Internal Server Error in 2ms (Allocations: 935)
+
+
+  
+NoMethodError (undefined method `map' for nil:NilClass):
+  
+app/controllers/xml_controller.rb:40:in `generate_xml_res'
+app/controllers/xml_controller.rb:16:in `index'
+Started GET "/?num1=20&num2=3&format=xml" for ::1 at 2022-12-14 17:17:16 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"20", "num2"=>"3"}
+Completed 500 Internal Server Error in 2ms (Allocations: 941)
+
+
+  
+NoMethodError (undefined method `map' for nil:NilClass):
+  
+app/controllers/xml_controller.rb:40:in `generate_xml_res'
+app/controllers/xml_controller.rb:16:in `index'
+Started GET "/?num1=20&num2=3&format=xml" for ::1 at 2022-12-14 17:17:18 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"20", "num2"=>"3"}
+Completed 500 Internal Server Error in 2ms (Allocations: 945)
+
+
+  
+NoMethodError (undefined method `map' for nil:NilClass):
+  
+app/controllers/xml_controller.rb:40:in `generate_xml_res'
+app/controllers/xml_controller.rb:16:in `index'
+Started GET "/?num1=20&num2=3&format=xml" for ::1 at 2022-12-14 17:18:19 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"20", "num2"=>"3"}
+Completed 200 OK in 9ms (Views: 0.2ms | Allocations: 6245)
+
+
+Started GET "/?num1=6&num2=3&format=xml" for ::1 at 2022-12-14 17:18:34 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"6", "num2"=>"3"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1071)
+
+
+Started GET "/?num1=6&num2=3&format=xml" for ::1 at 2022-12-14 17:21:47 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"6", "num2"=>"3"}
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 7457)
+
+
+Started GET "/?num1=8&num2=3&format=xml" for ::1 at 2022-12-14 17:21:56 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"8", "num2"=>"3"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1780)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms | Allocations: 3457)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 521)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 415)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 417)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 415)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 419)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 425)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 423)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 403)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 423)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 417)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 427)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 417)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 409)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:24:13 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 411)
+
+
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 17:24:15 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5508)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (Allocations: 502)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (Allocations: 413)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 424)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (Allocations: 422)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 418)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (Allocations: 432)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 420)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 422)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 410)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 410)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 418)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 406)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 412)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 424)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 412)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 410)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (Allocations: 424)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 416)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 410)
+
+
+Started GET "/" for ::1 at 2022-12-14 17:50:16 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (Allocations: 408)
+
+
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-14 17:50:47 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1289)
+
+
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 18:09:51 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 1926)
+
+
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 18:10:09 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1923)
+
+
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 18:15:45 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.3ms | Allocations: 1927)
+
+
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 18:16:17 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1925)
+
+
+Started GET "/?num1=35&num2=9&format=xml" for 127.0.0.1 at 2022-12-14 18:16:40 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"9"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 3225)
+
+
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 18:16:45 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.2ms | Allocations: 1923)
+
+
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 18:16:46 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1923)
+
+
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 18:16:48 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1923)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 18:17:10 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 1931)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 18:17:17 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.4ms | Allocations: 1929)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 18:17:17 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.3ms | Allocations: 1929)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 18:17:20 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 1929)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 18:41:39 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 8ms (Views: 0.3ms | Allocations: 1930)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 18:41:47 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 10ms (Views: 0.4ms | Allocations: 1929)
+
+
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 18:44:00 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.4ms | Allocations: 1923)
+
+
+Started GET "/?num1=35&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 18:44:48 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1923)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 18:46:06 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1929)
+
+
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-14 18:59:16 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 7681)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 18:59:22 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2013)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 18:59:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1936)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:02 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4224)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:15 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1874)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:16 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1796)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:16 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1796)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:16 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:17 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1796)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:17 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:17 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:18 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:26 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:26 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1793)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:56:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 21:58:45 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1793)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:21 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1793)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:29 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:29 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:29 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:30 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:31 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:31 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:31 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:32 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:32 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:33 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:00:33 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:29 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:29 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:29 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:30 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:37 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:50 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:51 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 9ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:51 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:51 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:03:51 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:05:56 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:05:57 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:26:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 9ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:26:31 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:26:32 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 1790)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:26:32 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 22:26:32 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.3ms | Allocations: 1789)
+
+
+Started GET "/?num1=77&num2=92" for 127.0.0.1 at 2022-12-14 23:06:16 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"77", "num2"=>"92"}
+Completed 200 OK in 4ms (Views: 0.1ms | Allocations: 3644)
+
+
+Started GET "/?num1=36&num2=48" for 127.0.0.1 at 2022-12-14 23:06:16 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"36", "num2"=>"48"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1378)
+
+
+Started GET "/?num1=91&num2=53" for 127.0.0.1 at 2022-12-14 23:07:04 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"91", "num2"=>"53"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 3231)
+
+
+Started GET "/?num1=36&num2=48" for 127.0.0.1 at 2022-12-14 23:07:04 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"36", "num2"=>"48"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1377)
+
+
+Started GET "/?num1=77&num2=53" for 127.0.0.1 at 2022-12-14 23:07:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"77", "num2"=>"53"}
+Completed 200 OK in 4ms (Views: 0.1ms | Allocations: 3025)
+
+
+Started GET "/?num1=55&num2=65" for 127.0.0.1 at 2022-12-14 23:07:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"55", "num2"=>"65"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2201)
+
+
+Started GET "/?num1=70&num2=58" for 127.0.0.1 at 2022-12-14 23:07:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"70", "num2"=>"58"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2819)
+
+
+Started GET "/?num1=36&num2=48" for 127.0.0.1 at 2022-12-14 23:07:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"36", "num2"=>"48"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1377)
+
+
+Started GET "/?num1=17&num2=89" for 127.0.0.1 at 2022-12-14 23:07:38 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"17", "num2"=>"89"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 3231)
+
+
+Started GET "/?num1=8&num2=50" for 127.0.0.1 at 2022-12-14 23:07:38 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"8", "num2"=>"50"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2613)
+
+
+Started GET "/?num1=86&num2=30" for 127.0.0.1 at 2022-12-14 23:07:38 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"86", "num2"=>"30"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2819)
+
+
+Started GET "/?num1=36&num2=48" for 127.0.0.1 at 2022-12-14 23:07:38 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"36", "num2"=>"48"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1377)
+
+
+Started GET "/?num1=14&num2=35" for 127.0.0.1 at 2022-12-14 23:08:02 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"14", "num2"=>"35"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1377)
+
+
+Started GET "/?num1=2&num2=13" for 127.0.0.1 at 2022-12-14 23:08:02 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"2", "num2"=>"13"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2201)
+
+
+Started GET "/?num1=35&num2=75" for 127.0.0.1 at 2022-12-14 23:08:02 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"75"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2407)
+
+
+Started GET "/?num1=36&num2=48" for 127.0.0.1 at 2022-12-14 23:08:02 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"36", "num2"=>"48"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1377)
+
+
+Started GET "/?num1=71&num2=71" for 127.0.0.1 at 2022-12-14 23:08:44 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"71", "num2"=>"71"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 759)
+
+
+Started GET "/?num1=16&num2=66" for 127.0.0.1 at 2022-12-14 23:08:44 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"16", "num2"=>"66"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 3025)
+
+
+Started GET "/?num1=19&num2=81" for 127.0.0.1 at 2022-12-14 23:08:44 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"19", "num2"=>"81"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 3025)
+
+
+Started GET "/?num1=36&num2=48" for 127.0.0.1 at 2022-12-14 23:08:44 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"36", "num2"=>"48"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1377)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 23:10:30 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 23:10:38 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 23:10:40 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.3ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 23:10:43 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 23:10:59 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 23:13:35 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 23:13:59 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 23:14:03 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.3ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45" for 127.0.0.1 at 2022-12-14 23:14:16 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:15:15 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 3643)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:15:48 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.1ms | Allocations: 3643)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:15:56 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 3643)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:16:09 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.1ms | Allocations: 3643)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:16:36 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 8ms (Views: 0.1ms | Allocations: 3644)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:16:46 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 5ms (Views: 0.1ms | Allocations: 3643)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:16:47 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 6ms (Views: 0.1ms | Allocations: 3644)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:16:54 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 3644)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:17:01 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 3643)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:17:38 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 4ms (Views: 0.3ms | Allocations: 3643)
+
+
+Started GET "/?num1=3&num2=45" for 127.0.0.1 at 2022-12-14 23:17:39 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 3643)
+
+
+Started GET "/?num1=3&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:19:36 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 3643)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:19:50 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 6ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:21:09 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:21:20 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:21:36 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:21:51 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:22:13 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:23:10 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:23:11 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:23:11 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:23:11 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:23:11 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:23:12 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:23:18 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:23:19 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:24:37 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 6ms (Views: 0.3ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:25:19 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:25:52 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:25:53 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 9ms (Views: 0.5ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:25:53 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=35&num2=45&form=xml" for 127.0.0.1 at 2022-12-14 23:53:50 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"35", "num2"=>"45", "form"=>"xml"}
+Completed 200 OK in 7ms (Views: 1.0ms | Allocations: 1789)
+
+
+Started GET "/?num1=16&num2=4&form=xml" for 127.0.0.1 at 2022-12-14 23:54:02 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"16", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 7ms (Views: 0.3ms | Allocations: 1377)
+
+
+Started GET "/?num1=4&num2=1&form=xml" for 127.0.0.1 at 2022-12-14 23:54:32 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"4", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1377)
+
+
+Started GET "/?num1=9&num2=6&form=xml" for 127.0.0.1 at 2022-12-14 23:54:50 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"9", "num2"=>"6", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1171)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-14 23:55:52 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 5ms (Views: 0.3ms | Allocations: 1377)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-14 23:56:05 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1377)
+
+
+Started GET "/?num1=3&num2=6&form=xml" for 127.0.0.1 at 2022-12-14 23:57:25 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"6", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 965)
+
+
+Started GET "/?num1=3&num2=9&form=xml" for 127.0.0.1 at 2022-12-14 23:57:49 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"9", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1171)
+
+
+Started GET "/?num1=3&num2=9&form=xml" for 127.0.0.1 at 2022-12-14 23:58:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"9", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 1394)
+
+
+Started GET "/?num1=3&num2=9&form=xml" for 127.0.0.1 at 2022-12-14 23:59:47 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"9", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1393)
+
+
+Started GET "/?num1=3&num2=9&form=xml" for 127.0.0.1 at 2022-12-15 00:00:09 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"9", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1171)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:00:23 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:00:33 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:01:11 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2011)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:02:09 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2011)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:03:49 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:03:53 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:04:00 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2012)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:04:58 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 2012)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:05:36 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2011)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:05:58 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 2011)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:08:46 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 2011)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:08:46 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:08:47 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 1789)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:08:48 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1789)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:09:18 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1171)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:09:38 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1394)
+
+
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-15 00:14:45 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 500 Internal Server Error in 5ms (Allocations: 3351)
+
+
+  
+NoMethodError (undefined method `calc_nod' for #<XmlController:0x000000000334a0>
+
+    @res, @nod, @nok = calc_nod(@input1, @input2)
+                       ^^^^^^^^):
+  
+app/controllers/xml_controller.rb:11:in `index'
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-15 00:15:17 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1217)
+
+
+Started GET "/?num1=2&num2=10&format=xml" for ::1 at 2022-12-15 00:15:26 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"10"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1396)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:15:35 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:18:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:18:54 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:19:14 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:19:15 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:19:33 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:19:34 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:19:56 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:19:57 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:21:12 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:21:13 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:23:25 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:23:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:24:50 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:24:52 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:26:04 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:26:07 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:26:29 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.3ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:26:30 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:27:53 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:27:54 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 11ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:28:07 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 989)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:28:39 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:29:30 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:33:18 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:33:19 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:33:20 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:33:29 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 988)
+
+
+Started GET "/?num1=3&num2=1&form=xml" for 127.0.0.1 at 2022-12-15 00:34:01 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"1", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 989)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:34:10 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 5ms (Views: 0.3ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:37:02 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:37:03 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:37:05 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:37:30 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:37:31 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:37:32 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.3ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:39:34 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:39:35 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:39:39 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:40:50 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 6ms (Views: 0.3ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:40:52 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:41:40 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:42:00 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.5ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:42:00 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:44:27 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:44:32 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:45:52 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:46:55 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:46:57 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:47:56 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:48:03 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:49:25 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:49:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:49:41 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:50:06 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:50:06 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:50:28 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:51:08 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:51:09 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:54:34 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 1196)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:54:47 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 1196)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:55:04 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 8ms (Views: 0.2ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-15 00:56:38 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=5&form=xml" for 127.0.0.1 at 2022-12-15 00:56:58 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"5", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1195)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:57:06 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.1ms | Allocations: 1609)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:57:36 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 1609)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:57:54 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1610)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:58:13 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1609)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:58:14 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 5ms (Views: 0.1ms | Allocations: 1609)
+
+
+Started GET "/?num1=3&num2=10&form=xml" for 127.0.0.1 at 2022-12-15 00:58:34 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"10", "form"=>"xml"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 1609)
+
+
+Started GET "/?num1=3&num2=100&form=xml" for 127.0.0.1 at 2022-12-15 00:58:44 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"100", "form"=>"xml"}
+Completed 200 OK in 6ms (Views: 0.1ms | Allocations: 7819)
+
+
+Started GET "/?num1=3&num2=100&form=xml" for 127.0.0.1 at 2022-12-15 00:59:13 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"100", "form"=>"xml"}
+Completed 200 OK in 6ms (Views: 0.1ms | Allocations: 7819)
+
+

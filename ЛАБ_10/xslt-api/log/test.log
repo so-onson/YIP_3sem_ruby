@@ -1,0 +1,158 @@
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/?num1=10&num2=5&format=rss" for 127.0.0.1 at 2022-12-13 22:44:17 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"10", "num2"=>"5"}
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 7498)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/?inpt=2&format=xml" for 127.0.0.1 at 2022-12-13 22:44:17 +0300
+Processing by XmlController#index as XML
+  Parameters: {"inpt"=>"2"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 863)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/?num1=10&num2=5&format=rss" for 127.0.0.1 at 2022-12-13 22:54:30 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"10", "num2"=>"5"}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7496)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/?num1=8&num2=6&format=xml" for 127.0.0.1 at 2022-12-13 22:54:30 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"8", "num2"=>"6"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1944)
+Started GET "/?num1=79&num2=31&format=xml" for 127.0.0.1 at 2022-12-13 22:54:30 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"79", "num2"=>"31"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4624)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+XmlControllerTest: test_should_get_result
+-----------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+XmlControllerTest: test_should_get_index
+----------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+XmlControllerTest: test_check_rss_format
+----------------------------------------
+Started GET "/?num1=100&num2=40&format=rss" for 127.0.0.1 at 2022-12-13 23:21:43 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"100", "num2"=>"40"}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 8253)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+XmlControllerTest: test_check_rss_format
+----------------------------------------
+Started GET "/?num1=100&num2=40&format=rss" for 127.0.0.1 at 2022-12-14 08:40:10 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"100", "num2"=>"40"}
+Completed 200 OK in 36ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 8254)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+XmlControllerTest: test_check_rss_format
+----------------------------------------
+Started GET "/?num1=100&num2=40&format=rss" for 127.0.0.1 at 2022-12-14 08:49:11 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"100", "num2"=>"40"}
+Completed 200 OK in 31ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 8252)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+XmlControllerTest: test_check_rss_format
+----------------------------------------
+Started GET "/?num1=100&num2=40&format=rss" for 127.0.0.1 at 2022-12-14 08:51:01 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"100", "num2"=>"40"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 3685)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+XmlControllerTest: test_check_rss_format
+----------------------------------------
+Started GET "/?num1=100&num2=40&format=rss" for 127.0.0.1 at 2022-12-14 08:51:49 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"100", "num2"=>"40"}
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7767)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+XmlControllerTest: test_check_rss_format
+----------------------------------------
+Started GET "/?num1=100&num2=40&format=rss" for 127.0.0.1 at 2022-12-14 17:22:12 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"100", "num2"=>"40"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 3107)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+XmlControllerTest: test_check_rss_format
+----------------------------------------
+Started GET "/?num1=100&num2=40&format=rss" for 127.0.0.1 at 2022-12-14 17:22:31 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"100", "num2"=>"40"}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 7873)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/?num1=10&num2=5&format=rss" for 127.0.0.1 at 2022-12-14 17:23:19 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"10", "num2"=>"5"}
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 7417)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/?num1=28&num2=24&format=xml" for 127.0.0.1 at 2022-12-14 17:23:19 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"28", "num2"=>"24"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2207)
+Started GET "/?num1=65&num2=45&format=xml" for 127.0.0.1 at 2022-12-14 17:23:19 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"65", "num2"=>"45"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2137)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/?num1=10&num2=5&format=rss" for 127.0.0.1 at 2022-12-14 19:08:55 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"10", "num2"=>"5"}
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 7417)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/?num1=17&num2=22&format=xml" for 127.0.0.1 at 2022-12-14 19:08:55 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"17", "num2"=>"22"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2424)
+Started GET "/?num1=80&num2=100&format=xml" for 127.0.0.1 at 2022-12-14 19:08:55 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"80", "num2"=>"100"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1703)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/?num1=10&num2=5&format=rss" for 127.0.0.1 at 2022-12-14 21:04:09 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"10", "num2"=>"5"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5997)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/?num1=6&num2=22&format=xml" for 127.0.0.1 at 2022-12-14 21:04:09 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"6", "num2"=>"22"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1853)
+Started GET "/?num1=46&num2=94&format=xml" for 127.0.0.1 at 2022-12-14 21:04:09 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"46", "num2"=>"94"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5694)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+XmlControllerTest: test_check_rss_format
+----------------------------------------
+Started GET "/?num1=100&num2=40&format=rss" for 127.0.0.1 at 2022-12-14 21:04:19 +0300
+Processing by XmlController#index as RSS
+  Parameters: {"num1"=>"100", "num2"=>"40"}
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3783)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m

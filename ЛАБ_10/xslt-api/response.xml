@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hash>
+<result>
+<num1 type="integer">2</num1>
+<num2 type="integer">3</num2>
+<iterations type="array">
+<iteration>
+<index type="integer">2</index>
+<num1 type="integer">0</num1>
+<num2 type="integer">1</num2>
+</iteration>
+<iteration>
+<index type="integer">2</index>
+<num1 type="integer">1</num1>
+<num2 type="integer">0</num2>
+</iteration>
+<iteration>
+<index type="integer">2</index>
+<num1 type="integer">0</num1>
+<num2 type="integer">0</num2>
+</iteration>
+</iterations>
+<nod type="integer">1</nod>
+<nok type="integer">6</nok>
+</result>
+</hash>
