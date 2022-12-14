@@ -1,0 +1,23 @@
+<h1>Proxy#input</h1>
+<p>Find me in app/views/proxy/input.html.erb</p>
+
+<% flash.each do |_type, msg| %>
+  <p><%= msg %></p>
+<% end %>
+
+<h1>Введите целые числа</h1>
+
+<%= form_with url: 'proxy/output',layout: false, method: :get do |form| %>
+  <%= form.label :num1, "Первое число:" %>
+  <%= form.number_field :num1, value: "3"%>
+  <%= form.label :num2, "Второе число:" %>
+  <%= form.number_field :num2, min: 1, value: "4" %>
+  <%= form.submit "Отправить" %>
+
+  <select class="custom-select" name = "side">
+      <option value = "server">Трансформация на стороне сервера</option>
+      <option value = "client-with-xslt">Трансформация на стороне браузера</option>
+      <option value = "client">RAW</option>
+  </select>
+<% end %>
+

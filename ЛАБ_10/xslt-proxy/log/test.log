@@ -1,0 +1,868 @@
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+ProxyControllerTest: test_should_get_input
+------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+-------------------------------------------
+ProxyControllerTest: test_should_get_output
+-------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+ProxyControllerTest: test_should_get_input
+------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+-------------------------------------------
+ProxyControllerTest: test_should_get_output
+-------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+ProxyControllerTest: test_should_get_input
+------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+ProxyControllerTest: test_should_get_output
+-------------------------------------------
+Started GET "/proxy/output" for 127.0.0.1 at 2022-12-14 21:04:58 +0300
+Processing by ProxyController#output as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms | Allocations: 2055)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/input" for 127.0.0.1 at 2022-12-14 21:13:47 +0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=63&num2=4&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:13:47 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"63", "num2"=>"4", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1523)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output" for 127.0.0.1 at 2022-12-14 21:13:47 +0300
+Processing by ProxyController#output as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 524)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=25&num2=3&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:14:39 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"25", "num2"=>"3", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1523)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output" for 127.0.0.1 at 2022-12-14 21:14:39 +0300
+Processing by ProxyController#output as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 525)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:15:03 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2021)
+  Rendered layout layouts/application.html.erb (Duration: 249.6ms | Allocations: 116696)
+Completed 200 OK in 257ms (Views: 252.8ms | ActiveRecord: 0.0ms | Allocations: 120454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=53&num2=20&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:15:03 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"53", "num2"=>"20", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 418)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output" for 127.0.0.1 at 2022-12-14 21:15:03 +0300
+Processing by ProxyController#output as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 372)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:16:57 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 51363)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 0.0ms | Allocations: 54320)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=82&num2=31&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:16:57 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"82", "num2"=>"31", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 418)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output" for 127.0.0.1 at 2022-12-14 21:16:57 +0300
+Processing by ProxyController#output as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 372)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:17:23 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 124.8ms | Allocations: 51372)
+Completed 200 OK in 131ms (Views: 126.6ms | ActiveRecord: 0.0ms | Allocations: 54330)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=83&num2=44&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:17:23 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"83", "num2"=>"44", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 418)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output" for 127.0.0.1 at 2022-12-14 21:17:23 +0300
+Processing by ProxyController#output as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 372)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:17:23 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:18:22 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 130.2ms | Allocations: 51536)
+Completed 200 OK in 136ms (Views: 133.1ms | ActiveRecord: 0.0ms | Allocations: 54494)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=78&num2=18&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:18:22 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"78", "num2"=>"18", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 418)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output" for 127.0.0.1 at 2022-12-14 21:18:22 +0300
+Processing by ProxyController#output as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 372)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=server" for 127.0.0.1 at 2022-12-14 21:18:22 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:18:22 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:19:49 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 125.6ms | Allocations: 51333)
+Completed 200 OK in 131ms (Views: 127.5ms | ActiveRecord: 0.0ms | Allocations: 54291)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=63&num2=33&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:19:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"63", "num2"=>"33", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 418)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=server" for 127.0.0.1 at 2022-12-14 21:19:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 372)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=server" for 127.0.0.1 at 2022-12-14 21:19:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:19:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:21:18 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 51768)
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 0.0ms | Allocations: 54725)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=93&num2=52&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:21:18 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"93", "num2"=>"52", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 418)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=server" for 127.0.0.1 at 2022-12-14 21:21:18 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 372)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=server" for 127.0.0.1 at 2022-12-14 21:21:18 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:21:18 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:21:45 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 62.2ms | Allocations: 51348)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 0.0ms | Allocations: 54305)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=49&num2=90&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:21:45 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"49", "num2"=>"90", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 418)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=server" for 127.0.0.1 at 2022-12-14 21:21:45 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 369)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:21:45 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:22:55 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 131.5ms | Allocations: 51316)
+Completed 200 OK in 136ms (Views: 133.1ms | ActiveRecord: 0.0ms | Allocations: 54274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=65&num2=4&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:22:55 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"65", "num2"=>"4", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 417)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=64&input2=28&side=server" for 127.0.0.1 at 2022-12-14 21:22:55 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"64", "input2"=>"28", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 369)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:22:55 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:23:46 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 59.4ms | Allocations: 51561)
+Completed 200 OK in 64ms (Views: 60.9ms | ActiveRecord: 0.0ms | Allocations: 54518)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=22&num2=67&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:23:46 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"22", "num2"=>"67", "side"=>"server", "commit"=>"Отправить"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 418)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=11&num2=75&side=server" for 127.0.0.1 at 2022-12-14 21:23:46 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"11", "num2"=>"75", "side"=>"server"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=36&num2=48&side=client" for 127.0.0.1 at 2022-12-14 21:23:46 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"36", "num2"=>"48", "side"=>"client"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:24:20 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 51584)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 0.0ms | Allocations: 54541)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?input1=10&input2=99&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:24:20 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"10", "input2"=>"99", "side"=>"server", "commit"=>"Отправить"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 374)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=64&input2=28&side=server" for 127.0.0.1 at 2022-12-14 21:24:20 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"64", "input2"=>"28", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:24:20 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:25:24 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 51564)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.0ms | Allocations: 54521)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?input1=9&input2=69&side=html&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:25:24 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"9", "input2"=>"69", "side"=>"html", "commit"=>"Отправить"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 374)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=13&input2=50&side=server" for 127.0.0.1 at 2022-12-14 21:25:24 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"13", "input2"=>"50", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:25:24 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:25:40 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 51195)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 0.0ms | Allocations: 54152)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?input1=98&input2=42&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:25:41 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"98", "input2"=>"42", "side"=>"server", "commit"=>"Отправить"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 374)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=32&input2=51&side=server" for 127.0.0.1 at 2022-12-14 21:25:41 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"32", "input2"=>"51", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:25:41 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:26:16 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 62.4ms | Allocations: 51653)
+Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 0.0ms | Allocations: 54610)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?input1=5&input2=29&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:26:16 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"5", "input2"=>"29", "side"=>"server", "commit"=>"Отправить"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 374)
+Started GET "/proxy/output/?input1=99&input2=55&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 21:26:16 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"99", "input2"=>"55", "side"=>"server", "commit"=>"Отправить"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 434)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=20&input2=77&side=server" for 127.0.0.1 at 2022-12-14 21:26:16 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"20", "input2"=>"77", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:26:16 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 21:27:56 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1611)
+  Rendered layout layouts/application.html.erb (Duration: 124.2ms | Allocations: 51274)
+Completed 200 OK in 130ms (Views: 126.1ms | ActiveRecord: 0.0ms | Allocations: 54231)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=97&input2=7&side=server" for 127.0.0.1 at 2022-12-14 21:27:57 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"97", "input2"=>"7", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 371)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 21:27:57 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 22:27:43 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1611)
+  Rendered layout layouts/application.html.erb (Duration: 60.1ms | Allocations: 51597)
+Completed 200 OK in 65ms (Views: 61.7ms | ActiveRecord: 0.0ms | Allocations: 54554)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=57&input2=74&side=server" for 127.0.0.1 at 2022-12-14 22:27:43 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"57", "input2"=>"74", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 371)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=36&input2=48&side=client" for 127.0.0.1 at 2022-12-14 22:27:43 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"36", "input2"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 23:05:45 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 51411)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 0.0ms | Allocations: 54366)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?input1=54&input2=61&side=server" for 127.0.0.1 at 2022-12-14 23:05:45 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"54", "input2"=>"61", "side"=>"server"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms | Allocations: 371)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=48&side=client" for 127.0.0.1 at 2022-12-14 23:05:45 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"48", "side"=>"client"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 23:06:16 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1611)
+  Rendered layout layouts/application.html.erb (Duration: 125.6ms | Allocations: 51806)
+Completed 200 OK in 131ms (Views: 127.4ms | ActiveRecord: 0.0ms | Allocations: 54763)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=77&num2=92&side=server" for 127.0.0.1 at 2022-12-14 23:06:16 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"77", "num2"=>"92", "side"=>"server"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.2ms | Allocations: 133)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 1.0ms | Allocations: 500)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2979)
+Completed 200 OK in 15ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 4528)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=36&num2=48&side=client" for 127.0.0.1 at 2022-12-14 23:06:16 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"36", "num2"=>"48", "side"=>"client"}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 896)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 23:07:03 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 60.8ms | Allocations: 51476)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.0ms | Allocations: 54433)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?input1=23&input2=99&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 23:07:04 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"23", "input2"=>"99", "side"=>"server", "commit"=>"Отправить"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 374)
+Started GET "/proxy/output/?input1=18&input2=84&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 23:07:04 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"input1"=>"18", "input2"=>"84", "side"=>"server", "commit"=>"Отправить"}
+Redirected to http://www.example.com/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 407)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=91&num2=53&side=server" for 127.0.0.1 at 2022-12-14 23:07:04 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"91", "num2"=>"53", "side"=>"server"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.2ms | Allocations: 133)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 1.3ms | Allocations: 463)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2949)
+Completed 200 OK in 12ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 4496)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=36&num2=48&side=client" for 127.0.0.1 at 2022-12-14 23:07:04 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"36", "num2"=>"48", "side"=>"client"}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 896)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 23:07:27 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 51318)
+Completed 200 OK in 66ms (Views: 62.7ms | ActiveRecord: 0.0ms | Allocations: 54275)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=77&num2=53&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 23:07:27 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"77", "num2"=>"53", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.2ms | Allocations: 133)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 0.9ms | Allocations: 502)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2982)
+Completed 200 OK in 13ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 4531)
+Started GET "/proxy/output/?num1=55&num2=65&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 23:07:27 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"55", "num2"=>"65", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.7ms | Allocations: 112)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 1.1ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2670)
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3794)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=70&num2=58&side=server" for 127.0.0.1 at 2022-12-14 23:07:27 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"70", "num2"=>"58", "side"=>"server"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.2ms | Allocations: 112)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 0.5ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2666)
+Completed 200 OK in 11ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 3790)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=36&num2=48&side=client" for 127.0.0.1 at 2022-12-14 23:07:27 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"36", "num2"=>"48", "side"=>"client"}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 896)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 23:07:38 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 62.0ms | Allocations: 51809)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 0.0ms | Allocations: 54766)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=17&num2=89&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 23:07:38 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"17", "num2"=>"89", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.2ms | Allocations: 133)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 1.1ms | Allocations: 502)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2986)
+Completed 200 OK in 12ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 4535)
+Started GET "/proxy/output/?num1=8&num2=50&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 23:07:38 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"8", "num2"=>"50", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.2ms | Allocations: 112)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2667)
+Completed 200 OK in 11ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 3790)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=86&num2=30&side=server" for 127.0.0.1 at 2022-12-14 23:07:38 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"86", "num2"=>"30", "side"=>"server"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.4ms | Allocations: 112)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 0.6ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2671)
+Completed 200 OK in 12ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3795)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=36&num2=48&side=client" for 127.0.0.1 at 2022-12-14 23:07:38 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"36", "num2"=>"48", "side"=>"client"}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 896)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 23:08:02 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 59.4ms | Allocations: 51434)
+Completed 200 OK in 64ms (Views: 60.9ms | ActiveRecord: 0.0ms | Allocations: 54391)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=14&num2=35&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 23:08:02 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"14", "num2"=>"35", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.7ms | Allocations: 133)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 1.9ms | Allocations: 502)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2987)
+Completed 200 OK in 14ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 4537)
+Started GET "/proxy/output/?num1=2&num2=13&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 23:08:02 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"2", "num2"=>"13", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.3ms | Allocations: 112)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 0.6ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2665)
+Completed 200 OK in 12ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3788)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=35&num2=75&side=server" for 127.0.0.1 at 2022-12-14 23:08:02 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"35", "num2"=>"75", "side"=>"server"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.3ms | Allocations: 112)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 0.6ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2672)
+Completed 200 OK in 11ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3796)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=36&num2=48&side=client" for 127.0.0.1 at 2022-12-14 23:08:02 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"36", "num2"=>"48", "side"=>"client"}
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 896)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-12-14 23:08:44 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 51222)
+Completed 200 OK in 64ms (Views: 60.6ms | ActiveRecord: 0.0ms | Allocations: 54179)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output/?num1=71&num2=71&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 23:08:44 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"71", "num2"=>"71", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.3ms | Allocations: 133)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 1.1ms | Allocations: 502)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2986)
+Completed 200 OK in 11ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 4535)
+Started GET "/proxy/output/?num1=16&num2=66&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2022-12-14 23:08:44 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"16", "num2"=>"66", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.2ms | Allocations: 112)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2667)
+Completed 200 OK in 10ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 3791)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=19&num2=81&side=server" for 127.0.0.1 at 2022-12-14 23:08:44 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"19", "num2"=>"81", "side"=>"server"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.2ms | Allocations: 112)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2671)
+Completed 200 OK in 11ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3795)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/proxy/output?num1=36&num2=48&side=client" for 127.0.0.1 at 2022-12-14 23:08:44 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"36", "num2"=>"48", "side"=>"client"}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 896)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
