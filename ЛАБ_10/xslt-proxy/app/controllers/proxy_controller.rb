@@ -11,8 +11,8 @@ class ProxyController < ApplicationController
 
   def output
     unless check.nil?
-      return redirect_to '/proxy/input',
-                         notice: check
+      return redirect_to '/proxy/input'
+                        #  notice: check
     end
     api_response = URI.open(url)
     where(params[:side], api_response)
@@ -23,9 +23,9 @@ class ProxyController < ApplicationController
     when 'server'
       @result = xslt_transform(api_response).to_html
     when 'client-with-xslt'
-      @result = insert_browser_xslt(api_response).to_xml
+      # @result = insert_browser_xslt(api_response).to_xml
       # render xml: @result
-      # render xml: insert_browser_xslt(api_response).to_xml
+      render xml: insert_browser_xslt(api_response).to_xml
     when 'client'
       # render xml: api_response
       @result = api_response
@@ -45,7 +45,7 @@ class ProxyController < ApplicationController
     doc = Nokogiri::XML(data)
     xslt = Nokogiri::XML::ProcessingInstruction.new(doc,
                                                     'xml-stylesheet',
-                                                    'type="text/xsl" href="/public/browser_transform.xslt"')
+                                                    'type="text/xsl" href="/brow_transform.xslt"')
     doc.root.add_previous_sibling(xslt)
     # Возвращаем doc, так как предыдущая операция возвращает не XML-документ.
     doc

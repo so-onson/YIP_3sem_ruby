@@ -4096,3 +4096,945 @@ Started GET "/public/browser_transform.xslt" for ::1 at 2022-12-15 00:59:13 +030
   
 ActionController::RoutingError (No route matches [GET] "/public/browser_transform.xslt"):
   
+Started GET "/" for ::1 at 2022-12-15 23:41:24 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3614)
+  Rendered layout layouts/application.html.erb (Duration: 72.2ms | Allocations: 55356)
+Completed 200 OK in 78ms (Views: 74.1ms | ActiveRecord: 0.0ms | Allocations: 58381)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:41:26 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"server", "commit"=>"Отправить"}
+Redirected to http://localhost:3001/proxy/input
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 267)
+
+
+Started GET "/proxy/input" for ::1 at 2022-12-15 23:41:26 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/proxy/input"):
+  
+Started GET "/" for ::1 at 2022-12-15 23:41:26 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2512)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 6110)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 6407)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:41:29 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"server", "commit"=>"Отправить"}
+Redirected to http://localhost:3001/proxy/input
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 162)
+
+
+Started GET "/proxy/input" for ::1 at 2022-12-15 23:41:29 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/proxy/input"):
+  
+Started GET "/" for ::1 at 2022-12-15 23:41:29 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2436)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 5925)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6181)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:41:29 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"server", "commit"=>"Отправить"}
+Redirected to http://localhost:3001/proxy/input
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 145)
+
+
+Started GET "/proxy/input" for ::1 at 2022-12-15 23:41:29 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/proxy/input"):
+  
+Started GET "/" for ::1 at 2022-12-15 23:41:30 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2438)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 5918)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 6174)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:41:30 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"server", "commit"=>"Отправить"}
+Redirected to http://localhost:3001/proxy/input
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 144)
+
+
+Started GET "/proxy/input" for ::1 at 2022-12-15 23:41:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/proxy/input"):
+  
+Started GET "/" for ::1 at 2022-12-15 23:41:30 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2427)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5920)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 6177)
+
+
+Started GET "/" for ::1 at 2022-12-15 23:41:40 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2564)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 24895)
+Completed 200 OK in 19ms (Views: 18.3ms | Allocations: 25579)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:41:41 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.3ms | Allocations: 152)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 2.5ms | Allocations: 539)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4528)
+Completed 200 OK in 222ms (Views: 7.9ms | Allocations: 9037)
+
+
+Started GET "/" for ::1 at 2022-12-15 23:42:09 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2509)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 24839)
+Completed 200 OK in 29ms (Views: 28.8ms | Allocations: 25521)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:42:10 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.8ms | Allocations: 134)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 2.0ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4252)
+Completed 200 OK in 34ms (Views: 9.6ms | Allocations: 5426)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:42:28 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.5ms | Allocations: 118)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 1.1ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4213)
+Completed 200 OK in 27ms (Views: 5.8ms | Allocations: 5368)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:43:48 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.4ms | Allocations: 117)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 1.0ms | Allocations: 231)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4208)
+Completed 200 OK in 29ms (Views: 6.5ms | Allocations: 5343)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:44:31 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 1107)
+
+
+Started GET "/public/browser_transform.xslt" for ::1 at 2022-12-15 23:44:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/browser_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:45:12 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 10ms (Views: 0.2ms | Allocations: 1107)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:46:47 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 8ms (Views: 0.2ms | Allocations: 1100)
+
+
+Started GET "/public/browser_transform.xslt" for ::1 at 2022-12-15 23:46:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/browser_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:46:47 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 18ms (Views: 0.2ms | Allocations: 945)
+
+
+Started GET "/public/browser_transform.xslt" for ::1 at 2022-12-15 23:46:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/browser_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:46:48 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 21ms (Views: 0.2ms | Allocations: 962)
+
+
+Started GET "/public/browser_transform.xslt" for ::1 at 2022-12-15 23:46:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/browser_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:46:48 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 13ms (Views: 0.1ms | Allocations: 945)
+
+
+Started GET "/public/browser_transform.xslt" for ::1 at 2022-12-15 23:46:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/browser_transform.xslt"):
+  
+Started GET "/" for ::1 at 2022-12-15 23:46:53 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2858)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 25363)
+Completed 200 OK in 33ms (Views: 31.9ms | Allocations: 26136)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=server&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:46:56 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"server", "commit"=>"Отправить"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.4ms | Allocations: 112)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 1.7ms | Allocations: 375)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4355)
+Completed 200 OK in 33ms (Views: 8.1ms | Allocations: 5598)
+
+
+Started GET "/" for ::1 at 2022-12-15 23:46:58 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2460)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 5941)
+Completed 200 OK in 21ms (Views: 20.1ms | Allocations: 6200)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:01 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 24ms (Views: 0.2ms | Allocations: 941)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:03 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 24ms (Views: 0.2ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:03 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 17ms (Views: 0.2ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:03 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 22ms (Views: 0.2ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:03 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 14ms (Views: 0.2ms | Allocations: 968)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:04 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 27ms (Views: 0.7ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:04 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 21ms (Views: 0.2ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:08 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 23ms (Views: 0.3ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:08 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 14ms (Views: 0.2ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:08 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 17ms (Views: 0.3ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:12 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 23ms (Views: 0.2ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:12 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 19ms (Views: 0.2ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:12 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 22ms (Views: 0.3ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:12 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 29ms (Views: 0.3ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:13 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 21ms (Views: 0.2ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:13 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 28ms (Views: 0.2ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:13 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 25ms (Views: 0.4ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:13 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 27ms (Views: 0.5ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:13 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 28ms (Views: 0.5ms | Allocations: 950)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:14 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 29ms (Views: 0.5ms | Allocations: 949)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:14 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 11ms (Views: 0.1ms | Allocations: 973)
+
+
+Started GET "/proxy/output?num1=3&num2=4&side=client-with-xslt&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for ::1 at 2022-12-15 23:47:15 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "side"=>"client-with-xslt", "commit"=>"Отправить"}
+Completed 200 OK in 10ms (Views: 0.2ms | Allocations: 950)
+
+
+Started GET "/" for ::1 at 2022-12-15 23:48:17 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2841)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 6702)
+Completed 200 OK in 15ms (Views: 13.3ms | Allocations: 7524)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:48:20 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 15ms (Views: 0.2ms | Allocations: 944)
+
+
+Started GET "/public/browser_transform.xslt" for ::1 at 2022-12-15 23:48:20 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/browser_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:02 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 10ms (Views: 0.2ms | Allocations: 1117)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:03 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 16ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:04 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 14ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:05 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 13ms (Views: 0.1ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:05 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 9ms (Views: 0.1ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:05 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 16ms (Views: 0.3ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:05 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 9ms (Views: 0.1ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:05 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 35ms (Views: 0.3ms | Allocations: 965)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:05 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 13ms (Views: 0.1ms | Allocations: 948)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:06 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 31ms (Views: 0.5ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:06 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 12ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:06 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 44ms (Views: 0.7ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:06 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 14ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:06 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 35ms (Views: 0.6ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:07 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 33ms (Views: 0.5ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:07 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 12ms (Views: 0.2ms | Allocations: 948)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:07 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 32ms (Views: 0.4ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:07 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 9ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:07 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 40ms (Views: 0.5ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:07 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 13ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:08 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 32ms (Views: 0.6ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:08 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 20ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:08 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 30ms (Views: 0.4ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:11 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 17ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client" for ::1 at 2022-12-15 23:51:19 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client"}
+Completed 200 OK in 16ms (Views: 0.2ms | Allocations: 905)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:24 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 14ms (Views: 0.2ms | Allocations: 946)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:48 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 9ms (Views: 0.1ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:48 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 11ms (Views: 0.2ms | Allocations: 965)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:49 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 31ms (Views: 0.5ms | Allocations: 948)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:49 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 33ms (Views: 0.6ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:49 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 38ms (Views: 0.5ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:49 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 10ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 30ms (Views: 0.6ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 11ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 30ms (Views: 1.3ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 9ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 30ms (Views: 0.3ms | Allocations: 948)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 12ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:50 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 10ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:51 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 30ms (Views: 0.3ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:51 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 9ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:51 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 31ms (Views: 0.4ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:51 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 11ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:51 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 31ms (Views: 0.5ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:51 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 12ms (Views: 0.2ms | Allocations: 948)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:52 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 38ms (Views: 0.5ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:52 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 12ms (Views: 0.2ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:51:53 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 16ms (Views: 0.2ms | Allocations: 963)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:55:30 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 12ms (Views: 0.3ms | Allocations: 948)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-15 23:55:31 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 14ms (Views: 0.1ms | Allocations: 947)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:06:34 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 10ms (Views: 0.2ms | Allocations: 1107)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:12:44 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 500 Internal Server Error in 13ms (Allocations: 2541)
+
+
+  
+NoMethodError (undefined method `add_namespace_definition' for nil:NilClass
+
+    doc.at_css("tire").add_namespace_definition(nil, "http://localhost:3001/public/")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/proxy_controller.rb:46:in `insert_browser_xslt'
+app/controllers/proxy_controller.rb:28:in `where'
+app/controllers/proxy_controller.rb:18:in `output'
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:46:35 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 12ms (Views: 0.2ms | Allocations: 1106)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:47:17 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 16ms (Views: 0.2ms | Allocations: 1100)
+
+
+Started GET "/transform.xslt" for ::1 at 2022-12-16 00:47:17 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:47:18 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 44ms (Views: 0.8ms | Allocations: 962)
+
+
+Started GET "/transform.xslt" for ::1 at 2022-12-16 00:47:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:47:19 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 32ms (Views: 0.4ms | Allocations: 962)
+
+
+Started GET "/transform.xslt" for ::1 at 2022-12-16 00:47:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:48:01 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 14ms (Views: 0.2ms | Allocations: 1117)
+
+
+Started GET "/public/brow_transform.xslt" for ::1 at 2022-12-16 00:48:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/brow_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:48:02 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 32ms (Views: 0.4ms | Allocations: 963)
+
+
+Started GET "/public/brow_transform.xslt" for ::1 at 2022-12-16 00:48:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/brow_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:48:33 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 34ms (Views: 0.3ms | Allocations: 962)
+
+
+Started GET "/public/brow_transform.xslt" for ::1 at 2022-12-16 00:48:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/brow_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:48:34 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 32ms (Views: 0.4ms | Allocations: 962)
+
+
+Started GET "/public/brow_transform.xslt" for ::1 at 2022-12-16 00:48:34 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/brow_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:48:35 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 30ms (Views: 0.3ms | Allocations: 963)
+
+
+Started GET "/public/brow_transform.xslt" for ::1 at 2022-12-16 00:48:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/brow_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:51:03 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 14ms (Views: 0.2ms | Allocations: 1117)
+
+
+Started GET "/public/brow_transform.xslt" for ::1 at 2022-12-16 00:51:03 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/brow_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:51:04 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 30ms (Views: 0.4ms | Allocations: 962)
+
+
+Started GET "/public/brow_transform.xslt" for ::1 at 2022-12-16 00:51:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/brow_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:51:05 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 35ms (Views: 1.0ms | Allocations: 962)
+
+
+Started GET "/public/brow_transform.xslt" for ::1 at 2022-12-16 00:51:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/brow_transform.xslt"):
+  
+Started GET "/" for ::1 at 2022-12-16 00:52:14 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2548)
+  Rendered layout layouts/application.html.erb (Duration: 84.1ms | Allocations: 24882)
+Completed 200 OK in 92ms (Views: 89.0ms | Allocations: 25400)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=server" for ::1 at 2022-12-16 00:52:17 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"server"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 0.8ms | Allocations: 113)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 4.1ms | Allocations: 377)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 4360)
+Completed 200 OK in 52ms (Views: 22.9ms | Allocations: 5601)
+
+
+Started GET "/" for ::1 at 2022-12-16 00:52:20 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2451)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 5932)
+Completed 200 OK in 24ms (Views: 23.2ms | Allocations: 6189)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client" for ::1 at 2022-12-16 00:52:24 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client"}
+Completed 200 OK in 28ms (Views: 0.3ms | Allocations: 880)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:52:30 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 34ms (Views: 0.4ms | Allocations: 946)
+
+
+Started GET "/public/brow_transform.xslt" for ::1 at 2022-12-16 00:52:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/public/brow_transform.xslt"):
+  
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:53:38 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 12ms (Views: 0.4ms | Allocations: 1118)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:54:28 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Completed 200 OK in 37ms (Views: 0.6ms | Allocations: 960)
+
+
+Started GET "/" for ::1 at 2022-12-16 00:55:52 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2557)
+  Rendered layout layouts/application.html.erb (Duration: 72.4ms | Allocations: 24892)
+Completed 200 OK in 78ms (Views: 76.9ms | Allocations: 25418)
+
+
+Started GET "/proxy/output?num1=3&num2=&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=server" for ::1 at 2022-12-16 00:55:58 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"", "commit"=>"Отправить", "side"=>"server"}
+Redirected to http://localhost:3001/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (Allocations: 567)
+
+
+Started GET "/" for ::1 at 2022-12-16 00:55:58 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2440)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 5927)
+Completed 200 OK in 23ms (Views: 21.3ms | Allocations: 6194)
+
+
+Started GET "/proxy/output?num1=3&num2=&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=client-with-xslt" for ::1 at 2022-12-16 00:56:07 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"", "commit"=>"Отправить", "side"=>"client-with-xslt"}
+Redirected to http://localhost:3001/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 5ms (Allocations: 526)
+
+
+Started GET "/" for ::1 at 2022-12-16 00:56:07 +0300
+Processing by ProxyController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2443)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 5928)
+Completed 200 OK in 23ms (Views: 20.9ms | Allocations: 6181)
+
+
+Started GET "/proxy/output?num1=3&num2=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C&side=server" for ::1 at 2022-12-16 00:56:10 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num1"=>"3", "num2"=>"4", "commit"=>"Отправить", "side"=>"server"}
+  Rendering layout layouts/application.html.erb
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (Duration: 1.5ms | Allocations: 134)
+  Rendered proxy/output.html.erb within layouts/application (Duration: 3.1ms | Allocations: 262)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 4260)
+Completed 200 OK in 53ms (Views: 21.3ms | Allocations: 5407)
+
+
