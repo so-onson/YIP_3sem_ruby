@@ -23,8 +23,6 @@ class ProxyController < ApplicationController
     when 'server'
       @result = xslt_transform(api_response).to_html
     when 'client-with-xslt'
-      # @result = insert_browser_xslt(api_response).to_xml
-      # render xml: @result
       render xml: insert_browser_xslt(api_response).to_xml
     when 'client'
       # render xml: api_response

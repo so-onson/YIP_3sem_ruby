@@ -1,6 +1,6 @@
 require "test_helper"
   require 'nokogiri'
-  doc = Nokogiri::XML(File.read('/home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/test_xml-api.xml'))
+  doc = Nokogiri::XML(File.read('/home/bison/Documents/BMSTU/ЯИП/ЛАБ_10/xslt-api/test_xml-api.xml'))
   # xslt = Nokogiri::XSLT(File.read('/home/bison/Documents/BMSTU/ЯИП/ЛАБ10/xslt-api/transform.xslt'))
   # puts xslt.transform(doc)
 class XmlControllerTest < ActionDispatch::IntegrationTest

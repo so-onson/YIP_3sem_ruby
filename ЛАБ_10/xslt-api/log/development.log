@@ -2562,3 +2562,435 @@ Processing by XmlController#index as */*
 Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 1195)
 
 
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms | Allocations: 2023)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 615)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 504)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 510)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 519)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 495)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 510)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms | Allocations: 522)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 525)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 525)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 489)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 498)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 519)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 501)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 522)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:21 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 489)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:22 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 520)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 519)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 504)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 516)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms | Allocations: 504)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 504)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 504)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 510)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 498)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 504)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 516)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 534)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 516)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 495)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 498)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:23 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 520)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 522)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 495)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 498)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 516)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 516)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 501)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 528)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 516)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 516)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 516)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:28 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:29 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 510)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:29 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:29 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 534)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:29 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 510)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:29 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 501)
+
+
+Started GET "/" for ::1 at 2022-12-16 01:25:29 +0300
+Processing by XmlController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :check rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 504)
+
+
+Started GET "/?num1=2&num2=3&format=xml" for ::1 at 2022-12-16 01:26:14 +0300
+Processing by XmlController#index as XML
+  Parameters: {"num1"=>"2", "num2"=>"3"}
+Completed 200 OK in 62ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 5200)
+
+
+Started GET "/?num1=3&num2=4&form=xml" for 127.0.0.1 at 2022-12-16 01:41:49 +0300
+Processing by XmlController#index as */*
+  Parameters: {"num1"=>"3", "num2"=>"4", "form"=>"xml"}
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 3641)
+
+

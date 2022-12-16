@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects type="array">
-  <object>
-    <first type="integer">17</first>
-    <second type="integer">19</second>
-  </object>
-</objects>
+<result>
+<num1 type="integer">2</num1>
+<num2 type="integer">3</num2>
+<iterations type="array">
+<iteration>
+<index type="integer">1</index>
+<num1 type="integer">2</num1>
+<num2 type="integer">1</num2>
+</iteration>
+<iteration>
+<index type="integer">2</index>
+<num1 type="integer">1</num1>
+<num2 type="integer">1</num2>
+</iteration>
+</iterations>
+<nod type="integer">1</nod>
+<nok type="integer">6</nok>
+</result>
